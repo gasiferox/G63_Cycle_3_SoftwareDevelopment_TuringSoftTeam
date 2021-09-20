@@ -25,7 +25,7 @@
 |:--:|
 | *Figure 1 - UML v2* | -->
 
-| ![UI_Design_v1](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/UML/UML_HospitalizacionEnCasa_v2.jpg) |
+| ![UI_Design_v1](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20II/Wireframe/IndexPaginaWebV1.jpg) |
 |:--:|
 | *Figure 1 - UI Design v1* |
 
