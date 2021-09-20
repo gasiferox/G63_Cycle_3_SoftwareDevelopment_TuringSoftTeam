@@ -29,3 +29,13 @@
 |:--:|
 | *Figure 1 - UI Design v1* |
 
+| ![Spring_meeting](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20II/Kanban%20board/SprintII_2021-09-15%2021-14-13.png) |
+|:--:|
+| *Figure 2 - Spring Sample Meeting* |
+
+| ![Kanban_board](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20II/Kanban%20board/Screenshot%20from%202021-09-15%2021-03-57.png) |
+|:--:|
+| *Figure 3 - Kanban board* |
+
+
+
