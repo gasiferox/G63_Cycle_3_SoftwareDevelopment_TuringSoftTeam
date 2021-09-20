@@ -1,0 +1,97 @@
+﻿@page "/"
+
+@* CTRL + SHIFT + A *@
+
+<h1>Movie DataBase</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="card" style="width: 18rem;">
+        <img src="/img/archer.jpg" class="card-img-top" alt="..." width="20" height="380">
+        <div class="card-body">
+            <h5 class="card-title">@movie1</h5>
+            <p class="card-text">Great movie about a girl with a bow.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="/img/joker.jpg" class="card-img-top" alt="..." width="20" height="380">
+        <div class="card-body">
+            <h5 class="card-title">@movie2</h5>
+            <p class="card-text">Joker with a full theme movie.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+        <img src="/img/backToTheFuture.jpg" class="card-img-top" alt="..." width="20" height="380">
+        <div class="card-body">
+            <h5 class="card-title">@movie3</h5>
+            <p class="card-text">A classic cult 80's movie.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="mb-3">
+    <input class="form-control form-control-sm" type="text" placeholder="Titulo de la película">
+</div>
+
+<div class="mb-3">
+    <input class="form-control form-control-sm" type="text" placeholder="Género">
+</div>
+
+<div class="mb-3">
+    <input class="form-control form-control-sm" type="text" placeholder="Titulo de la película">
+</div>
+
+<div class="mb-3">
+  <label for="formFileSm" class="form-label">Small file input example</label>
+  <input class="form-control form-control-sm" id="formFileSm" type="file">
+</div>
+
+@* <div class="mb-3">
+  <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+  <input class="form-control" type="file" id="formFileDisabled" disabled>
+</div> *@
+
+<input type="file" name="" id="" class="form-control form-control-sm">
+
+@* <div>
+    <label class="form-label">Pelicula 1 @functionConvertMayus(movie1).</label>
+    <label class="form-label">Pelicula 2 @functionConvertMayus(movie2).</label>
+    <label class="form-label">Pelicula 3 @functionConvertMayus(movie3).</label>
+</div> *@
+
+<div>
+    <button class="btn btn-info" @onclick="@clickEventButton">Da click</button>
+    <button class="btn btn-danger" @onclick="@clickEventCancel">Cancelar</button>
+</div>
+
+Welcome to your new app.
+
+@* <SurveyPrompt Title="How is Blazor working for you?" /> *@
+
+@* coomentari *@
+
+@code{
+    public string movie1 = "Archer";
+    public string movie2 = "Joker";
+    public string movie3 = "Back to the Future";
+
+    @* Funciones flecha estructura:
+        variable(parametros) => instrucciones; 
+    public string functionConvertMayus(string value) => value.ToUpper();
+    public string functionConvertMinus(string value) => value.ToLower(); *@
+
+    @* Métodos *@
+    public void clickEventButton(){
+        Console.WriteLine("Has dado click en el botón");
+    }
+
+    public void clickEventCancel(){
+        Console.WriteLine("Cancelaste el proceso");
+    }
+}

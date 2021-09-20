@@ -1,0 +1,42 @@
+﻿@using ProyPeliculas.Shared.Entity;
+
+@page "/compoundinterest"
+
+<h1>Compound Interest</h1>
+
+<table class="table">
+    <tr>
+        <th>Initial Principal</th>
+        <th><input @bind="_calculations.Principal" /></th>
+    </tr>
+    <tr>
+        <th>Years</th>
+        <th><input @bind="_calculations.Years" /></th>
+    </tr>
+    <tr>
+        <th>Annuall Interest Rate (%)</th>
+        <th><input @bind="_calculations.InterestRate" /></th>
+    </tr>
+    <tr>
+        <th>Total:</th>
+        <th>$ @_calculations.Total USD</th>
+    </tr>
+</table>
+
+<buttton class="btn btn-primary" @onclick="_calculations.Calculate">Calculated</buttton>
+
+@code {
+@*     private double Principal { get; set; }
+    private double InterestRate { get; set; } = 5;
+    private int Years { get; set; } = 10;
+    private double total { get; set;} = 0;
+    private string Total { get; set; }
+
+    private void Calculate()
+    {
+        var total = Principal * Math.Pow(1 + InterestRate / (1200.0), Years * 12);
+        Total = total.ToString("C");
+    } *@
+
+    ProyPeliculas.Shared.Entity.Calculations _calculations = new ProyPeliculas.Shared.Entity.Calculations();
+}

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ProyPeliculas.Shared/1.0.0": {
+        "runtime": {
+          "ProyPeliculas.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProyPeliculas.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
