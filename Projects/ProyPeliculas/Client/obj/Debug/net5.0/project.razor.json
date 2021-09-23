@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1819961012,
+        "HashCode": -1979455606,
         "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.App",
+        "Name": "ProyPeliculas.Client.Pages.Index",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.App"
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
         }
       },
       {
-        "HashCode": 1392074979,
+        "HashCode": 676609624,
         "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.App",
+        "Name": "ProyPeliculas.Client.Pages.Index",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyPeliculas.Client.App"
+            "TagName": "ProyPeliculas.Client.Pages.Index"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.App",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -74,6 +74,39 @@
         }
       },
       {
+        "HashCode": -329034538,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Counter",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": 1364061797,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Counter",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -307899527,
         "Kind": "Components.Component",
         "Name": "ProyPeliculas.Client.Pages.FetchData",
@@ -107,68 +140,35 @@
         }
       },
       {
-        "HashCode": -1979455606,
+        "HashCode": 1819961012,
         "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Index",
+        "Name": "ProyPeliculas.Client.App",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
+          "Common.TypeName": "ProyPeliculas.Client.App"
         }
       },
       {
-        "HashCode": 676609624,
+        "HashCode": 1392074979,
         "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Index",
+        "Name": "ProyPeliculas.Client.App",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ProyPeliculas.Client.Pages.Index"
+            "TagName": "ProyPeliculas.Client.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -329034538,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Counter",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": 1364061797,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Counter",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyPeliculas.Client.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Counter",
+          "Common.TypeName": "ProyPeliculas.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
