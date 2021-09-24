@@ -33,7 +33,7 @@
 |:--:|
 | *Figure 2 - Spring Sample Meeting* |
 
-| ![Kanban_board](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20II/Kanban%20board/Screenshot%20from%202021-09-15%2021-03-57.png) |
+| ![Kanban_board](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Kanban%20board/trello_2021-09-23%2023-00-42.png) |
 |:--:|
 | *Figure 3 - Kanban board* |
 
