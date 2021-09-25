@@ -1,97 +1,157 @@
 ﻿@page "/"
-
-@* CTRL + SHIFT + A *@
+@using ProyPeliculas.Client.Pages.Components
 
 <h1>Movie DataBase</h1>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="card" style="width: 18rem;">
-        <img src="/img/archer.jpg" class="card-img-top" alt="..." width="20" height="380">
-        <div class="card-body">
-            <h5 class="card-title">@movie1</h5>
-            <p class="card-text">Great movie about a girl with a bow.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+<CardComponent></CardComponent>
 
-    <div class="card" style="width: 18rem;">
-        <img src="/img/joker.jpg" class="card-img-top" alt="..." width="20" height="380">
-        <div class="card-body">
-            <h5 class="card-title">@movie2</h5>
-            <p class="card-text">Joker with a full theme movie.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Base de datos de películas</h1>
+        <p class="lead">Películas</p>
+        <hr class="my-2">
 
-    <div class="card" style="width: 18rem;">
-        <img src="/img/backToTheFuture.jpg" class="card-img-top" alt="..." width="20" height="380">
-        <div class="card-body">
-            <h5 class="card-title">@movie3</h5>
-            <p class="card-text">A classic cult 80's movie.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
+        @if (Movies == null)
+        {
+            <Label><small class="text-muted">No se encontraron registros</small></Label>
+        }
+        else
+        {
+            @foreach (var itemMovie in Movies)
+            {
+                <div class="list-group align-items-start mb-3">
+                    @* Fila que contiene la info de una película *@
+                    <div class="row">
+                        <div class="col md-3">
+                            <img src="@itemMovie.Image" alt="" height="300px" width="200px">
+                        </div>
+                        <div class="col md-9">
+                            <h6 class="text-left"><small class="text-muted">@itemMovie.Name</small></h6>
+                            <blockquote class="blockquote text-left"><small>@itemMovie.Sinopsis</small></blockquote>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+        <p>More info</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        </p>
     </div>
 </div>
 
-<br>
 
-<div class="mb-3">
+
+@* <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="card" style="width: 18rem;">
+    <img src="/img/archer.jpg" class="card-img-top" alt="..." width="20" height="380">
+    <div class="card-body">
+    <h5 class="card-title">@movie1</h5>
+    <p class="card-text">Great movie about a girl with a bow.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="/img/joker.jpg" class="card-img-top" alt="..." width="20" height="380">
+    <div class="card-body">
+    <h5 class="card-title">@movie2</h5>
+    <p class="card-text">Joker with a full theme movie.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+    <img src="/img/backToTheFuture.jpg" class="card-img-top" alt="..." width="20" height="380">
+    <div class="card-body">
+    <h5 class="card-title">@movie3</h5>
+    <p class="card-text">A classic cult 80's movie.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+    </div>
+    </div>
+
+    <br>
+
+    <div class="mb-3">
     <input class="form-control form-control-sm" type="text" placeholder="Titulo de la película">
-</div>
+    </div>
 
-<div class="mb-3">
+    <div class="mb-3">
     <input class="form-control form-control-sm" type="text" placeholder="Género">
-</div>
+    </div>
 
-<div class="mb-3">
+    <div class="mb-3">
     <input class="form-control form-control-sm" type="text" placeholder="Titulo de la película">
-</div>
+    </div>
 
-<div class="mb-3">
-  <label for="formFileSm" class="form-label">Small file input example</label>
-  <input class="form-control form-control-sm" id="formFileSm" type="file">
-</div>
+    <div class="mb-3">
+    <label for="formFileSm" class="form-label">Small file input example</label>
+    <input class="form-control form-control-sm" id="formFileSm" type="file">
+    </div> *@
 
 @* <div class="mb-3">
-  <label for="formFileDisabled" class="form-label">Disabled file input example</label>
-  <input class="form-control" type="file" id="formFileDisabled" disabled>
-</div> *@
+    <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+    <input class="form-control" type="file" id="formFileDisabled" disabled>
+    </div> *@
 
-<input type="file" name="" id="" class="form-control form-control-sm">
+@* <input type="file" name="" id="" class="form-control form-control-sm"> *@
 
 @* <div>
     <label class="form-label">Pelicula 1 @functionConvertMayus(movie1).</label>
     <label class="form-label">Pelicula 2 @functionConvertMayus(movie2).</label>
     <label class="form-label">Pelicula 3 @functionConvertMayus(movie3).</label>
-</div> *@
+    </div> *@
 
-<div>
+@* <div>
     <button class="btn btn-info" @onclick="@clickEventButton">Da click</button>
     <button class="btn btn-danger" @onclick="@clickEventCancel">Cancelar</button>
-</div>
+    </div>
 
-Welcome to your new app.
+    Welcome to your new app. *@
 
 @* <SurveyPrompt Title="How is Blazor working for you?" /> *@
 
 @* coomentari *@
 
-@code{
-    public string movie1 = "Archer";
-    public string movie2 = "Joker";
-    public string movie3 = "Back to the Future";
+@code {
+    @* public string movie1 = "Archer";
+        public string movie2 = "Joker";
+        public string movie3 = "Back to the Future"; *@
 
     @* Funciones flecha estructura:
-        variable(parametros) => instrucciones; 
-    public string functionConvertMayus(string value) => value.ToUpper();
-    public string functionConvertMinus(string value) => value.ToLower(); *@
+        variable(parametros) => instrucciones;
+        public string functionConvertMayus(string value) => value.ToUpper();
+        public string functionConvertMinus(string value) => value.ToLower(); *@
 
     @* Métodos *@
-    public void clickEventButton(){
+    @* public void clickEventButton()
+        {
         Console.WriteLine("Has dado click en el botón");
-    }
+        }
 
-    public void clickEventCancel(){
+        public void clickEventCancel()
+        {
         Console.WriteLine("Cancelaste el proceso");
+        } *@
+
+
+    public List<Movie> Movies { get { return GetMovies(); } }
+    private List<Movie> GetMovies()
+    {
+        return new List<Movie>()
+        {
+            new Movie(){Name="Archer", Sinopsis="Trama de la película...", Image="/img/poster_archer.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Back to the future", Sinopsis="Trama de la película...", Image="/img/poster_backToTheFuture.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Joker", Sinopsis="Trama de la película...", Image="/img/poster_joker.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Wolverine I", Sinopsis="Trama de la película...", Image="/img/poster_wolverine.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Wolverine II", Sinopsis="Trama de la película...", Image="/img/poster_wolverine_2.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="World War Z", Sinopsis="Trama de la película...", Image="/img/poster_worldWarZ.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Antman", Sinopsis="Trama de la película...", Image="/img/poster_antman.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="After", Sinopsis="Trama de la película...", Image="/img/poster_after.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Star Trek", Sinopsis="Trama de la película...", Image="/img/poster_starTrek.jpeg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
+            new Movie(){Name="Suicide Squad", Sinopsis="Trama de la película...", Image="/img/poster_suicideSquad.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""}
+        };
     }
 }

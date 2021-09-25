@@ -1,0 +1,75 @@
+﻿@page "/"
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Catálogo de peces</h1>
+        <p class="lead">Banco de peces marinos</p>
+        <hr class="my-2">
+        <p>Mas Información</p>
+
+        <div class="card">
+            <img src="/img/PezDiscutirRosa.jpg" alt="" class="card-img-top" height="">
+            <div class="card-body">
+                <h5 class="card-title"><em>@cardTitle</em></h5>
+                <small class="text-muted">@cardText</small>
+            </div>
+            <footer class="blockcuote-footer">
+                <small>Autor 1</small>
+            </footer>
+        </div>
+
+        <div class="card">
+            <img src="/img/PezGloboMarron.jpg" alt="" class="card-img-top" height="">
+            <div class="card-body">
+                <h5 class="card-title"><em>@cardTitle</em></h5>
+                <small class="text-muted">@cardText</small>
+            </div>
+            <footer class="blockcuote-footer">
+                <small>Autor 2</small>
+            </footer>
+        </div>
+
+        <div class="card">
+            <img src="/img/PezLeon.jpg" alt="" class="card-img-top" height="">
+            <div class="card-body">
+                <h5 class="card-title"><em>@cardTitle</em></h5>
+                <small class="text-muted">@cardText</small>
+            </div>
+            <footer class="blockcuote-footer">
+                <small>Autor 3</small>
+            </footer>
+        </div>
+
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        </p>
+    </div>
+
+    <div>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+@code{
+    @* Declaración de variables *@
+    public string cardTitle = "Tipo Pez";
+    public string cardText = "Descripción del pez";
+}
