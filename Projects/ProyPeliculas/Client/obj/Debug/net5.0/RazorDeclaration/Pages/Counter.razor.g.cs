@@ -103,6 +103,13 @@ using ProyPeliculas.Shared.Entity;
 #line hidden
 #nullable disable
 #nullable restore
+#line 14 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
+using ProyPeliculas.Client.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 15 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
 using ProyPeliculas.Client.Pages.Components;
 
@@ -110,8 +117,8 @@ using ProyPeliculas.Client.Pages.Components;
 #line hidden
 #nullable disable
 #nullable restore
-#line 2 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Counter.razor"
-using ProyPeliculas.Client.Pages;
+#line 16 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
+using ProyPeliculas.Client.Services;
 
 #line default
 #line hidden

@@ -116,6 +116,13 @@ using ProyPeliculas.Client.Pages.Components;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 16 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
+using ProyPeliculas.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
     public partial class CardComponent : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -131,16 +138,16 @@ using ProyPeliculas.Client.Pages.Components;
     {
         return new List<Movie>()
         {
-            new Movie(){Name="Archer", Sinopsis="Trama de la película...", Image="/img/poster_archer.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Back to the future", Sinopsis="Trama de la película...", Image="/img/poster_backToTheFuture.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Joker", Sinopsis="Trama de la película...", Image="/img/poster_joker.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Wolverine I", Sinopsis="Trama de la película...", Image="/img/poster_wolverine.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Wolverine II", Sinopsis="Trama de la película...", Image="/img/poster_wolverine_2.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="World War Z", Sinopsis="Trama de la película...", Image="/img/poster_worldWarZ.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Antman", Sinopsis="Trama de la película...", Image="/img/poster_antman.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="After", Sinopsis="Trama de la película...", Image="/img/poster_after.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Star Trek", Sinopsis="Trama de la película...", Image="/img/poster_starTrek.jpeg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""},
-            new Movie(){Name="Suicide Squad", Sinopsis="Trama de la película...", Image="/img/poster_suicideSquad.jpg", Premier=new DateTime(2021, 10, 15), Category="", Casting=""}
+            new Movie(){Name="Archer", Sinopsis="Trama de la película...", Image="/img/poster_archer.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Back to the future", Sinopsis="Trama de la película...", Image="/img/poster_backToTheFuture.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Joker", Sinopsis="Trama de la película...", Image="/img/poster_joker.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Wolverine I", Sinopsis="Trama de la película...", Image="/img/poster_wolverine.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Wolverine II", Sinopsis="Trama de la película...", Image="/img/poster_wolverine_2.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="World War Z", Sinopsis="Trama de la película...", Image="/img/poster_worldWarZ.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Antman", Sinopsis="Trama de la película...", Image="/img/poster_antman.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="After", Sinopsis="Trama de la película...", Image="/img/poster_after.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Star Trek", Sinopsis="Trama de la película...", Image="/img/poster_starTrek.jpeg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()},
+            new Movie(){Name="Suicide Squad", Sinopsis="Trama de la película...", Image="/img/poster_suicideSquad.jpg", Premier=new DateTime(2021, 10, 15), Category=Category.Accion, Casting=new Casting()}
         };
     }
 

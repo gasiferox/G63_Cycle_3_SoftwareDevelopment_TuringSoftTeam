@@ -41,80 +41,371 @@
         }
       },
       {
-        "HashCode": -1778762504,
+        "HashCode": 377191752,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_fc1cbd795dbcf31e67c1be931a5f540f2ead6a62",
+        "Name": "ProyPeliculas.Client.Pages.Components.ServiceComponent",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_fc1cbd795dbcf31e67c1be931a5f540f2ead6a62"
+            "TagName": "ServiceComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Movies",
+            "TypeName": "System.Collections.Generic.List<ProyPeliculas.Shared.Entity.Movie>",
+            "Metadata": {
+              "Common.PropertyName": "Movies"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_fc1cbd795dbcf31e67c1be931a5f540f2ead6a62"
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.ServiceComponent"
         }
       },
       {
-        "HashCode": 913073555,
+        "HashCode": 1304285019,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_fc1cbd795dbcf31e67c1be931a5f540f2ead6a62",
+        "Name": "ProyPeliculas.Client.Pages.Components.ServiceComponent",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_fc1cbd795dbcf31e67c1be931a5f540f2ead6a62"
+            "TagName": "ProyPeliculas.Client.Pages.Components.ServiceComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Movies",
+            "TypeName": "System.Collections.Generic.List<ProyPeliculas.Shared.Entity.Movie>",
+            "Metadata": {
+              "Common.PropertyName": "Movies"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_fc1cbd795dbcf31e67c1be931a5f540f2ead6a62",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.ServiceComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -125925897,
+        "HashCode": 927898597,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_cfe9dbaa91d154812621279ec11f17c4282fe318",
+        "Name": "ProyPeliculas.Client.Pages.Components.CardComponent",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_cfe9dbaa91d154812621279ec11f17c4282fe318"
+            "TagName": "CardComponent"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_cfe9dbaa91d154812621279ec11f17c4282fe318"
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.CardComponent"
         }
       },
       {
-        "HashCode": 1519675504,
+        "HashCode": 502787226,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_cfe9dbaa91d154812621279ec11f17c4282fe318",
+        "Name": "ProyPeliculas.Client.Pages.Components.CardComponent",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_cfe9dbaa91d154812621279ec11f17c4282fe318"
+            "TagName": "ProyPeliculas.Client.Pages.Components.CardComponent"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_cfe9dbaa91d154812621279ec11f17c4282fe318",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.CardComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -4205665,
+        "HashCode": -2004858185,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8",
+        "Name": "ProyPeliculas.Client.Pages.Components.DataTableComponent",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8"
+            "TagName": "DataTableComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Movies",
+            "TypeName": "System.Collections.Generic.List<ProyPeliculas.Shared.Entity.Movie>",
+            "Metadata": {
+              "Common.PropertyName": "Movies"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.DataTableComponent"
+        }
+      },
+      {
+        "HashCode": -1943596028,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Components.DataTableComponent",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Components.DataTableComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Movies",
+            "TypeName": "System.Collections.Generic.List<ProyPeliculas.Shared.Entity.Movie>",
+            "Metadata": {
+              "Common.PropertyName": "Movies"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.DataTableComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 776123565,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.CompoundInterest",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CompoundInterest"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.CompoundInterest"
+        }
+      },
+      {
+        "HashCode": 1253271609,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.CompoundInterest",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.CompoundInterest"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.CompoundInterest",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -329034538,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Counter",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": 1364061797,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Counter",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1979455606,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Index",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 676609624,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Index",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -307899527,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.FetchData",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -1593445,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.FetchData",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1333369597,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.MoviesTable",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MoviesTable"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.MoviesTable"
+        }
+      },
+      {
+        "HashCode": -1541638107,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.MoviesTable",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.MoviesTable"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.MoviesTable",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 795238934,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Shared.SurveyPrompt",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Shared.SurveyPrompt"
+        }
+      },
+      {
+        "HashCode": 460628961,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Shared.SurveyPrompt",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Shared.SurveyPrompt"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Title",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Title"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Shared.SurveyPrompt",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1256505858,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Shared.MainLayout",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
           }
         ],
         "BoundAttributes": [
@@ -131,18 +422,18 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8"
+          "Common.TypeName": "ProyPeliculas.Client.Shared.MainLayout"
         }
       },
       {
-        "HashCode": -985543800,
+        "HashCode": 703855537,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8",
+        "Name": "ProyPeliculas.Client.Shared.MainLayout",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8"
+            "TagName": "ProyPeliculas.Client.Shared.MainLayout"
           }
         ],
         "BoundAttributes": [
@@ -159,145 +450,79 @@
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8",
+          "Common.TypeName": "ProyPeliculas.Client.Shared.MainLayout",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": 288719810,
+        "HashCode": -205411531,
         "Kind": "Components.ChildContent",
-        "Name": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8.Body",
+        "Name": "ProyPeliculas.Client.Shared.MainLayout.Body",
         "AssemblyName": "ProyPeliculas.Client",
         "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8"
+            "ParentTag": "MainLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8.Body",
+          "Common.TypeName": "ProyPeliculas.Client.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent"
         }
       },
       {
-        "HashCode": -1419234164,
+        "HashCode": 283306522,
         "Kind": "Components.ChildContent",
-        "Name": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8.Body",
+        "Name": "ProyPeliculas.Client.Shared.MainLayout.Body",
         "AssemblyName": "ProyPeliculas.Client",
         "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
             "TagName": "Body",
-            "ParentTag": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8"
+            "ParentTag": "ProyPeliculas.Client.Shared.MainLayout"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.None",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_d23e108e6e23834cd571c3cf8a6398a72311f6e8.Body",
+          "Common.TypeName": "ProyPeliculas.Client.Shared.MainLayout.Body",
           "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
       {
-        "HashCode": -1039436848,
+        "HashCode": -152411258,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_f832dac86857fba075c8b6615093edf2d56f07fe",
+        "Name": "ProyPeliculas.Client.Shared.NavMenu",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "AspNetCore_f832dac86857fba075c8b6615093edf2d56f07fe"
+            "TagName": "NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_f832dac86857fba075c8b6615093edf2d56f07fe"
+          "Common.TypeName": "ProyPeliculas.Client.Shared.NavMenu"
         }
       },
       {
-        "HashCode": 1013996766,
+        "HashCode": -347486070,
         "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_f832dac86857fba075c8b6615093edf2d56f07fe",
+        "Name": "ProyPeliculas.Client.Shared.NavMenu",
         "AssemblyName": "ProyPeliculas.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "__GeneratedComponent.AspNetCore_f832dac86857fba075c8b6615093edf2d56f07fe"
+            "TagName": "ProyPeliculas.Client.Shared.NavMenu"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_f832dac86857fba075c8b6615093edf2d56f07fe",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1628858639,
-        "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_53915c4c5013fd938e844ceb07e1f4095c94b4cc",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AspNetCore_53915c4c5013fd938e844ceb07e1f4095c94b4cc"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_53915c4c5013fd938e844ceb07e1f4095c94b4cc"
-        }
-      },
-      {
-        "HashCode": 1645482007,
-        "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_53915c4c5013fd938e844ceb07e1f4095c94b4cc",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "__GeneratedComponent.AspNetCore_53915c4c5013fd938e844ceb07e1f4095c94b4cc"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_53915c4c5013fd938e844ceb07e1f4095c94b4cc",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2004195953,
-        "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_432d5cc9caa07adf1af8de841049b0199eeda379",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "AspNetCore_432d5cc9caa07adf1af8de841049b0199eeda379"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_432d5cc9caa07adf1af8de841049b0199eeda379"
-        }
-      },
-      {
-        "HashCode": -1538289742,
-        "Kind": "Components.Component",
-        "Name": "__GeneratedComponent.AspNetCore_432d5cc9caa07adf1af8de841049b0199eeda379",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "__GeneratedComponent.AspNetCore_432d5cc9caa07adf1af8de841049b0199eeda379"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "__GeneratedComponent.AspNetCore_432d5cc9caa07adf1af8de841049b0199eeda379",
+          "Common.TypeName": "ProyPeliculas.Client.Shared.NavMenu",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -12987,6 +13212,72 @@
     "CSharpLanguageVersion": 900
   },
   "RootNamespace": "ProyPeliculas.Client",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Shared/SurveyPrompt.razor",
+      "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Components/CardComponent.razor",
+      "TargetPath": "Pages\\Components\\CardComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Shared/NavMenu.razor",
+      "TargetPath": "Shared\\NavMenu.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/CompoundInterest.razor",
+      "TargetPath": "Pages\\CompoundInterest.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Components/ServiceComponent.razor",
+      "TargetPath": "Pages\\Components\\ServiceComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Index.razor",
+      "TargetPath": "Pages\\Index.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Shared/MainLayout.razor",
+      "TargetPath": "Shared\\MainLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Components/DataTableComponent.razor",
+      "TargetPath": "Pages\\Components\\DataTableComponent.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/FetchData.razor",
+      "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor",
+      "TargetPath": "_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Counter.razor",
+      "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/MoviesTable.razor",
+      "TargetPath": "Pages\\MoviesTable.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/App.razor",
+      "TargetPath": "App.razor",
+      "FileKind": "component"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

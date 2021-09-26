@@ -1,0 +1,15 @@
+@page "/moviesdatatable"
+@using ProyPeliculas.Client.Pages.Components
+@inject IServiceMovie movie
+
+<DataTableComponent Movies="Movies"></DataTableComponent>
+
+@code
+{
+    private List<Movie> Movies;
+    protected override void OnInitialized()
+    {
+        Movies = movie.GetMovies();
+    }
+
+}

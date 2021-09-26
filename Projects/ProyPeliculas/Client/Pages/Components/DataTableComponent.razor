@@ -1,0 +1,58 @@
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-3">Fluid jumbo heading</h1>
+        <p class="lead">Jumbo helper text</p>
+        <hr class="my-2">
+        <p>More info</p>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Pelicula</th>
+                    <th scope="col">Sinopsis</th>
+                    <th scope="col">Categoría</th>
+                    <th scope="col">Premier</th>
+                    <th scope="col">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var movie in Movies)
+                {
+                    <tr>
+                        <th scope="row">@movie.Name</th>
+                        <td>@movie.Sinopsis</td>
+                        <td>@movie.Category</td>
+                        <td>@movie.Premier</td>
+                        <td>
+                            <a href="">
+                                <span class="oi oi-plus" aria-hidden="true"></span>
+                            </a>
+                            <a href="">
+                                <span class="oi oi-delete" aria-hidden="true"></span>
+                            </a>
+                            <a href="">
+                                <span class="oi oi-zoom-in" aria-hidden="true"></span>
+                            </a>
+                            <a href="">
+                                <span class="oi oi-document" aria-hidden="true"></span>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        </p>
+    </div>
+</div>
+
+@code {
+    [Parameter] public List<Movie> Movies { get; set; }
+
+    void MovieDelete()
+    {
+        Console.WriteLine($"Eliminando de cartelera la película");
+    }
+}
