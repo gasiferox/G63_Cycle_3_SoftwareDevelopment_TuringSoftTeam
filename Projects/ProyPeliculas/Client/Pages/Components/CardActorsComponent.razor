@@ -1,0 +1,54 @@
+<div class="jumbotron">
+    <div class="container">
+        <div class="container-fluid">
+        <div class="row mb-3">
+            @foreach (var actor in Actors)
+            {
+                <div class="col-md-4">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-300">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="card">
+                                <img src="@actor.Photo" alt="img-thumbnail card-img-top" height="300px" width="200px">
+                                <div class="card-body">
+                                    <h6 class="card-title">@actor.Name @actor.LastName</h6>
+                                    <p class="text-muted">
+                                        @actor.Birthday
+                                        <br>
+                                        @actor.PlaceOfBirth
+                                        <br>
+                                        <small>@actor.ArtisticName</small>
+                                        <br>
+                                        <small>@actor.CareerTime</small>
+                                    </p>
+                                </div>
+                                <div>
+                                    <a href="http://"><span class="oi oi-pencil" aria-hidden="true"></span></a>
+                                </div>
+                                <div>
+                                    <a href="http://"><span class="oi oi-zoom-in" aria-hidden="true"></span></a>
+                                </div>
+                                <div>
+                                    <a href="http://"><span class="oi oi-delete" aria-hidden="true"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <p>More info</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        </p>
+    </div>
+    </div>
+</div>
+
+@code{
+    [Parameter] public List<Actor> Actors { get; set; }
+
+    void ActorDelete()
+    {
+        Console.WriteLine("Eliminando actor");
+    }
+}

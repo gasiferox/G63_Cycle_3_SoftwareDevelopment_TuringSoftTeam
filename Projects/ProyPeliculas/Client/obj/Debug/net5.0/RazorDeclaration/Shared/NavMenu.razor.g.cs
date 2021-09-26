@@ -131,7 +131,7 @@ using ProyPeliculas.Client.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Shared/NavMenu.razor"
+#line 43 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Shared/NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

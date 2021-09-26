@@ -137,7 +137,7 @@ using ProyPeliculas.Client.Services;
 
     void MovieDelete()
     {
-        Console.WriteLine($"Eliminando de cartelera la película");
+        Console.WriteLine("Eliminando de cartelera la película");
     }
 
 #line default

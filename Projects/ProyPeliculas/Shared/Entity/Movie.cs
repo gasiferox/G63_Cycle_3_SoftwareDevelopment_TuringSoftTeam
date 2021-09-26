@@ -19,6 +19,7 @@ namespace ProyPeliculas.Shared.Entity
         Suspenso = 1,
         Accion = 2,
         Drama = 3,
-        Comedia =4
+        Comedia =4,
+        SiFi = 5
     }
 }

@@ -3927,6 +3927,158 @@
         }
       },
       {
+        "HashCode": 1819961012,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.App",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.App"
+        }
+      },
+      {
+        "HashCode": 1392074979,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.App",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1979455606,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Index",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 676609624,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Index",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1238623633,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.ActorsView",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ActorsView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.ActorsView"
+        }
+      },
+      {
+        "HashCode": 719381252,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.ActorsView",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.ActorsView"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.ActorsView",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1342285907,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Components.CardActorsComponent",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CardActorsComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Actors",
+            "TypeName": "System.Collections.Generic.List<ProyPeliculas.Shared.Entity.Actor>",
+            "Metadata": {
+              "Common.PropertyName": "Actors"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.CardActorsComponent"
+        }
+      },
+      {
+        "HashCode": -848111980,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Components.CardActorsComponent",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Components.CardActorsComponent"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Actors",
+            "TypeName": "System.Collections.Generic.List<ProyPeliculas.Shared.Entity.Actor>",
+            "Metadata": {
+              "Common.PropertyName": "Actors"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.CardActorsComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 927898597,
         "Kind": "Components.Component",
         "Name": "ProyPeliculas.Client.Pages.Components.CardComponent",
@@ -4009,6 +4161,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyPeliculas.Client.Pages.Components.DataTableComponent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1217674627,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Components.InterestCalculatorComponent",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "InterestCalculatorComponent"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.InterestCalculatorComponent"
+        }
+      },
+      {
+        "HashCode": 560773366,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Components.InterestCalculatorComponent",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Components.InterestCalculatorComponent"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Components.InterestCalculatorComponent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -4165,39 +4350,6 @@
         }
       },
       {
-        "HashCode": -1979455606,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Index",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 676609624,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Index",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyPeliculas.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1333369597,
         "Kind": "Components.Component",
         "Name": "ProyPeliculas.Client.Pages.MoviesTable",
@@ -4227,39 +4379,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyPeliculas.Client.Pages.MoviesTable",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1819961012,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.App",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.App"
-        }
-      },
-      {
-        "HashCode": 1392074979,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.App",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyPeliculas.Client.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

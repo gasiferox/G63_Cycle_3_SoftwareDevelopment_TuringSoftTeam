@@ -132,7 +132,7 @@ using ProyPeliculas.Shared.Entity;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 39 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/CompoundInterest.razor"
+#line 18 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/CompoundInterest.razor"
         
 
     ProyPeliculas.Shared.Entity.Calculations _calculations = new ProyPeliculas.Shared.Entity.Calculations();

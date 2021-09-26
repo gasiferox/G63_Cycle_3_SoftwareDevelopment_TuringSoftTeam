@@ -36,6 +36,7 @@ namespace ProyPeliculas.Client
         private static void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IServiceMovie, ServiceMovie>();
+            services.AddSingleton<IServiceActor, ServiceActor>();
         }
     }
 }

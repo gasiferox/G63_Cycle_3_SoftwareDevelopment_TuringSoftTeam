@@ -1,0 +1,26 @@
+<h1>Compound Interest</h1>
+
+<table class="table">
+    <tr>
+        <th>Initial Principal</th>
+        <th><input @bind="_calculations.Principal" /></th>
+    </tr>
+    <tr>
+        <th>Years</th>
+        <th><input @bind="_calculations.Years" /></th>
+    </tr>
+    <tr>
+        <th>Annuall Interest Rate (%)</th>
+        <th><input @bind="_calculations.InterestRate" /></th>
+    </tr>
+    <tr>
+        <th>Total:</th>
+        <th>$ @_calculations.Total USD</th>
+    </tr>
+</table>
+
+<buttton class="btn btn-primary" @onclick="_calculations.Calculate">Calculated</buttton>
+
+@code{
+    ProyPeliculas.Shared.Entity.Calculations _calculations = new ProyPeliculas.Shared.Entity.Calculations();
+}
