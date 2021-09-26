@@ -17,7 +17,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.HistoriaClinica", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.HistoriaClinica", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.ToTable("HistoriasClinicas");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Medicamento", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Medicamento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -61,7 +61,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.ToTable("Medicamentos");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Persona", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Persona", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -93,7 +93,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Remision", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Remision", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -118,7 +118,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.ToTable("Remisiones");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.SignoVital", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.SignoVital", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -143,7 +143,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.ToTable("SignosVitales");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Tratamiento", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Tratamiento", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -160,9 +160,9 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.ToTable("Tratamientos");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Enfermera", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Enfermera", b =>
                 {
-                    b.HasBaseType("HospiEnCasa.App.Dominio.Persona");
+                    b.HasBaseType("HospiEnCasa.App.Dominio.Entidades.Persona");
 
                     b.Property<string>("HorasLaborales")
                         .HasColumnType("text");
@@ -173,9 +173,9 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Enfermera");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.FamiliarDesignado", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.FamiliarDesignado", b =>
                 {
-                    b.HasBaseType("HospiEnCasa.App.Dominio.Persona");
+                    b.HasBaseType("HospiEnCasa.App.Dominio.Entidades.Persona");
 
                     b.Property<string>("Correo")
                         .HasColumnType("text");
@@ -186,9 +186,9 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("FamiliarDesignado");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Medico", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Medico", b =>
                 {
-                    b.HasBaseType("HospiEnCasa.App.Dominio.Persona");
+                    b.HasBaseType("HospiEnCasa.App.Dominio.Entidades.Persona");
 
                     b.Property<string>("Especialidad")
                         .HasColumnType("text");
@@ -199,9 +199,9 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Medico");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Paciente", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Paciente", b =>
                 {
-                    b.HasBaseType("HospiEnCasa.App.Dominio.Persona");
+                    b.HasBaseType("HospiEnCasa.App.Dominio.Entidades.Persona");
 
                     b.Property<int?>("EnfermeraId")
                         .HasColumnType("int");
@@ -209,14 +209,14 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.Property<int?>("FamiliarDesignadoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("FechaNacimiento")
-                        .HasColumnType("text");
+                    b.Property<DateTime>("FechaNacimiento")
+                        .HasColumnType("datetime");
 
                     b.Property<int?>("HistoriaClinicaId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Latitud")
-                        .HasColumnType("int");
+                    b.Property<double>("Latitud")
+                        .HasColumnType("double");
 
                     b.Property<double>("Longitud")
                         .HasColumnType("double");
@@ -241,51 +241,51 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.HasDiscriminator().HasValue("Paciente");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.HistoriaClinica", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.HistoriaClinica", b =>
                 {
-                    b.HasOne("HospiEnCasa.App.Dominio.Tratamiento", "Tratamiento")
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.Tratamiento", "Tratamiento")
                         .WithMany()
                         .HasForeignKey("TratamientoId");
 
                     b.Navigation("Tratamiento");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Medicamento", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Medicamento", b =>
                 {
-                    b.HasOne("HospiEnCasa.App.Dominio.Tratamiento", null)
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.Tratamiento", null)
                         .WithMany("Medicamentos")
                         .HasForeignKey("TratamientoId");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Remision", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Remision", b =>
                 {
-                    b.HasOne("HospiEnCasa.App.Dominio.Tratamiento", null)
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.Tratamiento", null)
                         .WithMany("Remisiones")
                         .HasForeignKey("TratamientoId");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.SignoVital", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.SignoVital", b =>
                 {
-                    b.HasOne("HospiEnCasa.App.Dominio.Paciente", null)
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.Paciente", null)
                         .WithMany("SignosVitales")
                         .HasForeignKey("PacienteId");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Paciente", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Paciente", b =>
                 {
-                    b.HasOne("HospiEnCasa.App.Dominio.Enfermera", "Enfermera")
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.Enfermera", "Enfermera")
                         .WithMany()
                         .HasForeignKey("EnfermeraId");
 
-                    b.HasOne("HospiEnCasa.App.Dominio.FamiliarDesignado", "FamiliarDesignado")
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.FamiliarDesignado", "FamiliarDesignado")
                         .WithMany()
                         .HasForeignKey("FamiliarDesignadoId");
 
-                    b.HasOne("HospiEnCasa.App.Dominio.HistoriaClinica", "HistoriaClinica")
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.HistoriaClinica", "HistoriaClinica")
                         .WithMany()
                         .HasForeignKey("HistoriaClinicaId");
 
-                    b.HasOne("HospiEnCasa.App.Dominio.Medico", "Medico")
+                    b.HasOne("HospiEnCasa.App.Dominio.Entidades.Medico", "Medico")
                         .WithMany()
                         .HasForeignKey("MedicoId");
 
@@ -298,14 +298,14 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.Navigation("Medico");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Tratamiento", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Tratamiento", b =>
                 {
                     b.Navigation("Medicamentos");
 
                     b.Navigation("Remisiones");
                 });
 
-            modelBuilder.Entity("HospiEnCasa.App.Dominio.Paciente", b =>
+            modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.Paciente", b =>
                 {
                     b.Navigation("SignosVitales");
                 });

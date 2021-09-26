@@ -9,4 +9,12 @@ namespace HospiEnCasa.App.Dominio.Entidades
         public DateTime FechaHora { get; set;}
         public string Resultado { get; set; }
     }
+
+    public enum TipoExamen
+    {
+        Radiología,
+        Hematologia,
+        Ortopédia,
+        Glicemia
+    }
 }

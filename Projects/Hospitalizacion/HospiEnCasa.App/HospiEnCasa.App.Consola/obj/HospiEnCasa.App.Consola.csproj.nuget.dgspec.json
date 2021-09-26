@@ -1,38 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj": {}
+    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj": {}
   },
   "projects": {
-    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj": {
+    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
+        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
         "projectName": "HospiEnCasa.App.Consola",
-        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
+        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
         "packagesPath": "/home/maverick/.nuget/packages/",
-        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/obj/",
+        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/nuget.config",
+          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/nuget.config",
           "/home/maverick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "NET5.0"
         ],
         "sources": {
-          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/References": {},
+          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/References": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net5.0": {
+            "targetAlias": "NET5.0",
             "projectReferences": {
-              "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
-                "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
+              "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
               },
-              "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
-                "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj"
+              "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
+                "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj"
               }
             }
           }
@@ -44,8 +44,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "NET5.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -74,20 +74,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.10, 3.1.10]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[3.1.19, 3.1.19]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[3.1.0, 3.1.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -97,24 +83,24 @@
         }
       }
     },
-    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
+    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
+        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
         "projectName": "HospiEnCasa.App.Dominio",
-        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
+        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj",
         "packagesPath": "/home/maverick/.nuget/packages/",
-        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/obj/",
+        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/nuget.config",
+          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/nuget.config",
           "/home/maverick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/References": {},
+          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/References": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -151,32 +137,32 @@
         }
       }
     },
-    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
+    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
+        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
         "projectName": "HospiEnCasa.App.Persistencia",
-        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
+        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/HospiEnCasa.App.Persistencia.csproj",
         "packagesPath": "/home/maverick/.nuget/packages/",
-        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/obj/",
+        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Persistencia/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/nuget.config",
+          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/nuget.config",
           "/home/maverick/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/References": {},
+          "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/References": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
-                "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
+              "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj": {
+                "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Dominio/HospiEnCasa.App.Dominio.csproj"
               }
             }
           }

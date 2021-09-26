@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bH8uoG2nsISgIUxc8oCSJBBDK+j96t+UwIQWlTEmyW+D9ohrOldve/eDnGEnHqRJOjV4ns8eFvYz5RelTWj/6g==",
+  "dgSpecHash": "jnbC+G8KDrDPpjEjDbZTLhqajCFW+MyHKOq0AN6OqUg7dWevlrQHZyl84JEjcpu6HVMt31BrKcTatsPDZBc93A==",
   "success": true,
-  "projectFilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/02. Modulo 2/03. TrabajoEnClase/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
+  "projectFilePath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/Hospitalizacion/HospiEnCasa.App/HospiEnCasa.App.Consola/HospiEnCasa.App.Consola.csproj",
   "expectedPackageFiles": [
     "/home/maverick/.nuget/packages/bouncycastle.netcore/1.8.5/bouncycastle.netcore.1.8.5.nupkg.sha512",
     "/home/maverick/.nuget/packages/google.protobuf/3.11.4/google.protobuf.3.11.4.nupkg.sha512",
@@ -44,10 +44,7 @@
     "/home/maverick/.nuget/packages/system.security.permissions/4.7.0/system.security.permissions.4.7.0.nupkg.sha512",
     "/home/maverick/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
     "/home/maverick/.nuget/packages/system.text.encoding.codepages/4.4.0/system.text.encoding.codepages.4.4.0.nupkg.sha512",
-    "/home/maverick/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512",
-    "/home/maverick/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "/home/maverick/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "/home/maverick/.nuget/packages/microsoft.netcore.app.host.linux-x64/3.1.19/microsoft.netcore.app.host.linux-x64.3.1.19.nupkg.sha512"
+    "/home/maverick/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
 }

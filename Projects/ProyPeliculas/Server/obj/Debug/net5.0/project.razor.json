@@ -3960,39 +3960,6 @@
         }
       },
       {
-        "HashCode": -1979455606,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Index",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 676609624,
-        "Kind": "Components.Component",
-        "Name": "ProyPeliculas.Client.Pages.Index",
-        "AssemblyName": "ProyPeliculas.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ProyPeliculas.Client.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1238623633,
         "Kind": "Components.Component",
         "Name": "ProyPeliculas.Client.Pages.ActorsView",
@@ -4346,6 +4313,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "ProyPeliculas.Client.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1979455606,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Index",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 676609624,
+        "Kind": "Components.Component",
+        "Name": "ProyPeliculas.Client.Pages.Index",
+        "AssemblyName": "ProyPeliculas.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ProyPeliculas.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ProyPeliculas.Client.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

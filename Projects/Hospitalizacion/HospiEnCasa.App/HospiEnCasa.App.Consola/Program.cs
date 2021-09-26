@@ -1,19 +1,21 @@
 ﻿using System;
 using HospiEnCasa.App.Persistencia;
 using HospiEnCasa.App.Dominio.Entidades;
+using HospiEnCasa.App;
 
 namespace HospiEnCasa.App.Consola
 {
     public class Program
     {
-        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente(new Persistencia.AppContext());
+        private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioPaciente  _repoPaciente = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioPaciente(new Persistencia.AppContext());
 
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World Entity Framework!");
-            //AddPaciente();
+            AddPaciente();
             //BuscarPaciente(1);
-            AsignarMedico();
+            //BorrarPaciente(1);
+            //AsignarMedico();
         }
 
         private static void AddPaciente()
@@ -31,18 +33,29 @@ namespace HospiEnCasa.App.Consola
                 FechaNacimiento = new DateTime(1977, 06, 09)
             };
             _repoPaciente.AddPaciente(paciente);
+            Console.WriteLine("El Paciente, " + paciente.Nombre + "" + paciente.Apellido + " fué agregado con éxito");
         }
 
         private static void BuscarPaciente(int idPaciente)
         {
-            Paciente paciente = _repoPaciente.getPaciente(idPaciente);
-            Console.WriteLine(paciente.Nombre + " " + paciente.Apellido);
+            var paciente = _repoPaciente.GetPaciente(idPaciente);
+            Console.WriteLine("Paciente: " + paciente.Nombre + " " + paciente.Apellido);
+            Console.WriteLine("Teléfono: " + paciente.Telefono + "\nGénero: " + paciente.Genero);
+            Console.WriteLine("Identificación: " + paciente.TipoDocumento + " " + paciente.Documento);
+            Console.WriteLine("Geolocalización: ( " + paciente.Latitud + ", " + paciente.Longitud + " )");
+            Console.WriteLine("Fecha de Nacimiento: " + paciente.FechaNacimiento);
+        }
+
+        private static void BorrarPaciente(int idPaciente)
+        {
+            _repoPaciente.DeletePaciente(idPaciente);
+            Console.WriteLine("Paciente eliminádo con éxito!");
         }
 
         private static void AsignarMedico()
         {
             var medico = _repoPaciente.AsignarMedico(1, 2);
-            Console.WriteLine(medico.Nombre + " " + medico.Apellidos);
+            Console.WriteLine(medico.Nombre + " " + medico.Apellido);
         }
     }
 }

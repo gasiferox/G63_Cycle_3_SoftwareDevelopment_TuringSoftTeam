@@ -8,4 +8,14 @@ namespace HospiEnCasa.App.Dominio.Entidades
         public TipoSigno TipoSigno {get; set;}
         public float Valor {get; set;}
     }
+
+    public enum TipoSigno
+    {
+        Oximetria,
+        FrecuenciaRespiratoria,
+        FrecuenciaCardiaca,
+        Temperatura,
+        PresionArterial,
+        Glicemias
+    }
 }

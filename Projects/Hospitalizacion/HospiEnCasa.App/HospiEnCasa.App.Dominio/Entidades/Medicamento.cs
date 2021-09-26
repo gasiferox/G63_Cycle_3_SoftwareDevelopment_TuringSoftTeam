@@ -6,4 +6,14 @@ namespace HospiEnCasa.App.Dominio.Entidades
         public NombreMedicamento NombreMedicamento { get; set; }
         public string Posologia { get; set; }
     }
+
+    public enum NombreMedicamento
+    {
+        Penicilina,
+        Tramadol,
+        Dexometasona,
+        Morfina,
+        Ibuprofeno,
+        Acetaminofen
+    }
 }

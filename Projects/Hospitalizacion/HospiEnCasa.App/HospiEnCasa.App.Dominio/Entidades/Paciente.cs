@@ -1,11 +1,12 @@
+using System;
 using System.Collections.Generic;
 
 namespace HospiEnCasa.App.Dominio.Entidades
 {
     public class Paciente : Persona
     {
-        public string FechaNacimiento { get; set; }
-        public int Latitud { get; set; }
+        public DateTime FechaNacimiento { get; set; }
+        public double Latitud { get; set; }
         public double Longitud { get; set; }
         public string Telefono { get; set; }
         public string PlanMedico { get; set; }

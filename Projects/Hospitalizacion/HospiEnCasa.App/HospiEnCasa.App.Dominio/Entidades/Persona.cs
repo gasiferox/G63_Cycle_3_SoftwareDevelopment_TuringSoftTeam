@@ -10,4 +10,22 @@ namespace HospiEnCasa.App.Dominio.Entidades
         public Genero Genero {get; set;}
     }
 
+    public enum TipoDocumento
+    {
+        CedulaDeCiudadania = 0,
+        Pasaporte = 1,
+        TarjetaDeIdentidad = 2,
+        CedulaDeExtranjeria = 3
+    }
+
+    public enum Genero
+    {
+        Masculino,
+        Femenino,
+        Bisexual,
+        Intersexual,
+        Pansexual,
+        Transexual
+    }
+
 }
