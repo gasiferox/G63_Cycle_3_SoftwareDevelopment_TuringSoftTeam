@@ -13,11 +13,11 @@
 |:--:|
 | *Figure 1 - UML v2* | -->
 
-| ![Trello]() |
+| ![Trello](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Kanban%20board/trello_2021-09-26%2020-30-30.png) |
 |:--:|
 | *Figure 1 - Trello al final del sprint* |
 
-| ![Github]() |
+| ![Github](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Kanban%20board/github_2021-09-26%2020-29-13.png) |
 |:--:|
 | *Figure 2 - Github al final del sprint* |
 
@@ -27,20 +27,20 @@
 |:--:|
 | *Figure 3 - Trabajo en Postman para práctica de Pruebas* |
 
-| ![ProyPeliculas_1](https://trello.com/1/cards/6151447770ca5d063a83490d/attachments/615144a8a03aac83c7b69355/download/Screenshot_from_2021-09-26_23-09-57.png) |
+| ![ProyPeliculas_1](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Wireframe/Screenshot%20from%202021-09-26%2023-09-02.png) |
 |:--:|
 | *Figure 4 - ProyPeliculas Vista 1* |
 
-| ![ProyPwliculas_2](https://trello.com/1/cards/6151447770ca5d063a83490d/attachments/615144a3cce091603c85321e/download/Screenshot_from_2021-09-26_23-09-02.png) |
+| ![ProyPwliculas_2](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Wireframe/Screenshot%20from%202021-09-26%2023-09-57.png) |
 |:--:|
 | *Figure 5 - ProyPeliculas Vista 2* |
 
-| ![ProyPeces](https://trello.com/1/cards/6151447d6d93ff0628da3c07/attachments/61514c99cfec4548b5523cbe/download/Screenshot_from_2021-09-26_23-24-00.png) |
+| ![ProyPeces](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Wireframe/Screenshot%20from%202021-09-26%2023-24-00.png) |
 |:--:|
 | *Figure 5 - ProyPeces Vista 1* |
 
 
-| ![HospitalizacionEnCasa](https://trello.com/1/cards/615144891d43d1109cb5d1a5/attachments/61514ca76b5e2d61f44b206f/download/Screenshot_from_2021-09-26_23-32-57.png) |
+| ![HospitalizacionEnCasa](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20III/Wireframe/Screenshot%20from%202021-09-26%2023-32-57.png) |
 |:--:|
 | *Figure 5 - HospitalizacionEnCasa Vista 1* |
 
