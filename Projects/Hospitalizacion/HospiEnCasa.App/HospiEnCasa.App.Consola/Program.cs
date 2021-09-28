@@ -12,9 +12,9 @@ namespace HospiEnCasa.App.Consola
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World Entity Framework!");
-            AddPaciente();
-            //BuscarPaciente(1);
-            //BorrarPaciente(1);
+            //AddPaciente();
+            //BuscarPaciente(4);
+            BorrarPaciente(4);
             //AsignarMedico();
         }
 
@@ -22,15 +22,15 @@ namespace HospiEnCasa.App.Consola
         {
             var paciente = new Paciente
             {
-                Nombre = "Nicolas",
-                Apellido = "Perez",
+                Nombre = "Maria Patricia",
+                Apellido = "Guevara",
                 Telefono = "33344455",
-                Genero = Genero.Masculino,
+                Genero = Genero.Femenino,
                 TipoDocumento = TipoDocumento.CedulaDeCiudadania,
-                Documento = "799429933",
+                Documento = "7587451",
                 Latitud = 5.006784D,
                 Longitud = -73.67653D,
-                FechaNacimiento = new DateTime(1977, 06, 09)
+                FechaNacimiento = new DateTime(1985, 07, 09)
             };
             _repoPaciente.AddPaciente(paciente);
             Console.WriteLine("El Paciente, " + paciente.Nombre + "" + paciente.Apellido + " fué agregado con éxito");
