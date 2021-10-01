@@ -48,3 +48,10 @@ a, .btn-link {
         right: 0.75rem;
         top: 0.5rem;
     }
+
+
+.Encabezado {
+    color: red;
+    position: absolute;
+    border: royalblue;
+}
