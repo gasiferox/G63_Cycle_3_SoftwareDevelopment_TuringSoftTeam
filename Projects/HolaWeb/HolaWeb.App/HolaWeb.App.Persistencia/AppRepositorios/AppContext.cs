@@ -1,4 +1,4 @@
-using Microsoft.EmtityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
 namespace HolaWeb.App.Persistencia.AppRepositorios
 {
