@@ -12,9 +12,9 @@ namespace HospiEnCasa.App.Consola
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World Entity Framework!");
-            //AddPaciente();
-            //BuscarPaciente(4);
-            BorrarPaciente(4);
+            AddPaciente();
+            //BuscarPaciente(2);
+            //BorrarPaciente(4);
             //AsignarMedico();
         }
 
@@ -22,8 +22,8 @@ namespace HospiEnCasa.App.Consola
         {
             var paciente = new Paciente
             {
-                Nombre = "Maria Patricia",
-                Apellido = "Guevara",
+                Nombre = "Leon",
+                Apellido = "Gongora",
                 Telefono = "33344455",
                 Genero = Genero.Femenino,
                 TipoDocumento = TipoDocumento.CedulaDeCiudadania,
