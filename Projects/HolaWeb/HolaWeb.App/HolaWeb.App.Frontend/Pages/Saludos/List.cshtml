@@ -1,0 +1,49 @@
+﻿@page
+@model HolaWeb.App.Frontend.Pages.ListModel
+@{
+}
+@* 
+1. Mostramos la lista de saludos mediante una tabla y la traemos mediante el model que esta en la otra clase.
+2. Adicionamos un formulario para que el usuario introduzca un dato para bucarlo mediante la actuación de un boton.
+ *@
+<h1>Listado de Saludos en varios Idiomas</h1>
+<br>
+<table class="table">
+@*     @foreach (var saludo in Model.ListaSaludos)
+    {
+        <tr>
+            <td>@saludo</td>
+        </tr>
+    } *@
+    @foreach (var saludo in Model.Saludos)
+    {
+        <tr>
+            <td>@saludo.Spanish</td>
+            <td>@saludo.English</td>
+            <td>@saludo.Italian</td>
+            <td>@saludo.German</td>
+            <td>@saludo.Japanese</td>
+
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-IdSaludo="@saludo.IdSaludo">
+                <i class="fas fa-info"></i>
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-IdSaludo="@saludo.IdSaludo">
+                <i class="fas fa-edit"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+<br>
+<h1>Listado de Saludos en Varios Idiomas</h1>
+<form action="" method="get">
+    <div class="form-group">
+        <p>
+            Saludo: <input type="text" name="" id="">
+            <input type="submit" value="Filtrar">
+        </p>
+    </div>
+</form>
