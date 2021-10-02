@@ -536,11 +536,7 @@
           "ref/netcoreapp2.0/System.IO.Pipelines.dll": {}
         }
       },
-      "System.Net.Http.Json/5.0.0": {
-        "compile": {
-          "lib/net5.0/System.Net.Http.Json.dll": {}
-        }
-      },
+      "System.Net.Http.Json/5.0.0": {},
       "ProyPeliculas.Client/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.WebAssembly": "5.0.10",

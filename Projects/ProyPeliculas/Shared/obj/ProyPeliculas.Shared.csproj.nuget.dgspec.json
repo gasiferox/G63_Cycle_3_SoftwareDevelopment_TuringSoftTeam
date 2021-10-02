@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/ProyPeliculas.Shared.csproj": {}
+    "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\ProyPeliculas.Shared.csproj": {}
   },
   "projects": {
-    "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/ProyPeliculas.Shared.csproj": {
+    "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\ProyPeliculas.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/ProyPeliculas.Shared.csproj",
+        "projectUniqueName": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\ProyPeliculas.Shared.csproj",
         "projectName": "ProyPeliculas.Shared",
-        "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/ProyPeliculas.Shared.csproj",
-        "packagesPath": "/home/maverick/.nuget/packages/",
-        "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/obj/",
+        "projectPath": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\ProyPeliculas.Shared.csproj",
+        "packagesPath": "C:\\Users\\teis_\\.nuget\\packages\\",
+        "outputPath": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/maverick/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\teis_\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -52,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
