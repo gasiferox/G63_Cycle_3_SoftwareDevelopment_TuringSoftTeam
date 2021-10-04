@@ -16,11 +16,11 @@
 |:--:|
 | *Figure 1 - UML v2* | -->
 
-| ![Trello](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20IV/Kanban%20board/Trello_202021-10-03%2019-26-42.png) |
+| ![Trello](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20IV/Kanban%20board/Trello_2021-10-03%2019-26-42.png) |
 |:--:|
 | *Figure 1 - Trello al final del sprint* |
 
-| ![Github](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20IV/Kanban%20board/Screenshot%20from%202021-10-03%2019-30-45.png) |
+| ![Github](https://github.com/gasiferox/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/blob/main/Sprints/Sprint%20IV/Kanban%20board/GitHub_2021-10-03%2019-30-45.png) |
 |:--:|
 | *Figure 2 - Github al final del sprint* |
 
