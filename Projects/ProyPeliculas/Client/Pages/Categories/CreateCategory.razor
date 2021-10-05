@@ -1,0 +1,26 @@
+@page "/categories/create"
+<h6>Crear categoría de películas</h6>
+
+@* Usamos la etiqueta de blazor *@
+<EditForm Model="Category" OnValidSubmit="Create">
+    @* Agregamos un DataAnotationsValidator el cual nos va a validar que el campo es requerido *@
+    <DataAnnotationsValidator></DataAnnotationsValidator>
+    <div class="form-group">
+        <label>Categoría</label>
+    </div>
+    <div>
+        @* Etiqueta de blazor que recibe un dato del usuario mediante el bind-value *@
+        <InputText class="form-control" @bind-Value="@Category.CategoryName"></InputText>
+        <ValidationMessage For="@(()=>Category.CategoryName)"></ValidationMessage>
+    </div>
+    <button class="btn btn-success" type="submit">Guardar</button>
+</EditForm>
+
+@code{
+    @* [Parameter] *@ private Category Category = new Category();
+    @* [Parameter] public EventCallback OnValidSubmit { get; set;} *@
+    private void Create()
+    {
+        Console.WriteLine($"Creando la categoría {Category.CategoryName}");
+    }
+}

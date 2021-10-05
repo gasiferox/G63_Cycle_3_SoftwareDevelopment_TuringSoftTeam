@@ -123,7 +123,7 @@ using ProyPeliculas.Client.Services;
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/categories/edit/{IdCategory:int")]
+    [Microsoft.AspNetCore.Components.RouteAttribute("/categories/edit/{IdCategory:int}")]
     public partial class EditCategory : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

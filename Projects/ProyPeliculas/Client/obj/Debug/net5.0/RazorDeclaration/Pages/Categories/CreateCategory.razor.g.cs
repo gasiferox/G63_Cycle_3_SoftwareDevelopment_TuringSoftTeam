@@ -123,6 +123,7 @@ using ProyPeliculas.Client.Services;
 #line default
 #line hidden
 #nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/categories/create")]
     public partial class CreateCategory : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
@@ -130,6 +131,25 @@ using ProyPeliculas.Client.Services;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 20 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Categories/CreateCategory.razor"
+                      private Category Category = new Category();
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 21 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Categories/CreateCategory.razor"
+                                                                     
+    private void Create()
+    {
+        Console.WriteLine($"Creando la categoría {Category.CategoryName}");
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

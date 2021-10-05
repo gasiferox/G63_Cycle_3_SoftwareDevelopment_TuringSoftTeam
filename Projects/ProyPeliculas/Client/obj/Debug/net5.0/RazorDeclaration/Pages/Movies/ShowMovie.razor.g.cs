@@ -133,8 +133,8 @@ using ProyPeliculas.Client.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 4 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Movies/ShowMovie.razor"
-      
+#line 5 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Movies/ShowMovie.razor"
+                                                                
     [Parameter] public int IdMovie { get; set; }
     [Parameter] public string Name { get; set; }
 

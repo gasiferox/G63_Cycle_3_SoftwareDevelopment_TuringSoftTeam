@@ -2,6 +2,7 @@
 @page "/movies/{IdMovie:int}/{Name}"
 <h6>Mostrar película</h6>
 @code{
+    @* Se muestra el Id y el nombre de la película en la ruta *@
     [Parameter] public int IdMovie { get; set; }
     [Parameter] public string Name { get; set; }
 
