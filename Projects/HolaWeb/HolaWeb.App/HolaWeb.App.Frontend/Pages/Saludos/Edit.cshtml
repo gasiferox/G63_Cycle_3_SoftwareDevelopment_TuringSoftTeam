@@ -6,6 +6,7 @@
 <h1>Edición del saludo: @Model.Saludo.Spanish</h1>
 
 <form action="" method="post">
+    <input type="hidden" asp-for="Saludo.IdSaludo"/>
     <div class="form-group">
         <label asp-for="Saludo.Spanish"></label>
         <input asp-for="Saludo.Spanish" class="form-control">

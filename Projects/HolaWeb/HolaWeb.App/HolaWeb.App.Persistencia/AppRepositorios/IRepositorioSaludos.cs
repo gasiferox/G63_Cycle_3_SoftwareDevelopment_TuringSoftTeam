@@ -7,5 +7,7 @@ namespace HolaWeb.App.Persistencia.AppRepositorios
     {
         IEnumerable<Saludo> GetAll();
         Saludo GetSaludoPorId(int IdSaludo);
+        Saludo Update(Saludo saludoActualizado);
+        Saludo Add(Saludo nuevoSaludo);
     }
 }
