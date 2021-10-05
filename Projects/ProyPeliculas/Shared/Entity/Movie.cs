@@ -4,7 +4,7 @@ namespace ProyPeliculas.Shared.Entity
 {
     public class Movie
     {
-        /* public int idMovie { get; set; } */
+        public int IdMovie { get; set; }
         public string Name { get; set; }
         public string Sinopsis { get; set; }
         public string Image { get; set; }
@@ -13,7 +13,7 @@ namespace ProyPeliculas.Shared.Entity
         public Casting Casting { get; set; }
     }
 
-    public enum Category
+    /* public enum Category
     {
         Terror = 0,
         Suspenso = 1,
@@ -21,5 +21,5 @@ namespace ProyPeliculas.Shared.Entity
         Drama = 3,
         Comedia =4,
         SiFi = 5
-    }
+    } */
 }
