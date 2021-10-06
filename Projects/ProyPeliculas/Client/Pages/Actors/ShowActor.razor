@@ -1,5 +1,15 @@
 @page "/actors"
-<h6>Listar reparto</h6>
-@code{
-    
+@using ProyPeliculas.Client.Services
+@using ProyPeliculas.Shared.Entity
+@using System.Collections.Generic
+@inject IServiceActor actor
+
+<CardActorsComponent Actors="Actors"></CardActorsComponent>
+
+@code {
+    private List<Actor> Actors;
+    protected override void OnInitialized()
+    {
+        Actors = actor.GetActors();
+    }
 }

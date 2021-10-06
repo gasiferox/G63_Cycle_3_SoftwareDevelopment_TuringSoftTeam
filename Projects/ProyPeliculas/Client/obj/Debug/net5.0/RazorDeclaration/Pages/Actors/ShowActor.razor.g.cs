@@ -7,7 +7,6 @@
 namespace ProyPeliculas.Client.Pages.Actors
 {
     #line hidden
-    using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
@@ -96,13 +95,6 @@ using ProyPeliculas.Client.Helper;
 #line hidden
 #nullable disable
 #nullable restore
-#line 13 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
-using ProyPeliculas.Shared.Entity;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 14 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
 using ProyPeliculas.Client.Pages;
 
@@ -117,8 +109,22 @@ using ProyPeliculas.Client.Pages.Components;
 #line hidden
 #nullable disable
 #nullable restore
-#line 16 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/_Imports.razor"
+#line 2 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Actors/ShowActor.razor"
 using ProyPeliculas.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Actors/ShowActor.razor"
+using ProyPeliculas.Shared.Entity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Actors/ShowActor.razor"
+using System.Collections.Generic;
 
 #line default
 #line hidden
@@ -131,6 +137,19 @@ using ProyPeliculas.Client.Services;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 9 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Actors/ShowActor.razor"
+       
+    private List<Actor> Actors;
+    protected override void OnInitialized()
+    {
+        Actors = actor.GetActors();
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IServiceActor actor { get; set; }
     }
 }
 #pragma warning restore 1591
