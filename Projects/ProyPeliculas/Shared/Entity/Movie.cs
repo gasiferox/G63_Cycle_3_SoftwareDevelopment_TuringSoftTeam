@@ -9,11 +9,11 @@ namespace ProyPeliculas.Shared.Entity
         public string Sinopsis { get; set; }
         public string Image { get; set; }
         public DateTime Premier { get; set; }
-        public Category Category { get; set; }
-        public Casting Casting { get; set; }
+        public string Category { get; set; }
+        public string Casting { get; set; }
     }
 
-    public enum Category
+    /*public enum Category
     {
         Terror = 0,
         Suspenso = 1,
@@ -21,5 +21,5 @@ namespace ProyPeliculas.Shared.Entity
         Drama = 3,
         Comedia =4,
         SiFi = 5
-    }
+    }  */
 }
