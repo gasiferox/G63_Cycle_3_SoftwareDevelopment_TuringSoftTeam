@@ -75,6 +75,13 @@ using Microsoft.JSInterop;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\_Imports.razor"
+using ProyPeliculas.Client;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 11 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\_Imports.razor"
 using ProyPeliculas.Client.Shared;
 
@@ -103,13 +110,6 @@ using ProyPeliculas.Client.Pages;
 #line hidden
 #nullable disable
 #nullable restore
-#line 15 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\_Imports.razor"
-using ProyPeliculas.Client.Pages.Components;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 16 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\_Imports.razor"
 using ProyPeliculas.Client.Services;
 
@@ -118,7 +118,7 @@ using ProyPeliculas.Client.Services;
 #nullable disable
 #nullable restore
 #line 2 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\Pages\Index.razor"
-using ProyPeliculas.Client;
+using ProyPeliculas.Client.Pages.Components;
 
 #line default
 #line hidden

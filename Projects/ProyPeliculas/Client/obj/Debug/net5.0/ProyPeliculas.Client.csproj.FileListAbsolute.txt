@@ -1319,3 +1319,5 @@ C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPel
 C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\obj\Debug\net5.0\Razor\Pages\Components\ComponenteTarjetas.razor.g.cs
 C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\obj\Debug\net5.0\Razor\Pages\Components\Encabezado.razor.g.cs
 C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\obj\Debug\net5.0\Razor\Pages\Components\Footer.razor.g.cs
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\obj\Debug\net5.0\RazorDeclaration\Pages\Components\MenuComponent.razor.g.cs
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\obj\Debug\net5.0\Razor\Pages\Components\MenuComponent.razor.g.cs

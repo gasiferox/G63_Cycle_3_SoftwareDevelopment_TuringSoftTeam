@@ -131,7 +131,7 @@ using ProyPeliculas.Client.Services;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 47 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\Pages\Components\CardActorsComponent.razor"
+#line 43 "C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Client\Pages\Components\CardActorsComponent.razor"
       
     [Parameter] public List<Actor> Actors { get; set; }
 
