@@ -17,10 +17,10 @@
 </EditForm>
 
 @code{
-    @* [Parameter] *@ private Category Category = new Category();
+    @* [Parameter] *@ private Category Category@*  = new Category() *@;
     @* [Parameter] public EventCallback OnValidSubmit { get; set;} *@
     private void Create()
     {
-        Console.WriteLine($"Creando la categoría {Category.CategoryName}");
+        Console.WriteLine($"Creando la categoría");
     }
 }

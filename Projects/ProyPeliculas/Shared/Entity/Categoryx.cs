@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ProyPeliculas.Shared.Entity
 {
-    public class Category
+    public class Categoryx
     {
         public int IdCategory { get; set; }
         [Required(ErrorMessage = "El campo {0} es requerido")]

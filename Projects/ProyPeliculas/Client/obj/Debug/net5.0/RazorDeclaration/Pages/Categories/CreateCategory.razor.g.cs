@@ -133,7 +133,14 @@ using ProyPeliculas.Client.Services;
         #pragma warning restore 1998
 #nullable restore
 #line 20 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Categories/CreateCategory.razor"
-                      private Category Category = new Category();
+                      private Category Category
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 20 "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/Pages/Categories/CreateCategory.razor"
+                                                                      ;
     
 
 #line default
@@ -144,7 +151,7 @@ using ProyPeliculas.Client.Services;
                                                                      
     private void Create()
     {
-        Console.WriteLine($"Creando la categoría {Category.CategoryName}");
+        Console.WriteLine($"Creando la categoría");
     }
 
 #line default
