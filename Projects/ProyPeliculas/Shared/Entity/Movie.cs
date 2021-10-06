@@ -23,10 +23,10 @@ namespace ProyPeliculas.Shared.Entity
                 {
                     return null;
                 }
-                /* if (Name.Length > 60)
+                if (Name.Length > 60)
                 {
-                    return NamedArgumentsEncoder.Substring(0,60) + "...";
-                } */
+                    return Name.Substring(0,60) + "...";
+                }
                 else
                 {
                     return Name;
