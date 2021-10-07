@@ -1,3 +1,26 @@
+@* <div class="jumbotron">
+    @foreach (var movie in Movies)
+    {
+        <div class="card-group">
+            <div class="card">
+                <img src="@movie.Image" class="card-img-top" alt="..." height="275px" width="175px">
+                <div class="card-body">
+                    <h5 class="card-title">@movie.Name</h5>
+                    <p class="card-text">@movie.Sinopsis</p>
+                    <p class="text-muted">
+                        @movie.Category
+                        <br>
+                        <small>@movie.Casting</small>
+                    </p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">@movie.Premier</small>
+                </div>
+            </div>
+        </div>
+    }
+</div> *@
+
 <div class="jumbotron jumbotron-fluid">
     @if (Movies == null)
     {
@@ -39,7 +62,7 @@
     </div>
     }
 </div>
-
+ 
 @code{
     public List<Movie> Movies;
     private List<Movie> GetMovies()
@@ -59,7 +82,6 @@
         };
     }
 
-    @* Incluir tiempo de espera para cargar el contenido del componente *@
     protected override async Task OnInitializedAsync(){
         await Task.Delay(2000);
         Movies = GetMovies();
