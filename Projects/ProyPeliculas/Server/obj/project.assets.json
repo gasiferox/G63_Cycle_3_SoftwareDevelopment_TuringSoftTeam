@@ -874,19 +874,19 @@
     ]
   },
   "packageFolders": {
-    "/home/maverick/.nuget/packages/": {}
+    "C:\\Users\\Patricia\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Server/ProyPeliculas.Server.csproj",
+      "projectUniqueName": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Server\\ProyPeliculas.Server.csproj",
       "projectName": "ProyPeliculas.Server",
-      "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Server/ProyPeliculas.Server.csproj",
-      "packagesPath": "/home/maverick/.nuget/packages/",
-      "outputPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Server/obj/",
+      "projectPath": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Server\\ProyPeliculas.Server.csproj",
+      "packagesPath": "C:\\Users\\Patricia\\.nuget\\packages\\",
+      "outputPath": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/maverick/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Patricia\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -898,11 +898,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/ProyPeliculas.Client.csproj": {
-              "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Client/ProyPeliculas.Client.csproj"
+            "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Client\\ProyPeliculas.Client.csproj": {
+              "projectPath": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Client\\ProyPeliculas.Client.csproj"
             },
-            "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/ProyPeliculas.Shared.csproj": {
-              "projectPath": "/home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/ProyPeliculas.Shared.csproj"
+            "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\ProyPeliculas.Shared.csproj": {
+              "projectPath": "C:\\ProysCicloIII\\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\\Projects\\ProyPeliculas\\Shared\\ProyPeliculas.Shared.csproj"
             }
           }
         }
@@ -940,7 +940,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
