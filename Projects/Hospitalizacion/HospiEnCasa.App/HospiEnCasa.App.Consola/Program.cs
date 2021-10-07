@@ -11,9 +11,14 @@ namespace HospiEnCasa.App.Consola
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World Entity Framework!");
-            AddPaciente();
-            //BuscarPaciente(2);
+            Console.WriteLine("\n####################################################");
+            Console.WriteLine("#                    TuringSoft                    #");
+            Console.WriteLine("#         Proyecto Hospitalización en Casa         #");
+            Console.WriteLine("# Implementación Base de Datos - Entity Framework  #");
+            Console.WriteLine("####################################################\n");
+
+            //AddPaciente();
+            BuscarPaciente(2);
             //BorrarPaciente(4);
             //AsignarMedico();
         }
