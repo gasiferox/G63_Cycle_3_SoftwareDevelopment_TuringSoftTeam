@@ -16,6 +16,6 @@ namespace HospiEnCasa.App.Dominio.Entidades
         FrecuenciaCardiaca,
         Temperatura,
         PresionArterial,
-        Glicemias
+        Glicemia
     }
 }
