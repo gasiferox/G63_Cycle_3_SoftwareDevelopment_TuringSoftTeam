@@ -10,3 +10,15 @@
 /home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/obj/Debug/net5.0/ProyPeliculas.Shared.dll
 /home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/obj/Debug/net5.0/ref/ProyPeliculas.Shared.dll
 /home/maverick/Documents/01. MinTIC - Universidad de Caldas/03. Ciclo III/01. Desarrollo de Software - G63/G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam/Projects/ProyPeliculas/Shared/obj/Debug/net5.0/ProyPeliculas.Shared.pdb
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.csproj.AssemblyReference.cache
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.AssemblyInfoInputs.cache
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.AssemblyInfo.cs
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.csproj.CoreCompileInputs.cache
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.dll
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ref\ProyPeliculas.Shared.dll
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\obj\Debug\net5.0\ProyPeliculas.Shared.pdb
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\bin\Debug\net5.0\ProyPeliculas.Shared.deps.json
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\bin\Debug\net5.0\ProyPeliculas.Shared.dll
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\bin\Debug\net5.0\ref\ProyPeliculas.Shared.dll
+C:\ProysCicloIII\G63_Cycle_3_SoftwareDevelopment_TuringSoftTeam\Projects\ProyPeliculas\Shared\bin\Debug\net5.0\ProyPeliculas.Shared.pdb
