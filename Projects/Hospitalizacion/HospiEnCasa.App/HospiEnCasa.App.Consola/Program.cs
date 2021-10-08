@@ -23,7 +23,8 @@ namespace HospiEnCasa.App.Consola
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
-            ListarPacientesMasculinos();
+            //ListarPacientesMasculinos();
+            ListarPacientesCorazon();
             //AsignarMedico();
         }
 
@@ -106,6 +107,16 @@ namespace HospiEnCasa.App.Consola
             foreach (Paciente p in pacientesM)
             {
                 Console.WriteLine("El paciente No. " + p.Id + " con Nombre: " + p.Nombre + " y Apellido: " + p.Apellido);
+            }
+        }
+
+        private static void ListarPacientesCorazon()
+        {
+            var pacientesC = _repoPaciente.GetPacientesCorazon();
+            Console.WriteLine("Los pacientes con Frecuencia cardiaca menores a 90 ppm");
+            foreach (Paciente p in pacientesC)
+            {
+                Console.WriteLine("El paciente " + p.Id + " " + p.Nombre + " " + p.Apellido);
             }
         }
 

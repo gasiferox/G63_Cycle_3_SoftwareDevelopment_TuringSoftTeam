@@ -75,6 +75,11 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return _appContext.Pacientes.Where(p => p.Genero == Genero.Masculino).ToList();
         }
 
+        IEnumerable<Paciente> IRepositorioPaciente.GetPacientesCorazon()
+        {
+            return _appContext.Pacientes.Where(p => p.SignosVitales.Any(s => TipoSigno.FrecuenciaCardiaca == s.TipoSigno && s.Valor <= 90)).ToList();
+        }
+
         /* Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);

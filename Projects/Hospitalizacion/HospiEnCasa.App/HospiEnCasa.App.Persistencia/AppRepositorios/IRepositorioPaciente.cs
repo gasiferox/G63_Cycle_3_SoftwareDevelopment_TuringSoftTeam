@@ -15,5 +15,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         /* Medico AsignarMedico(int idPaciente, int idMedico); */
         IEnumerable<Paciente> GetAllPacientesFemeninos();
         IEnumerable<Paciente> GetAllPacientesMasculinos();
+        IEnumerable<Paciente> GetPacientesCorazon();
     }
 }
