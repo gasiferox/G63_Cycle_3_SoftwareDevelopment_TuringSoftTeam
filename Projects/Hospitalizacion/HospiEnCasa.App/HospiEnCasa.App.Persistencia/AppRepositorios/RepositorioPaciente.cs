@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using HospiEnCasa.App.Dominio.Entidades;
@@ -64,7 +65,17 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         return pacienteEncontrado;
         }
 
-        Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
+        IEnumerable<Paciente> IRepositorioPaciente.GetAllPacientesFemeninos()
+        {
+            return _appContext.Pacientes.Where(p => p.Genero == Genero.Femenino).ToList();
+        }
+
+        IEnumerable<Paciente> IRepositorioPaciente.GetAllPacientesMasculinos()
+        {
+            return _appContext.Pacientes.Where(p => p.Genero == Genero.Masculino).ToList();
+        }
+
+        /* Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
             if (pacienteEncontrado != null)
@@ -76,6 +87,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                     _appContext.SaveChanges();
                 }return medicoEncontrado;
             }return null;
-        }
+        } */
     }
 }

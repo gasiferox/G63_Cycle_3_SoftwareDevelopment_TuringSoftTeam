@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using HospiEnCasa.App.Persistencia;
 using HospiEnCasa.App.Dominio.Entidades;
 using HospiEnCasa.App;
@@ -7,7 +8,7 @@ namespace HospiEnCasa.App.Consola
 {
     public class Program
     {
-        private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioPaciente  _repoPaciente = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioPaciente(new Persistencia.AppContext());
+        private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioPaciente _repoPaciente = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioPaciente(new Persistencia.AppContext());
 
         public static void Main(string[] args)
         {
@@ -17,9 +18,12 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("# Implementación Base de Datos - Entity Framework  #");
             Console.WriteLine("####################################################\n");
 
-            AddPaciente();
+            //AddPaciente();
             //BuscarPaciente(5);
-            //BorrarPaciente(4);
+            //BorrarPaciente(6);
+            //AddSignosPaciente(7);
+            //ListarPacientesFemeninos();
+            ListarPacientesMasculinos();
             //AsignarMedico();
         }
 
@@ -27,18 +31,27 @@ namespace HospiEnCasa.App.Consola
         {
             var paciente = new Paciente
             {
-                Nombre = "Andrey",
-                Apellido = "Bonilla",
-                Telefono = "5478551",
+                Nombre = "Pepito",
+                Apellido = "Perez",
+                TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
+                Documento = "E-5647483",
                 Genero = Genero.Masculino,
-                TipoDocumento = TipoDocumento.CedulaDeCiudadania,
-                Documento = "474515",
-                Latitud = 5.478784D,
-                Longitud = -74.14753D,
-                FechaNacimiento = new DateTime(1999, 06, 30)
+                FechaNacimiento = new DateTime(1965, 06, 03),
+                Latitud = 6.7648784D,
+                Longitud = -78.14753D,
+                Telefono = "87964546",
+                PlanMedico = PlanMedico.Subsidiado,
+                SignosVitales = new List<SignoVital> {
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Oximetria, Valor=98},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.FrecuenciaRespiratoria, Valor=50},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.FrecuenciaCardiaca, Valor=60},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Temperatura, Valor=37},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.PresionArterial, Valor=120},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Glicemia, Valor=100}
+                }
             };
             _repoPaciente.AddPaciente(paciente);
-            Console.WriteLine("El Paciente, " + paciente.Nombre + " " + paciente.Apellido + " fué agregado con éxito por el Equipo TuringSoft");
+            Console.WriteLine("El Paciente, " + paciente.Nombre + " " + paciente.Apellido + " fué agregado con éxito por el Equipo TuringSoft\n");
         }
 
         private static void BuscarPaciente(int idPaciente)
@@ -57,10 +70,49 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Paciente eliminádo con éxito!");
         }
 
-        private static void AsignarMedico()
+        private static void AddSignosPaciente(int idPaciente)
+        {
+            var paciente = _repoPaciente.GetPaciente(idPaciente);
+            if (paciente != null)
+            {
+                if (paciente.SignosVitales != null)
+                {
+                    paciente.SignosVitales.Add(
+                        new SignoVital { FechaHora = new DateTime(2021, 10, 07, 20, 00, 00), TipoSigno = TipoSigno.Oximetria, Valor = 96 });
+                }
+                else
+                {
+                    paciente.SignosVitales = new List<SignoVital> {
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Oximetria, Valor=96}
+                };
+                }
+                _repoPaciente.UpdatePaciente(paciente);
+            }
+            Console.WriteLine("El signo vital " + paciente.SignosVitales + " fué agregado con éxito al paciente " + paciente.Nombre + " " + paciente.Apellido);
+        }
+
+        private static void ListarPacientesFemeninos()
+        {
+            var pacientesF = _repoPaciente.GetAllPacientesFemeninos();
+            foreach (Paciente p in pacientesF)
+            {
+                Console.WriteLine("La paciente No. " + p.Id + " con Nombre: " + p.Nombre + " y Apellido: " + p.Apellido);
+            }
+        }
+
+        private static void ListarPacientesMasculinos()
+        {
+            var pacientesM = _repoPaciente.GetAllPacientesMasculinos();
+            foreach (Paciente p in pacientesM)
+            {
+                Console.WriteLine("El paciente No. " + p.Id + " con Nombre: " + p.Nombre + " y Apellido: " + p.Apellido);
+            }
+        }
+
+        /* private static void AsignarMedico()
         {
             var medico = _repoPaciente.AsignarMedico(1, 2);
             Console.WriteLine(medico.Nombre + " " + medico.Apellido);
-        }
+        } */
     }
 }

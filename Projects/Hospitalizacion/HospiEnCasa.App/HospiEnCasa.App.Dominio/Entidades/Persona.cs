@@ -22,10 +22,7 @@ namespace HospiEnCasa.App.Dominio.Entidades
     {
         Masculino,
         Femenino,
-        Bisexual,
-        Intersexual,
-        Pansexual,
-        Transexual
+        Otro
     }
 
 }
