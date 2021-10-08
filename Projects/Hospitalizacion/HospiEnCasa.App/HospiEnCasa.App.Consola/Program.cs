@@ -17,8 +17,8 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("# Implementación Base de Datos - Entity Framework  #");
             Console.WriteLine("####################################################\n");
 
-            //AddPaciente();
-            BuscarPaciente(2);
+            AddPaciente();
+            //BuscarPaciente(5);
             //BorrarPaciente(4);
             //AsignarMedico();
         }
@@ -27,18 +27,18 @@ namespace HospiEnCasa.App.Consola
         {
             var paciente = new Paciente
             {
-                Nombre = "Leon",
-                Apellido = "Gongora",
-                Telefono = "33344455",
-                Genero = Genero.Femenino,
+                Nombre = "Andrey",
+                Apellido = "Bonilla",
+                Telefono = "5478551",
+                Genero = Genero.Masculino,
                 TipoDocumento = TipoDocumento.CedulaDeCiudadania,
-                Documento = "7587451",
-                Latitud = 5.006784D,
-                Longitud = -73.67653D,
-                FechaNacimiento = new DateTime(1985, 07, 09)
+                Documento = "474515",
+                Latitud = 5.478784D,
+                Longitud = -74.14753D,
+                FechaNacimiento = new DateTime(1999, 06, 30)
             };
             _repoPaciente.AddPaciente(paciente);
-            Console.WriteLine("El Paciente, " + paciente.Nombre + "" + paciente.Apellido + " fué agregado con éxito");
+            Console.WriteLine("El Paciente, " + paciente.Nombre + " " + paciente.Apellido + " fué agregado con éxito por el Equipo TuringSoft");
         }
 
         private static void BuscarPaciente(int idPaciente)
