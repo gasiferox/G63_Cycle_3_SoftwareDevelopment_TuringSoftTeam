@@ -12,7 +12,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         Paciente UpdatePaciente(Paciente paciente);
         void DeletePaciente(int idPaciente);
         Paciente GetPaciente(int idPaciente);
-        /* Medico AsignarMedico(int idPaciente, int idMedico); */
+        /* Métodos para filtrar y listar */
         IEnumerable<Paciente> GetAllPacientesFemeninos();
         IEnumerable<Paciente> GetAllPacientesMasculinos();
         IEnumerable<Paciente> GetPacientesCorazon();

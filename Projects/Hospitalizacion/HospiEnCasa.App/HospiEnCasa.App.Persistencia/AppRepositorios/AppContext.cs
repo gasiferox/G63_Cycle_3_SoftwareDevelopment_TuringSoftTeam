@@ -7,9 +7,9 @@ namespace HospiEnCasa.App.Persistencia
     {
         public DbSet<Persona> Personas { get; set; }
         public DbSet<Paciente> Pacientes { get; set;}
-        public DbSet<Medico> medicos { get; set; }
+        public DbSet<Medico> Medicos { get; set; }
         public DbSet<Enfermera> Enfermeras { get; set; }
-        public DbSet<FamiliarDesignado> familiaresDesignados { get; set;}
+        public DbSet<FamiliarDesignado> FamiliaresDesignados { get; set;}
         public DbSet<HistoriaClinica> HistoriasClinicas { get; set; }
         public DbSet<Tratamiento> Tratamientos { get; set; }
         public DbSet<SignoVital> SignosVitales { get; set; }
