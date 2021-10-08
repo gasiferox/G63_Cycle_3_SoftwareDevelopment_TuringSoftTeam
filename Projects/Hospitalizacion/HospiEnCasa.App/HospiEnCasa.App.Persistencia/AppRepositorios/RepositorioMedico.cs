@@ -1,4 +1,4 @@
-using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using HospiEnCasa.App.Dominio.Entidades;
@@ -9,7 +9,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     {
         private readonly AppContext _appContext;
         
-        public RepositorioMedico(AppContext _appContext)
+        public RepositorioMedico(AppContext appContext)
         {
             this._appContext = appContext;
         }
@@ -18,7 +18,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         {
             var medicoAdicionado = _appContext.Medicos.Add(medico);
             _appContext.SaveChanges();
-            return (medico)medicoAdicionado.Entity;
+            return (Medico)medicoAdicionado.Entity;
         }
 
         public void DeleteMedico(int idMedico)
@@ -32,14 +32,9 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             _appContext.SaveChanges();
         }
 
-        public IEnumerable<Medico> GetMedico(int idMedico)
-        {
-            return _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
-        }
-
         public Medico UpdateMedico(Medico medico)
         {
-            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
+            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == medico.Id);
             if (medicoEncontrado != null)
             {
                 medicoEncontrado.Nombre = medico.Nombre;
@@ -54,6 +49,21 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                 _appContext.SaveChanges();
             }
             return medicoEncontrado;
+        }
+
+        public Medico GetMedico(int idMedico)
+        {
+            return _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
+        }
+
+        public IEnumerable<Medico> GetAllMedicos()
+        {
+            return _appContext.Medicos;
+        }
+
+        public IEnumerable<Medico> GetAllMedicosEspecialidad()
+        {
+            return _appContext.Medicos.Where(p => p.Especialidad == Especialidad.Cardiologo).ToList();
         }
     }
 }

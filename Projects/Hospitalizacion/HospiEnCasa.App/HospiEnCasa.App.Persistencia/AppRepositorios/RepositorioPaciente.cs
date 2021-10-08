@@ -47,19 +47,21 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             {
                 pacienteEncontrado.Nombre = paciente.Nombre;
                 pacienteEncontrado.Apellido = paciente.Apellido;
-                pacienteEncontrado.Telefono = paciente.Telefono;
-                pacienteEncontrado.Genero = paciente.Genero;
                 pacienteEncontrado.TipoDocumento = paciente.TipoDocumento;
                 pacienteEncontrado.Documento = paciente.Documento;
+                pacienteEncontrado.Genero = paciente.Genero;
+
+                pacienteEncontrado.FechaNacimiento = paciente.FechaNacimiento;
                 pacienteEncontrado.Latitud = paciente.Latitud;
                 pacienteEncontrado.Longitud = paciente.Longitud;
-                pacienteEncontrado.FechaNacimiento = paciente.FechaNacimiento;
-/*                pacienteEncontrado.FamiliarDesignado = paciente.FamiliarDesignado;
-                pacienteEncontrado.Medico = paciente.Medico;
+                pacienteEncontrado.Telefono = paciente.Telefono;
+                pacienteEncontrado.PlanMedico = paciente.PlanMedico;
+                pacienteEncontrado.FamiliarDesignado = paciente.FamiliarDesignado;
                 pacienteEncontrado.Enfermera = paciente.Enfermera;
+                pacienteEncontrado.Medico = paciente.Medico;
                 pacienteEncontrado.HistoriaClinica = paciente.HistoriaClinica;
                 pacienteEncontrado.SignosVitales = paciente.SignosVitales;
-*/
+
                 _appContext.SaveChanges();
             }
         return pacienteEncontrado;

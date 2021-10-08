@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using HospiEnCasa.App.Persistencia;
 using HospiEnCasa.App.Dominio.Entidades;
@@ -9,6 +9,8 @@ namespace HospiEnCasa.App.Consola
     public class Program
     {
         private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioPaciente _repoPaciente = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioPaciente(new Persistencia.AppContext());
+
+        private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioMedico _repoMedico = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioMedico(new Persistencia.AppContext());
 
         public static void Main(string[] args)
         {
@@ -24,16 +26,18 @@ namespace HospiEnCasa.App.Consola
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
-            ListarPacientesCorazon();
+            //ListarPacientesCorazon();
             //AsignarMedico();
+
+            AddMedico();
         }
 
         private static void AddPaciente()
         {
             var paciente = new Paciente
             {
-                Nombre = "Pepito",
-                Apellido = "Perez",
+                Nombre = "Benito",
+                Apellido = "Rios",
                 TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
                 Documento = "E-5647483",
                 Genero = Genero.Masculino,
@@ -42,6 +46,15 @@ namespace HospiEnCasa.App.Consola
                 Longitud = -78.14753D,
                 Telefono = "87964546",
                 PlanMedico = PlanMedico.Subsidiado,
+                FamiliarDesignado = new FamiliarDesignado {
+                    Nombre = "Familiar",
+                    Apellido = "Benito",
+                    TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
+                    Documento = "E-54638",
+                    Genero = Genero.Femenino,
+                    Parentesco = "Madre",
+                    Correo = "madre@correo.com"
+                },
                 SignosVitales = new List<SignoVital> {
                     new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Oximetria, Valor=98},
                     new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.FrecuenciaRespiratoria, Valor=50},
@@ -125,5 +138,22 @@ namespace HospiEnCasa.App.Consola
             var medico = _repoPaciente.AsignarMedico(1, 2);
             Console.WriteLine(medico.Nombre + " " + medico.Apellido);
         } */
+
+        /* Médicos */
+        public static void AddMedico()
+        {
+            var medico = new Medico{
+                Nombre = "Benito",
+                Apellido = "Rios",
+                TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
+                Documento = "E-5647483",
+                Genero = Genero.Masculino,
+
+                Especialidad = Especialidad.Internista,
+                RegistroMedico = "RM-756453"
+            };
+            _repoMedico.AddMedico(medico);
+            Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");
+        }
     }
 }
