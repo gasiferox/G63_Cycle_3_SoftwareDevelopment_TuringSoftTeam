@@ -1,19 +1,19 @@
-<div class="jumbotron jumbotron-fluid">
+@* <div class="jumbotron jumbotron-fluid">
     @if (Movies == null)
     {
-        <label><small class="text-muted">Buscando películas</small></label>
-        <img src="/img/loading.gif" height="" width="">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+        @* <label><small class="text-muted">Buscando películas...</small></label>
+        <img src="/img/loading3.gif" height="40px" width="40px"> */@
     }else
     {
     <div class="container-fluid">
-        <div class="row mb-3">
             @foreach (var movie in Movies)
             {
-                <div class="col-md-4">
-                    <div class="card flex-md-row mb-4 box-shadow h-md-300">
-                        <div class="card-body d-flex flex-column align-items-start">
-                            <div class="card">
-                                <img src="@movie.Image" alt="img-thumbnail card-img-top" height="300px" width="200px">
+                <div class="card-group">
+                            <div class="card-box shadow">
+                                <img src="@movie.Image" alt="card-img-top" height="300px" width="200px">
                                 <div class="card-body">
                                     <h6 class="card-title">@movie.Name</h6>
                                     <p class="text-muted">
@@ -27,16 +27,45 @@
                                     </p>
                                 </div>
                             </div>
+                </div>
+            }
+    </div>
+    }
+</div> *@
+<div class="jumbotron">
+    @if (Movies == null)
+    {
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"
+            aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+        </div>
+        @* <label><small class="text-muted">Buscando películas...</small></label>
+            <img src="/img/loading3.gif" height="40px" width="40px"> *@
+    }
+    else
+    {
+        <div class="container-fluid">
+            @foreach (var movie in Movies)
+            {
+                <div class="card-group">
+                    <div class="card">
+                        <img src="@movie.Image" class="card-img-top" alt="..." height="275px" width="175px">
+                        <div class="card-body">
+                            <h5 class="card-title">@movie.Name</h5>
+                            <p class="card-text">@movie.Sinopsis</p>
+                            <p class="text-muted">
+                                @movie.Category
+                                <br>
+                                <small>@movie.Casting</small>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">@movie.Premier</small>
                         </div>
                     </div>
                 </div>
             }
         </div>
-        <p>More info</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p>
-    </div>
     }
 </div>
 
@@ -55,7 +84,10 @@
             new Movie(){Name="Antman", Sinopsis="Trama de la película...", Image="/img/movies/poster_antman.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()},
             new Movie(){Name="After", Sinopsis="Trama de la película...", Image="/img/movies/poster_after.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()},
             new Movie(){Name="Star Trek", Sinopsis="Trama de la película...", Image="/img/movies/poster_starTrek.jpeg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()},
-            new Movie(){Name="Suicide Squad", Sinopsis="Trama de la película...", Image="/img/movies/poster_suicideSquad.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()}
+            new Movie(){Name="Chappie", Sinopsis="Trama de la película...", Image="/img/movies/poster_chappie.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()},
+            new Movie(){Name="Star Wars", Sinopsis="Trama de la película...", Image="/img/movies/poster_starWars.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()},
+            new Movie(){Name="League of the Justice", Sinopsis="Trama de la película...", Image="/img/movies/poster_leagueJustice.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()},
+            new Movie(){Name="Avengers Infinity War", Sinopsis="Trama de la película...", Image="/img/movies/poster_avengers_3.jpg", Premier=new DateTime(2021, 10, 15), Category=new Category(), Casting=new Casting()}
         };
     }
 
