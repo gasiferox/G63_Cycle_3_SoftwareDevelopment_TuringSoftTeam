@@ -20,7 +20,7 @@ namespace HospiEnCasa.App.Persistencia
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("server=localhost;database=HospiEnCasaData;user=root;password=7111").EnableSensitiveDataLogging(true);
+                optionsBuilder.UseMySQL("server=localhost;database=HospiEnCasaData;user=root;password=;SSLMode=0").EnableSensitiveDataLogging(true);
             }
         }
     }

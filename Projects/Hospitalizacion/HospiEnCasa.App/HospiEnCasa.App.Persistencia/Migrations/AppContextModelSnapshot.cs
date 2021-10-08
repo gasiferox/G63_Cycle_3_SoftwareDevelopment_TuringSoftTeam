@@ -15,7 +15,7 @@ namespace HospiEnCasa.App.Persistencia.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("ProductVersion", "5.0.10");
 
             modelBuilder.Entity("HospiEnCasa.App.Dominio.Entidades.HistoriaClinica", b =>
                 {
@@ -224,8 +224,8 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                     b.Property<int?>("MedicoId")
                         .HasColumnType("int");
 
-                    b.Property<string>("PlanMedico")
-                        .HasColumnType("text");
+                    b.Property<int>("PlanMedico")
+                        .HasColumnType("int");
 
                     b.Property<string>("Telefono")
                         .HasColumnType("text");
