@@ -12,6 +12,8 @@ namespace HospiEnCasa.App.Consola
 
         private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioMedico _repoMedico = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioMedico(new Persistencia.AppContext());
 
+        private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioEnfermera _repoEnfermera = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioEnfermera(new Persistencia.AppContext());
+
         public static void Main(string[] args)
         {
             Console.WriteLine("\n####################################################");
@@ -24,12 +26,14 @@ namespace HospiEnCasa.App.Consola
             //BuscarPaciente(5);
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
-            ListarPacientesFemeninos();
+            //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
             //ListarPacientesCorazon();
             //AsignarMedico();
 
             //AddMedico();
+
+            AddEnfermera();
         }
 
         private static void AddPaciente()
@@ -154,6 +158,23 @@ namespace HospiEnCasa.App.Consola
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");
+        }
+
+        /* Enfermeras */
+        public static void AddEnfermera()
+        {
+            var enfermera = new Enfermera{
+                Nombre = "Daisy",
+                Apellido = "Fuentes",
+                TipoDocumento = TipoDocumento.TarjetaDeIdentidad,
+                Documento = "TI-73623523",
+                Genero = Genero.Femenino,
+
+                TarjetaProfesional = "TP-82376346234",
+                HorasLaborales = 40
+            };
+            _repoEnfermera.AddEnfermera(enfermera);
+            Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");
         }
     }
 }
