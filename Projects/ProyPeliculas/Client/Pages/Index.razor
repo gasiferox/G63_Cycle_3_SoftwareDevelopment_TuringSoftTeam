@@ -1,13 +1,27 @@
 ﻿@page "/"
-@* @using ProyPeliculas.Client.Pages.Components; *@
+@using ProyPeliculas.Client.Pages.Components
+@* @inject IServiceMovie movie *@
 
-<MenuComponent></MenuComponent>
-
-<div class="jumbotron">
-    <CarouselComponent></CarouselComponent>
-</div>
+<CarouselComponent></CarouselComponent>
 
 <CardComponent></CardComponent>
+@* <ServiceComponent Movies= "Movies"></ServiceComponent> *@
 
-<Footer></Footer>
 
+<FooterComponent></FooterComponent>
+@* <footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer> *@
+
+@* @code
+{
+    private List<Movie> Movies;
+    protected override void OnInitialized()
+    {
+        Movies = movie.GetMovies();
+    }
+
+    
+} *@
