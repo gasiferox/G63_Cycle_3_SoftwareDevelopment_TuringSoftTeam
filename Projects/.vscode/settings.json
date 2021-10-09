@@ -1,3 +1,4 @@
 {
-    "razor.disableBlazorDebugPrompt": true
+    "razor.disableBlazorDebugPrompt": true,
+    "sqltools.connections": []
 }

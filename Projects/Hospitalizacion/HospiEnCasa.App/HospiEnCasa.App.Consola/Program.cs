@@ -24,44 +24,44 @@ namespace HospiEnCasa.App.Consola
             //BuscarPaciente(5);
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
-            //ListarPacientesFemeninos();
+            ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
             //ListarPacientesCorazon();
             //AsignarMedico();
 
-            AddMedico();
+            //AddMedico();
         }
 
         private static void AddPaciente()
         {
             var paciente = new Paciente
             {
-                Nombre = "Benito",
-                Apellido = "Rios",
-                TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
-                Documento = "E-5647483",
-                Genero = Genero.Masculino,
-                FechaNacimiento = new DateTime(1965, 06, 03),
-                Latitud = 6.7648784D,
-                Longitud = -78.14753D,
-                Telefono = "87964546",
-                PlanMedico = PlanMedico.Subsidiado,
+                Nombre = "Yaneth",
+                Apellido = "Mejía Rendón",
+                TipoDocumento = TipoDocumento.CedulaDeCiudadania,
+                Documento = "1.524.325.658",
+                Genero = Genero.Femenino,
+                FechaNacimiento = new DateTime(1995, 04, 13),
+                Latitud = 5.8748784D,
+                Longitud = -74.56853D,
+                Telefono = "3184526321",
+                PlanMedico = PlanMedico.Contributivo,
                 FamiliarDesignado = new FamiliarDesignado {
-                    Nombre = "Familiar",
-                    Apellido = "Benito",
-                    TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
-                    Documento = "E-54638",
+                    Nombre = "Carmenza",
+                    Apellido = "Mejía",
+                    TipoDocumento = TipoDocumento.Pasaporte,
+                    Documento = "P-785412",
                     Genero = Genero.Femenino,
                     Parentesco = "Madre",
-                    Correo = "madre@correo.com"
+                    Correo = "madre_Yaneth@correo.com"
                 },
                 SignosVitales = new List<SignoVital> {
-                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Oximetria, Valor=98},
-                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.FrecuenciaRespiratoria, Valor=50},
-                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.FrecuenciaCardiaca, Valor=60},
-                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Temperatura, Valor=37},
-                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.PresionArterial, Valor=120},
-                    new SignoVital{FechaHora= new DateTime(2021,10,07,20,00,00), TipoSigno=TipoSigno.Glicemia, Valor=100}
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,22,30,08), TipoSigno=TipoSigno.Oximetria, Valor=92},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,22,30,08), TipoSigno=TipoSigno.FrecuenciaRespiratoria, Valor=52},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,22,30,08), TipoSigno=TipoSigno.FrecuenciaCardiaca, Valor=62},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,22,30,08), TipoSigno=TipoSigno.Temperatura, Valor=32},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,22,30,08), TipoSigno=TipoSigno.PresionArterial, Valor=122},
+                    new SignoVital{FechaHora= new DateTime(2021,10,07,22,30,08), TipoSigno=TipoSigno.Glicemia, Valor=102}
                 }
             };
             _repoPaciente.AddPaciente(paciente);
