@@ -17,8 +17,8 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("# Implementación Base de Datos - Entity Framework  #");
             Console.WriteLine("####################################################\n");
 
-            AddPaciente();
-            //BuscarPaciente(2);
+            //AddPaciente();
+            BuscarPaciente(1);
             //BorrarPaciente(4);
             //AsignarMedico();
         }
@@ -38,7 +38,7 @@ namespace HospiEnCasa.App.Consola
                 FechaNacimiento = new DateTime(1985, 07, 09)
             };
             _repoPaciente.AddPaciente(paciente);
-            Console.WriteLine("El Paciente, " + paciente.Nombre + "" + paciente.Apellido + " fué agregado con éxito");
+            Console.WriteLine("El Paciente, " + paciente.Nombre + "" + paciente.Apellido + " fué agregado con éxito!");
         }
 
         private static void BuscarPaciente(int idPaciente)
