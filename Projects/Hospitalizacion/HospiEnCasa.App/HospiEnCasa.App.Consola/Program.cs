@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using HospiEnCasa.App.Persistencia;
 using HospiEnCasa.App.Dominio.Entidades;
@@ -16,6 +16,8 @@ namespace HospiEnCasa.App.Consola
 
         public static void Main(string[] args)
         {
+            Console.Clear();
+
             Console.WriteLine("\n####################################################");
             Console.WriteLine("#                    TuringSoft                    #");
             Console.WriteLine("#         Proyecto Hospitalización en Casa         #");
@@ -26,10 +28,10 @@ namespace HospiEnCasa.App.Consola
             //BuscarPaciente(5);
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
-            ListarPacientesFemeninos();
+            //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
             //ListarPacientesCorazon();
-            //AsignarMedico();
+            //AsignarMedico(5,14);
 
             //AddMedico();
 
@@ -137,24 +139,24 @@ namespace HospiEnCasa.App.Consola
             }
         }
 
-        /* private static void AsignarMedico()
+        private static void AsignarMedico(int idPaciente, int idMedico)
         {
-            var medico = _repoPaciente.AsignarMedico(1, 2);
-            Console.WriteLine(medico.Nombre + " " + medico.Apellido);
-        } */
+            var medico = _repoPaciente.AsignarMedico(idPaciente, idMedico);
+            Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " ha sido asignado al paciente No. " + "\n");
+        }
 
         /* Médicos */
         public static void AddMedico()
         {
             var medico = new Medico{
-                Nombre = "Benito",
-                Apellido = "Rios",
+                Nombre = Console.ReadLine(),
+                Apellido = Console.ReadLine(),
                 TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
-                Documento = "E-5647483",
+                Documento = Console.ReadLine(),
                 Genero = Genero.Masculino,
 
                 Especialidad = Especialidad.Internista,
-                RegistroMedico = "RM-756453"
+                RegistroMedico = Console.ReadLine()
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");

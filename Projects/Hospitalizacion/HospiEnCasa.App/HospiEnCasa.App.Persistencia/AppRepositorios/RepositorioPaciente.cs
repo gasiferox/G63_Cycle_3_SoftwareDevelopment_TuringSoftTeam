@@ -9,7 +9,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     {
         private readonly AppContext _appContext;
 
-        public RepositorioPaciente(AppContext appContext) 
+        public RepositorioPaciente(AppContext appContext)
         {
             this._appContext = appContext;
         }
@@ -64,7 +64,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
 
                 _appContext.SaveChanges();
             }
-        return pacienteEncontrado;
+            return pacienteEncontrado;
         }
 
         IEnumerable<Paciente> IRepositorioPaciente.GetAllPacientesFemeninos()
@@ -82,18 +82,20 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return _appContext.Pacientes.Where(p => p.SignosVitales.Any(s => TipoSigno.FrecuenciaCardiaca == s.TipoSigno && s.Valor <= 90)).ToList();
         }
 
-        /* Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
+        Medico IRepositorioPaciente.AsignarMedico(int idPaciente, int idMedico)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
             if (pacienteEncontrado != null)
             {
-                var medicoEncontrado = _appContext.medicos.FirstOrDefault(p => p.Id == idMedico);
+                var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
                 if (medicoEncontrado != null)
                 {
                     pacienteEncontrado.Medico = medicoEncontrado;
                     _appContext.SaveChanges();
-                }return medicoEncontrado;
-            }return null;
-        } */
+                }
+                return medicoEncontrado;
+            }
+            return null;
+        }
     }
 }
