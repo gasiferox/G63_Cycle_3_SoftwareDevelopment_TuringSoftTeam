@@ -4,9 +4,11 @@
 ### Avances
 
 * Se inició el desarrollo del proyecto de películas, pero por decisión del grupo se procede a realizar un cambio hacia el proyecto Hospitalización en Casa.
-* El compañero de tester desistió de sus funciones.
+* El compañero asignado a la función tester, desistió de sus funciones.
 * En el proyecto __HospiEnCasa__ se realizó la arquitectura multicapas, realizando la conexión a base de datos `MySQL` por medio del `EntytyFrameworkCore`.
-* Avanzamos 
+* Avanzamos en los bojetivos trazados para el sprint V.
+* Logramos interconectar el backend con el frontend y de igual forma realizar la interconexiones de las mismas.
+* Se logró generar las relación entre las entidades de 1 a muchos `1 - *` y de muchos a muchos `M - N`.
 
 
 ### Tablero Kanban

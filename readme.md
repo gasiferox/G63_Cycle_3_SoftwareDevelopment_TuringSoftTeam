@@ -15,7 +15,7 @@
 
 * Patricia Guevara - Configuration Administrator
 
-* Cristian Arenas - Tester
+* <s>Cristian Arenas - Tester</s>
 
 * Diego Fernando Henao del Rio - UI Designer
 
