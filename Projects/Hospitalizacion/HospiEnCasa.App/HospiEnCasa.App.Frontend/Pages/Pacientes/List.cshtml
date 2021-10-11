@@ -1,0 +1,20 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Pages.ListModel
+@{
+}
+
+<h1>Listado de Pacientes</h1>
+<br>
+<table class="table">
+    @foreach (var paciente in Model.Pacientes)
+    {
+        <tr>
+            <td>@paciente.Nombre</td>
+            <td>@paciente.Apellido</td>
+            <td>@paciente.TipoDocumento</td>
+            <td>@paciente.Documento</td>
+            <td>@paciente.Genero</td>
+            <td>@paciente.FechaNacimiento</td>
+        </tr>
+    }
+</table>

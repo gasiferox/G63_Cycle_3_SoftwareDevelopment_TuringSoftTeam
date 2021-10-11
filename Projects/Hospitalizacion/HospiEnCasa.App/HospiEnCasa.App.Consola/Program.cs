@@ -35,9 +35,9 @@ namespace HospiEnCasa.App.Consola
 
             //AddMedico();
 
-            //AddEnfermera();
+            AddEnfermera();
             //ListarEnfermeras();
-            ListarEnfermera(13);
+            //ListarEnfermera(13);
             //BorrarEnfermera();
         }
 
@@ -169,14 +169,14 @@ namespace HospiEnCasa.App.Consola
         public static void AddEnfermera()
         {
             var enfermera = new Enfermera{
-                Nombre = "Daisy",
-                Apellido = "Fuentes",
-                TipoDocumento = TipoDocumento.TarjetaDeIdentidad,
-                Documento = "TI-73623523",
+                Nombre = "Maria",
+                Apellido = "Del Valle",
+                TipoDocumento = TipoDocumento.Pasaporte,
+                Documento = "P-4753",
                 Genero = Genero.Femenino,
 
                 TarjetaProfesional = "TP-82376346234",
-                HorasLaborales = 40
+                HorasLaborales = 20
             };
             _repoEnfermera.AddEnfermera(enfermera);
             Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");
