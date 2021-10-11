@@ -21,6 +21,11 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return (Medico)medicoAdicionado.Entity;
         }
 
+        public IEnumerable<Medico> GetAllMedicos()
+        {
+            return _appContext.Medicos;
+        }
+
         public void DeleteMedico(int idMedico)
         {
             var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
@@ -54,11 +59,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         public Medico GetMedico(int idMedico)
         {
             return _appContext.Medicos.FirstOrDefault(p => p.Id == idMedico);
-        }
-
-        public IEnumerable<Medico> GetAllMedicos()
-        {
-            return _appContext.Medicos;
         }
 
         public IEnumerable<Medico> GetAllMedicosEspecialidad()

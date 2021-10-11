@@ -37,7 +37,8 @@ namespace HospiEnCasa.App.Consola
 
             //AddEnfermera();
             //ListarEnfermeras();
-            
+            ListarEnfermera(13);
+            //BorrarEnfermera();
         }
 
         private static void AddPaciente()
@@ -181,13 +182,31 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");
         }
 
+        public static void ListarEnfermera(int idEnfermera)
+        {
+            var enfermera = _repoEnfermera.GetEnfermera(idEnfermera);
+            Console.WriteLine("Los datos de la enfermera solicitada son:\n");
+            Console.WriteLine("Nombres y Apellidos: " + enfermera.Nombre + " " + enfermera.Apellido);
+            Console.WriteLine(enfermera.TipoDocumento + ": " + enfermera.Documento);
+            Console.WriteLine("Género: " + enfermera.Genero);
+            Console.WriteLine("Tarjeta profesional: " + enfermera.TarjetaProfesional);
+            Console.WriteLine("Holas laborales: " + enfermera.HorasLaborales);
+            Console.WriteLine("\n");
+        }
+
         public static void ListarEnfermeras()
         {
             var enfermerasL = _repoEnfermera.GetAllEnfermeras();
             foreach (var Enfermera in enfermerasL)
             {
-                Console.WriteLine("Enfermera " + Enfermera.Id + ", Nombre: " + Enfermera.Nombre + " " + Enfermera.Apellido + ", con " + Enfermera.HorasLaborales + " Horas de trabajo.");
+                Console.WriteLine("Enfermera " + Enfermera.Id + ", Nombre: " + Enfermera.Nombre + " " + Enfermera.Apellido + ", con " + Enfermera.HorasLaborales + " Horas de trabajo.\n");
             }
+        }
+
+        public static void BorrarEnfermera(int idEnfermera)
+        {
+            _repoEnfermera.DeleteEnfermera(idEnfermera);
+            Console.WriteLine("La enfermera fué eliminada con éxito.\n");
         }
     }
 }
