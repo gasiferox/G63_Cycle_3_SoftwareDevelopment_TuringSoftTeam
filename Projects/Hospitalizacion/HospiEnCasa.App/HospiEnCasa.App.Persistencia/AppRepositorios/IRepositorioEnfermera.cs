@@ -7,9 +7,9 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     public interface IRepositorioEnfermera
     {
          Enfermera AddEnfermera(Enfermera Enfermera);
+         IEnumerable<Enfermera> GetAllEnfermeras();
          /* void DeleteEnfermera(int idEnfermera);
          Enfermera UpdateEnfermera(Enfermera Enfermera);
-         Enfermera GetEnfermera(int idEnfermera);
-         IEnumerable<Enfermera> GetAllEnfermeras(); */
+         Enfermera GetEnfermera(int idEnfermera); */
     }
 }

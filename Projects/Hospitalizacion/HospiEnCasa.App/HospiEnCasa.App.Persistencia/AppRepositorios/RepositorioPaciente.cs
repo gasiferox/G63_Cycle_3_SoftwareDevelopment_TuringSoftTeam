@@ -14,11 +14,21 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             this._appContext = appContext;
         }
 
+        public IEnumerable<Paciente> GetAllPacientes()
+        {
+            return _appContext.Pacientes;
+        }
+
         public Paciente AddPaciente(Paciente paciente)
         {
             var pacienteAdicionado = _appContext.Pacientes.Add(paciente);
             _appContext.SaveChanges();
             return (Paciente)pacienteAdicionado.Entity;
+        }
+
+        public Paciente GetPaciente(int idPaciente)
+        {
+            return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
         }
 
         public void DeletePaciente(int idPaciente)
@@ -28,16 +38,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                 return;
             _appContext.Pacientes.Remove(pacienteEncontrado);
             _appContext.SaveChanges();
-        }
-
-        public IEnumerable<Paciente> GetAllPacientes()
-        {
-            return _appContext.Pacientes;
-        }
-
-        public Paciente GetPaciente(int idPaciente)
-        {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
         }
 
         public Paciente UpdatePaciente(Paciente paciente)
@@ -97,5 +97,21 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             }
             return null;
         }
+
+        /* SignoVital IRepositorioPaciente.AddSignosPaciente(int idPaciente, SignoVital signoVital)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            if (pacienteEncontrado != null)
+            {
+                var nuevoSignoVital = _appContext.SignosVitales.FirstOrDefault(p => p.SignosVitales == signoVital);
+                if (nuevoSignoVital != null)
+                {
+                    pacienteEncontrado.SignosVitales = nuevoSignoVital;
+                    _appContext.SaveChanges();
+                }
+                return signoVital;
+            }
+            return null;
+        } */
     }
 }

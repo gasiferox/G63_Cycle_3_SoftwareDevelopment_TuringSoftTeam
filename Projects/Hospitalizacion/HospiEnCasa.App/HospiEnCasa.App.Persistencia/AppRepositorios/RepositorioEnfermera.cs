@@ -19,9 +19,12 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             _appContext.SaveChanges();
             return (Enfermera)enfermeraAgregada.Entity;
         }
+        public IEnumerable<Enfermera> GetAllEnfermeras()
+        {
+            return _appContext.Enfermeras;
+        }
         /* void DeleteEnfermera(int idEnfermera);
         Enfermera UpdateEnfermera(Enfermera Enfermera);
-        Enfermera GetEnfermera(int idEnfermera);
-        IEnumerable<Enfermera> GetAllEnfermeras(); */
+        Enfermera GetEnfermera(int idEnfermera); */
     }
 }

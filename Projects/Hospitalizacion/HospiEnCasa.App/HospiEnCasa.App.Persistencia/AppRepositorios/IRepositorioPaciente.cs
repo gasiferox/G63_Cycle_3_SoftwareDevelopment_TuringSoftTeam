@@ -9,14 +9,19 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     {
         IEnumerable<Paciente> GetAllPacientes();
         Paciente AddPaciente(Paciente paciente);
-        Paciente UpdatePaciente(Paciente paciente);
-        void DeletePaciente(int idPaciente);
         Paciente GetPaciente(int idPaciente);
+        void DeletePaciente(int idPaciente);
+        Paciente UpdatePaciente(Paciente paciente);
+        
         /* Métodos para filtrar y listar */
         IEnumerable<Paciente> GetAllPacientesFemeninos();
         IEnumerable<Paciente> GetAllPacientesMasculinos();
         IEnumerable<Paciente> GetPacientesCorazon();
+
         /* Métodos para asignar */
         Medico AsignarMedico(int idPaciente, int idMedico);
+
+        /* Nuevas instancias */
+        /* SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital); */    
     }
 }

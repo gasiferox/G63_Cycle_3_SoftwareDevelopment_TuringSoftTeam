@@ -36,6 +36,8 @@ namespace HospiEnCasa.App.Consola
             //AddMedico();
 
             //AddEnfermera();
+            //ListarEnfermeras();
+            
         }
 
         private static void AddPaciente()
@@ -149,14 +151,14 @@ namespace HospiEnCasa.App.Consola
         public static void AddMedico()
         {
             var medico = new Medico{
-                Nombre = Console.ReadLine(),
-                Apellido = Console.ReadLine(),
+                Nombre = "Carlos Hernando",
+                Apellido = "Paez Lozano",
                 TipoDocumento = TipoDocumento.CedulaDeExtranjeria,
-                Documento = Console.ReadLine(),
+                Documento = "89654123",
                 Genero = Genero.Masculino,
 
                 Especialidad = Especialidad.Internista,
-                RegistroMedico = Console.ReadLine()
+                RegistroMedico = "RM-214365"
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");
@@ -177,6 +179,15 @@ namespace HospiEnCasa.App.Consola
             };
             _repoEnfermera.AddEnfermera(enfermera);
             Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");
+        }
+
+        public static void ListarEnfermeras()
+        {
+            var enfermerasL = _repoEnfermera.GetAllEnfermeras();
+            foreach (var Enfermera in enfermerasL)
+            {
+                Console.WriteLine("Enfermera " + Enfermera.Id + ", Nombre: " + Enfermera.Nombre + " " + Enfermera.Apellido + ", con " + Enfermera.HorasLaborales + " Horas de trabajo.");
+            }
         }
     }
 }
