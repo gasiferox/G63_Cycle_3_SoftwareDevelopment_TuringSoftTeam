@@ -1,3 +1,6 @@
+using HospiEnCasa.App.Dominio.Entidades;
+using System;
+
 namespace HospiEnCasa.App.Dominio.Entidades
 {
     public class Persona

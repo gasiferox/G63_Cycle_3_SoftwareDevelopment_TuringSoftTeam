@@ -54,7 +54,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                 pacienteEncontrado.Latitud = paciente.Latitud;
                 pacienteEncontrado.Longitud = paciente.Longitud;
                 pacienteEncontrado.FechaNacimiento = paciente.FechaNacimiento;
-/*                pacienteEncontrado.FamiliarDesignado = paciente.FamiliarDesignado;
+/*              pacienteEncontrado.FamiliarDesignado = paciente.FamiliarDesignado;
                 pacienteEncontrado.Medico = paciente.Medico;
                 pacienteEncontrado.Enfermera = paciente.Enfermera;
                 pacienteEncontrado.HistoriaClinica = paciente.HistoriaClinica;

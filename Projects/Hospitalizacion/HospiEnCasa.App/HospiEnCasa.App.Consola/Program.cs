@@ -23,8 +23,15 @@ namespace HospiEnCasa.App.Consola
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
-            ListarPacientesMasculinos();
+            //ListarPacientesMasculinos();
             //AsignarMedico();
+
+            //AddMedico();
+
+            AddEnfermera();
+            //ListarEnfermeras();
+            //ListarEnfermera(13);
+            //BorrarEnfermera();
         }
 
         private static void AddPaciente()
@@ -108,11 +115,49 @@ namespace HospiEnCasa.App.Consola
                 Console.WriteLine("El paciente No. " + p.Id + " con Nombre: " + p.Nombre + " y Apellido: " + p.Apellido);
             }
         }
+            /* MEDICOS */
 
         /* private static void AsignarMedico()
         {
             var medico = _repoPaciente.AsignarMedico(1, 2);
             Console.WriteLine(medico.Nombre + " " + medico.Apellido);
         } */
+
+        /* MEDICOS */
+        
+        public static void AddMedico()
+        {
+            var medico = new Medico{
+                Nombre = "Yeison Andres",
+                Apellido = "Toledo Muñoz",
+                TipoDocumento = TipoDocumento.CedulaDeCiudadania,
+                Documento = "C.C No. 1117527557",
+                Genero = Genero.Masculino,
+
+                Especialidad =Especialidad.Urologo,
+                RegistroMedico ="RM - 527557"
+            };
+            _repoMedico.AddMedico(medico);
+            Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");
+
+            /* Enfermeras */
+        public static void AddEnfermera()
+        {
+            var enfermera = new Enfermera{
+                Nombre = "Kelly Jhoana",
+                Apellido = "Muñoz Silva",
+                TipoDocumento = TipoDocumento.CedulaDeCiudadania,
+                Documento = "C.C No.1117527061",
+                Genero = Genero.Femenino,
+
+                TarjetaProfesional = "TP-1117527061",
+                HorasLaborales = 48
+            };
+            _repoEnfermera.AddEnfermera(enfermera);
+            Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");
+        }
+
+        
+        }
     }
 }
