@@ -18,7 +18,7 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("####################################################\n");
 
             //AddPaciente();
-            BuscarPaciente(1);
+            BuscarPaciente(2);
             //BorrarPaciente(4);
             //AsignarMedico();
         }
@@ -27,18 +27,18 @@ namespace HospiEnCasa.App.Consola
         {
             var paciente = new Paciente
             {
-                Nombre = "Luciana",
-                Apellido = "Arias",
-                Telefono = "321234",
+                Nombre = "Luisa",
+                Apellido = "Bonilla",
+                Telefono = "32123234",
                 Genero = Genero.Femenino,
                 TipoDocumento = TipoDocumento.CedulaDeCiudadania,
-                Documento = "1245567",
-                Latitud = 5.023784D,
-                Longitud = -72.67753D,
-                FechaNacimiento = new DateTime(1985, 07, 09)
+                Documento = "124511567",
+                Latitud = 5.022184D,
+                Longitud = -72.68953D,
+                FechaNacimiento = new DateTime(1999, 02, 08)
             };
             _repoPaciente.AddPaciente(paciente);
-            Console.WriteLine("El Paciente, " + paciente.Nombre + "" + paciente.Apellido + " fué agregado con éxito!");
+            Console.WriteLine("El Paciente, " + paciente.Nombre + " " + paciente.Apellido + " fué agregado con éxito!");
         }
 
         private static void BuscarPaciente(int idPaciente)
@@ -47,7 +47,7 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Paciente: " + paciente.Nombre + " " + paciente.Apellido);
             Console.WriteLine("Teléfono: " + paciente.Telefono + "\nGénero: " + paciente.Genero);
             Console.WriteLine("Identificación: " + paciente.TipoDocumento + " " + paciente.Documento);
-            Console.WriteLine("Geolocalización: ( " + paciente.Latitud + ", " + paciente.Longitud + " )");
+            Console.WriteLine("Geolocalización: (Latitud: " + paciente.Latitud + ", Longitud: " + paciente.Longitud + ")");
             Console.WriteLine("Fecha de Nacimiento: " + paciente.FechaNacimiento);
         }
 
