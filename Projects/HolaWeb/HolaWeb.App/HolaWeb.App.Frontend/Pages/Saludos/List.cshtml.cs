@@ -25,16 +25,16 @@ namespace HolaWeb.App.Frontend.Pages
             ListaSaludos.AddRange(saludos);
         } */
 
-        private readonly IRepositorioSaludos repositorioSaludos;
+        private readonly IRepositorioSaludos _repositorioSaludos;
         public IEnumerable<Saludo> Saludos { get; set; }
 
         public ListModel(IRepositorioSaludos repositorioSaludos)
         {
-            this.repositorioSaludos = repositorioSaludos;
+            this._repositorioSaludos = repositorioSaludos;
         }
         public void OnGet()
         {
-            Saludos = repositorioSaludos.GetAll();
+            Saludos = _repositorioSaludos.GetAll();
         }
     }
 }

@@ -29,13 +29,13 @@ namespace HospiEnCasa.App.Consola
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
-            //ListarPacientesMasculinos();
+            ListarPacientesMasculinos();
             //ListarPacientesCorazon();
             //AsignarMedico(5,14);
 
             //AddMedico();
 
-            AddEnfermera();
+            //AddEnfermera();
             //ListarEnfermeras();
             //ListarEnfermera(13);
             //BorrarEnfermera();

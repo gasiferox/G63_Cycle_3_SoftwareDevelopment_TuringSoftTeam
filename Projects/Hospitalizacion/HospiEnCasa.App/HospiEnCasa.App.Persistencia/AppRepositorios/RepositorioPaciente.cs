@@ -16,6 +16,11 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
 
         public IEnumerable<Paciente> GetAllPacientes()
         {
+            return GetAllPacientes_();
+        }
+
+        public IEnumerable<Paciente> GetAllPacientes_()
+        {
             return _appContext.Pacientes;
         }
 

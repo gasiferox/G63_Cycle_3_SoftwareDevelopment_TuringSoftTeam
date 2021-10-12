@@ -6,6 +6,14 @@
 <h1>Listado de Pacientes</h1>
 <br>
 <table class="table">
+    <tr class="font-weight-bold">
+            <td>Nombre</td>
+            <td>Apellido</td>
+            <td>TipoDocumento</td>
+            <td>Documento</td>
+            <td>Genero</td>
+            <td>FechaNacimiento</td>
+    </tr>
     @foreach (var paciente in Model.Pacientes)
     {
         <tr>

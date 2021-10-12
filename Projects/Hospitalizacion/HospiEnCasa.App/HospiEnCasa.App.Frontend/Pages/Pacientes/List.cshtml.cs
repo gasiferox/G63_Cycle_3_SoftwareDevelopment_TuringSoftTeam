@@ -6,21 +6,22 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using HospiEnCasa.App.Dominio.Entidades;
 using HospiEnCasa.App.Persistencia.AppRepositorios;
+using Microsoft.AspNetCore.Authorization;
 
 namespace HospiEnCasa.App.Frontend.Pages
 {
+    /* [Authorize] */
     public class ListModel : PageModel
     {
-        /* private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioPaciente _repoPaciente = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioPaciente(new Persistencia.AppContext()); */
-        private readonly IRepositorioPaciente repositorioPaciente;
+        private readonly IRepositorioPaciente _repositorioPaciente;
         public IEnumerable<Paciente> Pacientes { get; set; }
-        public ListModel(IRepositorioPaciente repositorioPaciente)
+        public ListModel()
         {
-            this.repositorioPaciente = repositorioPaciente;
+            this._repositorioPaciente = new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext());
         }
-        public void OnGet()
+        public void OnGet(string FiltroBusqueda)
         {
-            Pacientes = repositorioPaciente.GetAllPacientes();
+            Pacientes = _repositorioPaciente.GetAllPacientes();
         }
     }
 }
