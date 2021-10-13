@@ -1,6 +1,7 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.DetailModel
 @{
+    int idPaciente = Model.Paciente.Id;
 }
 
 <h1>Detalles del paciente No. @Model.Paciente.Id</h1>
@@ -90,5 +91,5 @@
 </table>
 <br>
 <a asp-page="./Edit" class="btn btn-primary">Editar Paciente</a>
-<a asp-page="./Edit" class="btn btn-warning">Medición de Signos Vitales</a>
+<a asp-page="./Signos/List" class="btn btn-warning" asp-route-idPaciente="@idPaciente">Medición de Signos Vitales</a>
 <a asp-page="./List" class="btn btn-secondary">Volver</a>

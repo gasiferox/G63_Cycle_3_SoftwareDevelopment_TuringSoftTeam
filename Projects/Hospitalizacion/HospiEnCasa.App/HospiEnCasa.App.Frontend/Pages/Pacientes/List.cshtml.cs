@@ -15,6 +15,7 @@ namespace HospiEnCasa.App.Frontend.Pages
     {
         private readonly IRepositorioPaciente _repositorioPaciente;
         public IEnumerable<Paciente> Pacientes { get; set; }
+        public Paciente Paciente { get; set; }
         public ListModel()
         {
             this._repositorioPaciente = new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext());

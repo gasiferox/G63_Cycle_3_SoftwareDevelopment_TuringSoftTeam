@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace HospiEnCasa.App.Dominio.Entidades
 {
@@ -8,6 +9,7 @@ namespace HospiEnCasa.App.Dominio.Entidades
         public DateTime FechaNacimiento { get; set; }
         public double Latitud { get; set; }
         public double Longitud { get; set; }
+        [Required, StringLength(10)]
         public string Telefono { get; set; }
         public PlanMedico PlanMedico { get; set; }
         public FamiliarDesignado FamiliarDesignado { get; set; }

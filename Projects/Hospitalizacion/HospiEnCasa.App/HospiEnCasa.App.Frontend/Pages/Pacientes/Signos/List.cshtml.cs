@@ -20,11 +20,11 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes.Signos
         {
             this._repositorioPaciente = new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext());
         }
-        public void OnGet(int? pacienteId)
+        public void OnGet(int? idPaciente)
         {
-            if (pacienteId.HasValue)
+            if (idPaciente.HasValue)
             {
-                Paciente = _repositorioPaciente.GetPaciente(pacienteId.Value);
+                Paciente = _repositorioPaciente.GetPaciente(idPaciente.Value);
             }
 
             if (Paciente == null)
@@ -33,7 +33,7 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes.Signos
             }
             else
             {
-                SignosPaciente = _repositorioPaciente.GetSignosPaciente(pacienteId.Value);
+                SignosPaciente = _repositorioPaciente.GetSignosPaciente(idPaciente.Value);
             }
         }
     }

@@ -1,6 +1,7 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.ListModel
 @{
+    @* int idPaciente = Model.Paciente.Id; *@
 }
 
 <h1>Listado de Pacientes</h1>
@@ -36,11 +37,11 @@
                 <i class="fas fa-edit"></i>
                 </a>
             </td>
-            <td>
-                <a class="btn btn-primary table-btn" asp-page="./Signos/List" asp-route-SignosVitales="@paciente.SignosVitales">
+            @* <td>
+                <a class="btn btn-primary table-btn" asp-page="./Signos/List" asp-route-idPaciente="@paciente.SignosVitales">
                 <i class="fas fa-heartbeat"></i>
                 </a>
-            </td>
+            </td> *@
         </tr>
     }
 </table>

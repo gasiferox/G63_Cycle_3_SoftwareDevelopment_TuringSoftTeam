@@ -1,4 +1,69 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.EditModel
 @{
+    int idPaciente = Model.Paciente.Id;
 }
+
+<h1>Edición del Paciente No. @Model.Paciente.Id</h1>
+<h2>@Model.Paciente.Nombre @Model.Paciente.Apellido</h2>
+
+<form action="" method="post">
+    <input type="hidden" asp-for="Paciente.Id">
+    <div class="form-group">
+        <label asp-for="Paciente.Nombre"></label>
+        <input asp-for="Paciente.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.Apellido"></label>
+        <input asp-for="Paciente.Apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Apellido"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.TipoDocumento">Tipo de documento</label>
+        <select asp-for="TipoDocumento">
+            <option asp-for="TipoDocumento">@Model.TipoDocumento</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.Documento"></label>
+        <input asp-for="Paciente.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.Genero">Género</label>
+        <select asp-for="Genero">
+            <option asp-for="Genero">@Model.Genero</option>
+            @* <option value="Genero.Femenino">@Model.Genero</option>
+                <option value="2">Femenino</option>
+                <option value="3">Otro</option> *@
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.FechaNacimiento"></label>
+        <input asp-for="Paciente.FechaNacimiento" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.FechaNacimiento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.Latitud"></label>
+        <input asp-for="Paciente.Latitud" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Latitud"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.Longitud"></label>
+        <input asp-for="Paciente.Longitud" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Longitud"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Paciente.Telefono"></label>
+        <input asp-for="Paciente.Telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.Telefono"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Grabar</button>
+
+    <a class="btn btn-warning table-btn" asp-page="./Signos/List" asp-route-idPaciente="@idPaciente">
+        <i aria-hidden="true">Signos Vitales</i>
+    </a>
+</form>
+<a asp-page="./List" class="btn-default">Regrear a la lista de Pacientes</a>
