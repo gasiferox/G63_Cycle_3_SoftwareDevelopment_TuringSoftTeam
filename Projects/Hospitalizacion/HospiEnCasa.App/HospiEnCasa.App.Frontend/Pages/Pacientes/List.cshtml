@@ -7,30 +7,32 @@
 <br>
 <table class="table">
     <tr class="font-weight-bold">
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>TipoDocumento</td>
+            <td>No.</td>
+            <td>Nombres</td>
+            <td>Apellidos</td>
+            @* <td>TipoDocumento</td>
             <td>Documento</td>
             <td>Genero</td>
-            <td>FechaNacimiento</td>
+            <td>FechaNacimiento</td> *@
     </tr>
     @foreach (var paciente in Model.Pacientes)
     {
         <tr>
+            <td>@paciente.Id</td>
             <td>@paciente.Nombre</td>
             <td>@paciente.Apellido</td>
-            <td>@paciente.TipoDocumento</td>
+            @* <td>@paciente.TipoDocumento</td>
             <td>@paciente.Documento</td>
             <td>@paciente.Genero</td>
-            <td>@paciente.FechaNacimiento</td>
+            <td>@paciente.FechaNacimiento</td> *@
 
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-IdPaciente="@paciente.Id">
+                <a class="btn btn-primary table-btn" asp-page="./Detail" asp-route-idPaciente="@paciente.Id">
                 <i class="fas fa-user-tag"></i>
                 </a>
             </td>
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-IdPaciente="@paciente.Id">
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-idPaciente="@paciente.Id">
                 <i class="fas fa-edit"></i>
                 </a>
             </td>
@@ -44,3 +46,4 @@
 </table>
 <br>
 <a asp-page="./Edit" class="btn btn-primary">Agregar Paciente</a>
+<a asp-page="./List" class="btn btn-secondary">Volver</a>

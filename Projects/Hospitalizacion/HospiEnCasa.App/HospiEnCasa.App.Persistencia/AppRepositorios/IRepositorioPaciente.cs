@@ -21,6 +21,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         Medico AsignarMedico(int idPaciente, int idMedico);
 
         /* Nuevas instancias */
+        IEnumerable<SignoVital> GetSignosPaciente(int idPaciente);
         /* SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital); */    
     }
 }

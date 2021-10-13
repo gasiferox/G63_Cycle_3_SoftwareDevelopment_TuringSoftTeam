@@ -1,7 +1,8 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HospiEnCasa.App.Dominio.Entidades;
+using Microsoft.EntityFrameworkCore;
 
 namespace HospiEnCasa.App.Persistencia.AppRepositorios
 {
@@ -101,6 +102,12 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                 return medicoEncontrado;
             }
             return null;
+        }
+
+        IEnumerable<SignoVital> IRepositorioPaciente.GetSignosPaciente(int idPaciente)
+        {
+            var paciente = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.SignosVitales).FirstOrDefault();
+            return paciente.SignosVitales;
         }
 
         /* SignoVital IRepositorioPaciente.AddSignosPaciente(int idPaciente, SignoVital signoVital)

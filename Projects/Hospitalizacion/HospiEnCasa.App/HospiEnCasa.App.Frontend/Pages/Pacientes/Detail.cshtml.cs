@@ -4,24 +4,28 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using HospiEnCasa.App.Dominio.Entidades;
 using HospiEnCasa.App.Persistencia.AppRepositorios;
-using Microsoft.AspNetCore.Authorization;
+using HospiEnCasa.App.Dominio.Entidades;
 
 namespace HospiEnCasa.App.Frontend.Pages
 {
-    /* [Authorize] */
-    public class ListModel : PageModel
+    public class DetailModel : PageModel
     {
         private readonly IRepositorioPaciente _repositorioPaciente;
-        public IEnumerable<Paciente> Pacientes { get; set; }
-        public ListModel()
+        public Paciente Paciente { get; set; }
+        public DetailModel()
         {
             this._repositorioPaciente = new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext());
         }
-        public void OnGet(/* string FiltroBusqueda */)
+        public IActionResult OnGet(int idPaciente)
         {
-            Pacientes = _repositorioPaciente.GetAllPacientes();
+            Paciente = _repositorioPaciente.GetPaciente(idPaciente);
+            if (Paciente == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            else
+                return Page();
         }
     }
 }
