@@ -20,7 +20,7 @@ namespace HospiEnCasa.App.Frontend.Pages
         {
             this._repositorioPaciente = new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext());
         }
-        public void OnGet(/* string FiltroBusqueda */)
+        public void OnGet(/* int? idPaciente */)
         {
             Pacientes = _repositorioPaciente.GetAllPacientes();
         }

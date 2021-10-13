@@ -4,6 +4,7 @@
     @* int idPaciente = Model.Paciente.Id; *@
 }
 
+<img src="/img/banner_pacientes_01.png" alt="" class="img-fluid">
 <h1>Listado de Pacientes</h1>
 <br>
 <table class="table">
@@ -37,11 +38,11 @@
                 <i class="fas fa-edit"></i>
                 </a>
             </td>
-            @* <td>
-                <a class="btn btn-primary table-btn" asp-page="./Signos/List" asp-route-idPaciente="@paciente.SignosVitales">
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Signos/List" asp-route-idPaciente="@paciente.Id">
                 <i class="fas fa-heartbeat"></i>
                 </a>
-            </td> *@
+            </td>
         </tr>
     }
 </table>
