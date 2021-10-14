@@ -1,11 +1,13 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.EditModel
+@using HospiEnCasa.App.Dominio.Entidades;
 @{
     int idPaciente = Model.Paciente.Id;
 }
 
 <h1>Edición del Paciente No. @Model.Paciente.Id</h1>
 <h2>@Model.Paciente.Nombre @Model.Paciente.Apellido</h2>
+
 
 <form action="" method="post">
     <input type="hidden" asp-for="Paciente.Id">
@@ -21,9 +23,7 @@
     </div>
     <div class="form-group">
         <label asp-for="Paciente.TipoDocumento">Tipo de documento</label>
-        <select asp-for="TipoDocumento">
-            <option asp-for="TipoDocumento">@Model.TipoDocumento</option>
-        </select>
+        
     </div>
     <div class="form-group">
         <label asp-for="Paciente.Documento"></label>

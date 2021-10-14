@@ -22,6 +22,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
 
         /* Nuevas instancias */
         IEnumerable<SignoVital> GetSignosPaciente(int idPaciente);
-        /* SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital); */    
+        SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital);    
     }
 }

@@ -1,0 +1,31 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Pages.Pacientes.Signos.AddModel
+@{
+}
+
+<h1>Signos vitales del Paciente No. @Model.Paciente.Id</h1>
+<h2>@Model.Paciente.Nombre @Model.Paciente.Apellido</h2>
+
+<form action="" method="post">
+    <input type="hidden" asp-for="Paciente.Id">
+    <div class="form-froup">
+        <label asp-for="SignoVital.FechaHora">Fecha</label>
+        <input asp-for="SignoVital.FechaHora" class="form-control">
+        <span class="text-danger" asp-validation-for="SignoVital.FechaHora"></span>
+    </div>
+    <div class="form-froup">
+        <label asp-for="SignoVital.TipoSigno">Tipo de signo</label>
+        <input asp-for="SignoVital.TipoSigno" class="form-control">
+        <span class="text-danger" asp-validation-for="SignoVital.TipoSigno"></span>
+    </div>
+    <div class="form-froup">
+        <label asp-for="SignoVital.Valor"></label>
+        <input asp-for="SignoVital.Valor" class="form-control">
+        <span class="text-danger" asp-validation-for="SignoVital.Valor"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Grabar</button>
+
+</form>
+
+<a asp-page="./Pacientes/Detail" class="btn-default">Regresar al Paciente</a>

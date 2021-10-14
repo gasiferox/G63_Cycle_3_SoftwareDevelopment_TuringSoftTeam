@@ -10,6 +10,8 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     {
         private readonly AppContext _appContext;
 
+        List<TipoDocumento> tipoDocumentos = Enum.GetValues(typeof(TipoDocumento)).Cast<TipoDocumento>().ToList();
+
         public RepositorioPaciente(AppContext appContext)
         {
             this._appContext = appContext;
@@ -125,5 +127,15 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             }
             return null;
         } */
+
+        SignoVital IRepositorioPaciente.AddSignosPaciente(int idPaciente, SignoVital signoVital)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+
+            var nuevoSignoVital = _appContext.SignosVitales.Add(signoVital);
+            _appContext.SaveChanges();
+            return nuevoSignoVital.Entity;
+
+        }
     }
 }
