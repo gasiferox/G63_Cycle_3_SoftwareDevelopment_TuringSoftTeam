@@ -1,0 +1,54 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Pages.Enfermeras.DetailModel
+@{
+    int idEnfermera = Model.Enfermera.Id;
+}
+
+<h1>Detalles de la Enfermera No. @Model.Enfermera.Id</h1>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <tr class="font-weight-bold">
+                <tr>
+                    <th>Nombres</th>
+                    <th>@Model.Enfermera.Nombre</th>
+                </tr>
+                <tr>
+                    <th>Apellidos</th>
+                    <th>@Model.Enfermera.Apellido</th>
+                </tr>
+                <tr>
+                    <th>Tipo de documento</th>
+                    <th>@Model.Enfermera.TipoDocumento</th>
+                </tr>
+                <tr>
+                    <th>Documento</th>
+                    <th>@Model.Enfermera.Documento</th>
+                </tr>
+                <tr>
+                    <th>Género</th>
+                    <th>@Model.Enfermera.Genero</th>
+                </tr>
+                <tr>
+                    <th>Tarjera Profesional</th>
+                    <th>@Model.Enfermera.TarjetaProfesional</th>
+                </tr>
+                <tr>
+                    <th>Horas Laborales</th>
+                    <th>@Model.Enfermera.HorasLaborales</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col">
+            <img src="/img/Enfermeras/image_01.jpeg" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<a asp-page="./Edit" class="btn btn-primary">Editar Enfermera</a>
+<a asp-page="./List" class="btn btn-secondary">Volver</a>

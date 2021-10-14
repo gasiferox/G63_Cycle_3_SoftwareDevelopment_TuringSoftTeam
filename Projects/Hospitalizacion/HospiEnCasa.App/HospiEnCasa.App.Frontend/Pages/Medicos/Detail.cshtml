@@ -1,0 +1,44 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Pages.Medicos.DetailModel
+@{
+    int idMedico = Model.Medico.Id;
+}
+
+<h1>Detalles del médico No. @Model.Medico.Id</h1>
+<br>
+<table class="table">
+    <tr class="font-weight-bold">
+        <tr>
+            <th>Nombres</th>
+            <th>@Model.Medico.Nombre</th>
+        </tr>
+        <tr>
+            <th>Apellidos</th>
+            <th>@Model.Medico.Apellido</th>
+        </tr>
+        <tr>
+            <th>Tipo de documento</th>
+            <th>@Model.Medico.TipoDocumento</th>
+        </tr>
+        <tr>
+            <th>Documento</th>
+            <th>@Model.Medico.Documento</th>
+        </tr>
+        <tr>
+            <th>Género</th>
+            <th>@Model.Medico.Genero</th>
+        </tr>
+        <tr>
+            <th>Especialidad</th>
+            <th>@Model.Medico.Especialidad</th>
+        </tr>
+        <tr>
+            <th>Registro Médico</th>
+            <th>@Model.Medico.RegistroMedico</th>
+        </tr>
+</table>
+
+<br>
+
+<a asp-page="./Edit" class="btn btn-primary">Editar Médico</a>
+<a asp-page="./List" class="btn btn-secondary">Volver</a>

@@ -24,6 +24,7 @@ namespace HospiEnCasa.App.Frontend.Pages.Pacientes.Signos
             if (idPaciente.HasValue)
             {
                 Paciente = _repositorioPaciente.GetPaciente(idPaciente.Value);
+                Console.WriteLine("Id paciente encontrado");
             }
             else
             {

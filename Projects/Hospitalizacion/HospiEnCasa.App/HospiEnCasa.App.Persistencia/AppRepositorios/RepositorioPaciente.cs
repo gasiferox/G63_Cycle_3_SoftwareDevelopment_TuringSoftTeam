@@ -10,7 +10,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     {
         private readonly AppContext _appContext;
 
-        List<TipoDocumento> tipoDocumentos = Enum.GetValues(typeof(TipoDocumento)).Cast<TipoDocumento>().ToList();
+        /* List<TipoDocumento> tipoDocumentos = Enum.GetValues(typeof(TipoDocumento)).Cast<TipoDocumento>().ToList(); */
 
         public RepositorioPaciente(AppContext appContext)
         {

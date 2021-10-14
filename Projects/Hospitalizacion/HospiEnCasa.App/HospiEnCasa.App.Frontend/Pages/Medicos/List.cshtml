@@ -2,3 +2,37 @@
 @model HospiEnCasa.App.Frontend.Pages.Medicos.ListModel
 @{
 }
+
+<img src="/img/banner_hospi_02.jpg" alt="" class="img-fluid">
+<h1>Listado de Médicos</h1>
+<br>
+<table class="table">
+    <tr class="font-weight-bold">
+            <td>No.</td>
+            <td>Nombres</td>
+            <td>Apellidos</td>
+    </tr>
+    @foreach (var medico in Model.Medicos)
+    {
+        <tr>
+            <td>@medico.Id</td>
+            <td>@medico.Nombre</td>
+            <td>@medico.Apellido</td>
+
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Detail" asp-route-idmedico="@medico.Id">
+                <i class="fas fa-user-tag"></i>
+                </a>
+            </td>
+
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-idmedico="@medico.Id">
+                <i class="fas fa-edit"></i>
+                </a>
+            </td>
+        </tr>
+    }
+</table>
+<br>
+<a asp-page="./Medicos/Edit" class="btn btn-primary">Agregar Medico</a>
+<a asp-page="./Home" class="btn btn-secondary">Volver</a>

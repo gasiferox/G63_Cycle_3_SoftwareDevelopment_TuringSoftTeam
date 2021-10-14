@@ -9,18 +9,25 @@ using HospiEnCasa.App.Persistencia.AppRepositorios;
 
 namespace HospiEnCasa.App.Frontend.Pages.Medicos
 {
-    public class ListModel : PageModel
+    public class DetailModel : PageModel
     {
         private readonly IRepositorioMedico _repositorioMedico;
-        public IEnumerable<Medico> Medicos { get; set; }
         public Medico Medico { get; set; }
-        public ListModel()
+        public DetailModel()
         {
             this._repositorioMedico = new RepositorioMedico(new HospiEnCasa.App.Persistencia.AppContext());
         }
-        public void OnGet()
+        public IActionResult OnGet(int idMedico)
         {
-            Medicos = _repositorioMedico.GetAllMedicos();
+            Medico = _repositorioMedico.GetMedico(idMedico);
+            if (Medico == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            else
+            {
+                return Page();
+            }
         }
     }
 }
