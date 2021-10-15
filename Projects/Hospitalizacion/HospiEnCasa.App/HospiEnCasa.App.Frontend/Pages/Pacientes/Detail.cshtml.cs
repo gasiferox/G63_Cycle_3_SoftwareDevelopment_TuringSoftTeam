@@ -14,6 +14,8 @@ namespace HospiEnCasa.App.Frontend.Pages
         private readonly IRepositorioPaciente _repositorioPaciente;
         public Paciente Paciente { get; set; }
         public FamiliarDesignado FamiliarDesignado { get; set; }
+        public Medico Medico { get; set; }
+        public Enfermera Enfermera { get; set; }
         public DetailModel()
         {
             this._repositorioPaciente = new RepositorioPaciente(new HospiEnCasa.App.Persistencia.AppContext());
@@ -38,24 +40,12 @@ namespace HospiEnCasa.App.Frontend.Pages
             }
             else
                 FamiliarDesignado = _repositorioPaciente.GetFamiliarDesignado(idPaciente);
+
+                Medico = _repositorioPaciente.GetMedicoAsignado(idPaciente);
+
+                Enfermera = _repositorioPaciente.GetEnfermeraAsignada(idPaciente);
+
                 return Page();
         }
-
-        /* public void OnGetFamiliar(int? idPaciente)
-        {
-            if (idPaciente.HasValue)
-            {
-                Paciente = _repositorioPaciente.GetPaciente(idPaciente.Value);
-            }
-
-            if (Paciente == null)
-            {
-                RedirectToPage("./NotFound");
-            }
-            else
-            {
-                FamiliarDesignado = _repositorioPaciente.GetFamiliarDesignado(idPaciente.Value);
-            }
-        } */
     }
 }

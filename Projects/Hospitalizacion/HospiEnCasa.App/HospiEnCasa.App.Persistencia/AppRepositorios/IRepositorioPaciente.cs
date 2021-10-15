@@ -10,6 +10,8 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         Paciente AddPaciente(Paciente paciente);
         Paciente GetPaciente(int idPaciente);
         FamiliarDesignado GetFamiliarDesignado(int idPaciente);
+        Medico GetMedicoAsignado(int idPaciente);
+        Enfermera GetEnfermeraAsignada(int idPaciente);
         void DeletePaciente(int idPaciente);
         Paciente UpdatePaciente(Paciente paciente);
         
@@ -20,11 +22,12 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
 
         /* Métodos para asignar */
         Medico AsignarMedico(int idPaciente, int idMedico);
+        Enfermera AsignarEnfermera(int idPaciente, int idEnfermera);
 
         /* Nuevas instancias */
         IEnumerable<SignoVital> GetSignosPaciente(int idPaciente);
         /* SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital); */
-        
+
         
     }
 }

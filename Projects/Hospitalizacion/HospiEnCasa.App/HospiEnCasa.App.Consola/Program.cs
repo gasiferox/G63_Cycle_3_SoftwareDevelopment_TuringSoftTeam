@@ -33,14 +33,16 @@ namespace HospiEnCasa.App.Consola
             //ListarPacientesMasculinos();
             //ListarPacientesCorazon();
             //ListarSignosPaciente(9);
-            ListarFamiliarDesignado(12);
-            //AsignarMedico(5,14);
+            //ListarFamiliarDesignado(12);
+            //ListarMedicoAsignado(12);
+            //AsignarMedico(12,15);
+            //AsignarEnfermera(12,13);
 
             //AddMedico();
 
             //AddEnfermera();
             //ListarEnfermeras();
-            //ListarEnfermera(13);
+            ListarEnfermera(13);
             //BorrarEnfermera();
         }
 
@@ -172,10 +174,24 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("\n");
         }
 
+        public static void ListarMedicoAsignado(int idPaciente)
+        {
+            var medicoT = _repoPaciente.GetMedicoAsignado(idPaciente);
+            Console.WriteLine("El médico tratante del paciente No." + idPaciente + " es " + medicoT.Nombre + " " + medicoT.Apellido);
+            Console.WriteLine("\n");
+        }
+
         private static void AsignarMedico(int idPaciente, int idMedico)
         {
             var medico = _repoPaciente.AsignarMedico(idPaciente, idMedico);
-            Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " ha sido asignado al paciente No. " + "\n");
+            Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " ha sido asignado al paciente No. " + idPaciente + "\n");
+        }
+
+        public static void AsignarEnfermera(int idPaciente, int idEnfermera)
+        {
+            var enfermera = _repoPaciente.AsignarEnfermera(idPaciente, idEnfermera);
+            Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " ha sido asignado al paciente No. " + idPaciente + "\n");
+            
         }
 
         /* Médicos */

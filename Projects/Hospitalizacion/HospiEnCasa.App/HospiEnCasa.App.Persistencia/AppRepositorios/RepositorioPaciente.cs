@@ -43,6 +43,18 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return paciente.FamiliarDesignado;
         }
 
+        Medico IRepositorioPaciente.GetMedicoAsignado(int idPaciente)
+        {
+            var medico = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.Medico).FirstOrDefault();
+            return medico.Medico;
+        }
+
+        Enfermera IRepositorioPaciente.GetEnfermeraAsignada(int idPaciente)
+        {
+            var enfermera = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.Enfermera).FirstOrDefault();
+            return enfermera.Enfermera;
+        }
+
         public void DeletePaciente(int idPaciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
@@ -108,6 +120,22 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                     _appContext.SaveChanges();
                 }
                 return medicoEncontrado;
+            }
+            return null;
+        }
+
+        Enfermera IRepositorioPaciente.AsignarEnfermera(int idPaciente, int idEnfermera)
+        {
+            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
+            if (pacienteEncontrado != null)
+            {
+                var enfermeraEncontrada = _appContext.Enfermeras.FirstOrDefault(p => p.Id == idEnfermera);
+                if (enfermeraEncontrada != null)
+                {
+                    pacienteEncontrado.Enfermera = enfermeraEncontrada;
+                    _appContext.SaveChanges();
+                }
+                return enfermeraEncontrada;
             }
             return null;
         }
