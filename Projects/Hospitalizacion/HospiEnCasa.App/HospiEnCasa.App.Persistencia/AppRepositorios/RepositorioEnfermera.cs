@@ -47,6 +47,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                 enfermeraEncontrada.TipoDocumento = enfermera.TipoDocumento;
                 enfermeraEncontrada.Documento = enfermera.Documento;
                 enfermeraEncontrada.Genero = enfermera.Genero;
+                enfermeraEncontrada.Foto = enfermera.Foto;
 
                 enfermeraEncontrada.TarjetaProfesional = enfermera.TarjetaProfesional;
                 enfermeraEncontrada.HorasLaborales = enfermera.HorasLaborales;

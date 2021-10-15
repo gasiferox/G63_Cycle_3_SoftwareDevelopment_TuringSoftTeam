@@ -9,6 +9,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
         IEnumerable<Paciente> GetAllPacientes();
         Paciente AddPaciente(Paciente paciente);
         Paciente GetPaciente(int idPaciente);
+        FamiliarDesignado GetFamiliarDesignado(int idPaciente);
         void DeletePaciente(int idPaciente);
         Paciente UpdatePaciente(Paciente paciente);
         
@@ -22,6 +23,8 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
 
         /* Nuevas instancias */
         IEnumerable<SignoVital> GetSignosPaciente(int idPaciente);
-        SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital);    
+        /* SignoVital AddSignosPaciente(int idPaciente, SignoVital signoVital); */
+        
+        
     }
 }

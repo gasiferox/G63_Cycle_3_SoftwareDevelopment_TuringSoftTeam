@@ -10,8 +10,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
     {
         private readonly AppContext _appContext;
 
-        /* List<TipoDocumento> tipoDocumentos = Enum.GetValues(typeof(TipoDocumento)).Cast<TipoDocumento>().ToList(); */
-
         public RepositorioPaciente(AppContext appContext)
         {
             this._appContext = appContext;
@@ -39,6 +37,12 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
         }
 
+        FamiliarDesignado IRepositorioPaciente.GetFamiliarDesignado(int idPaciente)
+        {
+            var paciente = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.FamiliarDesignado).FirstOrDefault();
+            return paciente.FamiliarDesignado;
+        }
+
         public void DeletePaciente(int idPaciente)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
@@ -58,6 +62,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
                 pacienteEncontrado.TipoDocumento = paciente.TipoDocumento;
                 pacienteEncontrado.Documento = paciente.Documento;
                 pacienteEncontrado.Genero = paciente.Genero;
+                pacienteEncontrado.Foto = paciente.Foto;
 
                 pacienteEncontrado.FechaNacimiento = paciente.FechaNacimiento;
                 pacienteEncontrado.Latitud = paciente.Latitud;
@@ -85,6 +90,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return _appContext.Pacientes.Where(p => p.Genero == Genero.Masculino).ToList();
         }
 
+        
         IEnumerable<Paciente> IRepositorioPaciente.GetPacientesCorazon()
         {
             return _appContext.Pacientes.Where(p => p.SignosVitales.Any(s => TipoSigno.FrecuenciaCardiaca == s.TipoSigno && s.Valor <= 90)).ToList();
@@ -128,7 +134,7 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             return null;
         } */
 
-        SignoVital IRepositorioPaciente.AddSignosPaciente(int idPaciente, SignoVital signoVital)
+        /* SignoVital IRepositorioPaciente.AddSignosPaciente(int idPaciente, SignoVital signoVital)
         {
             var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id == idPaciente);
 
@@ -136,6 +142,6 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
             _appContext.SaveChanges();
             return nuevoSignoVital.Entity;
 
-        }
+        } */
     }
 }

@@ -25,12 +25,15 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("####################################################\n");
 
             //AddPaciente();
-            //BuscarPaciente(5);
+            //BuscarPaciente(12);
+            //BuscarFamiliarDesignado(11);
             //BorrarPaciente(6);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
-            ListarPacientesMasculinos();
+            //ListarPacientesMasculinos();
             //ListarPacientesCorazon();
+            //ListarSignosPaciente(9);
+            ListarFamiliarDesignado(12);
             //AsignarMedico(5,14);
 
             //AddMedico();
@@ -85,7 +88,16 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Identificación: " + paciente.TipoDocumento + " " + paciente.Documento);
             Console.WriteLine("Geolocalización: ( " + paciente.Latitud + ", " + paciente.Longitud + " )");
             Console.WriteLine("Fecha de Nacimiento: " + paciente.FechaNacimiento);
+            Console.WriteLine("Género: " + paciente.Genero);
+            Console.WriteLine("Familiar Designado: " + _repoPaciente.GetFamiliarDesignado(idPaciente));
+            Console.WriteLine("\n");
         }
+
+        /* private static void BuscarFamiliarDesignado(int idPaciente)
+        {
+            var familiarDesignado = _repoPaciente.GetFamiliarDesignado(idPaciente);
+            Console.WriteLine("Familiar Designado: " + familiarDesignado.Nombre + " " + familiarDesignado.Apellido);
+        } */
 
         private static void BorrarPaciente(int idPaciente)
         {
@@ -142,6 +154,24 @@ namespace HospiEnCasa.App.Consola
             }
         }
 
+        private static void ListarSignosPaciente(int idPaciente)
+        {
+            var signosP = _repoPaciente.GetSignosPaciente(idPaciente);
+            Console.WriteLine("Los signos del paciente son:\n");
+            foreach (var signo in signosP)
+            {
+                Console.WriteLine("La medición de " + signo.TipoSigno + " tiene un valor de " + signo.Valor);
+            }
+            Console.WriteLine("\n");
+        }
+
+        public static void ListarFamiliarDesignado(int idPaciente)
+        {
+            var familiar = _repoPaciente.GetFamiliarDesignado(idPaciente);
+            Console.WriteLine("El familiar designado del paciente No." + idPaciente + " es " + familiar.Nombre + " " + familiar.Apellido);
+            Console.WriteLine("\n");
+        }
+
         private static void AsignarMedico(int idPaciente, int idMedico)
         {
             var medico = _repoPaciente.AsignarMedico(idPaciente, idMedico);
@@ -169,14 +199,15 @@ namespace HospiEnCasa.App.Consola
         public static void AddEnfermera()
         {
             var enfermera = new Enfermera{
-                Nombre = "Maria",
-                Apellido = "Del Valle",
+                Nombre = "Antonia",
+                Apellido = "Lamberti",
                 TipoDocumento = TipoDocumento.Pasaporte,
-                Documento = "P-4753",
+                Documento = "P-879965",
                 Genero = Genero.Femenino,
+                Foto = "/img/Enfermeras/image_03.jpeg",
 
-                TarjetaProfesional = "TP-82376346234",
-                HorasLaborales = 20
+                TarjetaProfesional = "TP-5478541",
+                HorasLaborales = 25
             };
             _repoEnfermera.AddEnfermera(enfermera);
             Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");

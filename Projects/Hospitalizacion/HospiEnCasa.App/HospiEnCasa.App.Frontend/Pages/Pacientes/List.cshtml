@@ -7,15 +7,12 @@
 <img src="/img/banner_pacientes_01.png" alt="" class="img-fluid">
 <h1>Listado de Pacientes</h1>
 <br>
+
 <table class="table">
     <tr class="font-weight-bold">
             <td>No.</td>
             <td>Nombres</td>
             <td>Apellidos</td>
-            @* <td>TipoDocumento</td>
-            <td>Documento</td>
-            <td>Genero</td>
-            <td>FechaNacimiento</td> *@
     </tr>
     @foreach (var paciente in Model.Pacientes)
     {
@@ -23,10 +20,6 @@
             <td>@paciente.Id</td>
             <td>@paciente.Nombre</td>
             <td>@paciente.Apellido</td>
-            @* <td>@paciente.TipoDocumento</td>
-            <td>@paciente.Documento</td>
-            <td>@paciente.Genero</td>
-            <td>@paciente.FechaNacimiento</td> *@
 
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./Detail" asp-route-idPaciente="@paciente.Id">

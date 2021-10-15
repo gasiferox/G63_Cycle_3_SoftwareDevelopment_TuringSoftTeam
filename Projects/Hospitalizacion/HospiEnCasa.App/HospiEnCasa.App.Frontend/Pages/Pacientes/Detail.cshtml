@@ -6,89 +6,102 @@
 
 <h1>Detalles del paciente No. @Model.Paciente.Id</h1>
 <br>
-<table class="table">
-    <tr class="font-weight-bold">
-        <tr>
-            <th>Nombres</th>
-            <th>@Model.Paciente.Nombre</th>
-        </tr>
-        <tr>
-            <th>Apellidos</th>
-            <th>@Model.Paciente.Apellido</th>
-        </tr>
-        <tr>
-            <th>Tipo de documento</th>
-            <th>@Model.Paciente.TipoDocumento</th>
-        </tr>
-        <tr>
-            <th>Documento</th>
-            <th>@Model.Paciente.Documento</th>
-        </tr>
-        <tr>
-            <th>Género</th>
-            <th>@Model.Paciente.Genero</th>
-        </tr>
-        <tr>
-            <th>FechaNacimiento</th>
-            <th>@Model.Paciente.FechaNacimiento</th>
-        </tr>
-        <tr>
-            <th>Geolocalización</th>
-            <th>[ @Model.Paciente.Latitud N, @Model.Paciente.Longitud E ]</th>
-        </tr>
-        <tr>
-            <th>Teléfono</th>
-            <th>@Model.Paciente.Telefono</th>
-        </tr>
-        <tr>
-            <th>Plan Médico</th>
-            <th>@Model.Paciente.PlanMedico</th>
-        </tr>
-        <tr>
-            <th>Familiar designado</th>
-            <th>@Model.Paciente.FamiliarDesignado</th>
-        </tr>
-        <tr>
-            <th>Enfermera</th>
-            <th>@Model.Paciente.Enfermera</th>
-        </tr>
-        <tr>
-            <th>Médico tratante</th>
-            <th>@Model.Paciente.Medico</th>
-        </tr>
-        <tr>
-            <th>História clínica</th>
-            <th>@Model.Paciente.HistoriaClinica</th>
-        </tr>
-    </tr>
-@*     @foreach (var paciente in Model.Pacientes)
-    {
-        <tr>
-            <td>@paciente.Nombre</td>
-            <td>@paciente.Apellido</td>
-            <td>@paciente.TipoDocumento</td>
-            <td>@paciente.Documento</td>
-            <td>@paciente.Genero</td>
-            <td>@paciente.FechaNacimiento</td>
 
-            <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-IdPaciente="@paciente.Id">
-                <i class="fas fa-user-tag"></i>
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-IdPaciente="@paciente.Id">
-                <i class="fas fa-edit"></i>
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-primary table-btn" asp-page="./Signos/List" asp-route-SignosVitales="@paciente.SignosVitales">
-                <i class="fas fa-heartbeat"></i>
-                </a>
-            </td>
-        </tr>
-    } *@
-</table>
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <table class="table">
+                <tr class="font-weight-bold">
+                    <tr>
+                        <th>Nombres</th>
+                        <th>@Model.Paciente.Nombre</th>
+                    </tr>
+                    <tr>
+                        <th>Apellidos</th>
+                        <th>@Model.Paciente.Apellido</th>
+                    </tr>
+                    <tr>
+                        <th>Tipo de documento</th>
+                        <th>@Model.Paciente.TipoDocumento</th>
+                    </tr>
+                    <tr>
+                        <th>Documento</th>
+                        <th>@Model.Paciente.Documento</th>
+                    </tr>
+                    <tr>
+                        <th>Género</th>
+                        <th>@Model.Paciente.Genero</th>
+                    </tr>
+                    <tr>
+                        <th>FechaNacimiento</th>
+                        <th>@Model.Paciente.FechaNacimiento</th>
+                    </tr>
+                    <tr>
+                        <th>Geolocalización</th>
+                        <th>[ @Model.Paciente.Latitud N, @Model.Paciente.Longitud E ]</th>
+                    </tr>
+                    <tr>
+                        <th>Teléfono</th>
+                        <th>@Model.Paciente.Telefono</th>
+                    </tr>
+                    <tr>
+                        <th>Plan Médico</th>
+                        <th>@Model.Paciente.PlanMedico</th>
+                    </tr>
+                    <tr>
+                        <th>Familiar designado</th>
+                        <th>@Model.Paciente.FamiliarDesignado</th>
+                    </tr>
+                    <tr>
+                        <th>Enfermera</th>
+                        <th>@Model.Paciente.Enfermera</th>
+                    </tr>
+                    <tr>
+                        <th>Médico tratante</th>
+                        <th>@Model.Paciente.Medico</th>
+                    </tr>
+                    <tr>
+                        <th>História clínica</th>
+                        <th>@Model.Paciente.HistoriaClinica</th>
+                    </tr>
+                </tr>
+            @*     @foreach (var paciente in Model.Pacientes)
+                {
+                    <tr>
+                        <td>@paciente.Nombre</td>
+                        <td>@paciente.Apellido</td>
+                        <td>@paciente.TipoDocumento</td>
+                        <td>@paciente.Documento</td>
+                        <td>@paciente.Genero</td>
+                        <td>@paciente.FechaNacimiento</td>
+
+                        <td>
+                            <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-IdPaciente="@paciente.Id">
+                            <i class="fas fa-user-tag"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-IdPaciente="@paciente.Id">
+                            <i class="fas fa-edit"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a class="btn btn-primary table-btn" asp-page="./Signos/List" asp-route-SignosVitales="@paciente.SignosVitales">
+                            <i class="fas fa-heartbeat"></i>
+                            </a>
+                        </td>
+                    </tr>
+                } *@
+            </table>
+        </div>
+        <div class="col">
+            <img src="@Model.Paciente.Foto" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+</div>
+
+
 <br>
 <a asp-page="./Edit" class="btn btn-primary">Editar Paciente</a>
 <a asp-page="./Signos/List" class="btn btn-warning" asp-route-idPaciente="@idPaciente">Signos Vitales</a>

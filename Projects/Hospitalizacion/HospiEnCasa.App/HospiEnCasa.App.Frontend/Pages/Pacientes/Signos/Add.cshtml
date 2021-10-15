@@ -1,6 +1,7 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.Pacientes.Signos.AddModel
 @{
+    int idPaciente = Model.Paciente.Id;
 }
 
 <h1>Signos vitales del Paciente No. @Model.Paciente.Id</h1>
@@ -9,19 +10,29 @@
 <form action="" method="post">
     <input type="hidden" asp-for="Paciente.Id">
     <div class="form-froup">
-        <label asp-for="SignoVital.FechaHora">Fecha</label>
-        <input asp-for="SignoVital.FechaHora" class="form-control">
-        <span class="text-danger" asp-validation-for="SignoVital.FechaHora"></span>
+        <label asp-for="Paciente.SignosVitales">Fecha</label>
+        <input asp-for="Paciente.SignosVitales" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.SignosVitales"></span>
     </div>
     <div class="form-froup">
-        <label asp-for="SignoVital.TipoSigno">Tipo de signo</label>
-        <input asp-for="SignoVital.TipoSigno" class="form-control">
-        <span class="text-danger" asp-validation-for="SignoVital.TipoSigno"></span>
+        <label asp-for="Paciente.SignosVitales"></label>
+        <input asp-for="Paciente.SignosVitales" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.SignosVitales"></span>
+    </div>
+    <div>
+        @* @foreach (var p in Model.Paciente)
+        { *@
+            <tr>
+                @* <td>@Model.Paciente.SignosVitales.FechaHora</td>
+                <td>@Model.Paciente.SignosVitales.TipoSigno</td>
+                <td>@Model.Paciente.SignosVitales.Valor</td> *@
+            </tr>
+        @* } *@
     </div>
     <div class="form-froup">
-        <label asp-for="SignoVital.Valor"></label>
-        <input asp-for="SignoVital.Valor" class="form-control">
-        <span class="text-danger" asp-validation-for="SignoVital.Valor"></span>
+        <label asp-for="Paciente.SignosVitales"></label>
+        <input asp-for="Paciente.SignosVitales" class="form-control">
+        <span class="text-danger" asp-validation-for="Paciente.SignosVitales"></span>
     </div>
 
     <button type="submit" class="btn btn-primary">Grabar</button>

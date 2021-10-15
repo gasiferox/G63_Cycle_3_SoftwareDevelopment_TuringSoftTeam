@@ -68,20 +68,29 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Apellido")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Documento")
+                        .IsRequired()
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)");
+
+                    b.Property<string>("Foto")
                         .HasColumnType("text");
 
                     b.Property<int>("Genero")
                         .HasColumnType("int");
 
                     b.Property<string>("Nombre")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
 
                     b.Property<int>("TipoDocumento")
                         .HasColumnType("int");
@@ -228,7 +237,9 @@ namespace HospiEnCasa.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Telefono")
-                        .HasColumnType("text");
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("varchar(10)");
 
                     b.HasIndex("EnfermeraId");
 
