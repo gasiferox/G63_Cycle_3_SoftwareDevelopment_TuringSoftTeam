@@ -8,6 +8,7 @@ namespace HospiEnCasa.App.Consola
 {
     public class Program
     {
+        private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioEnfermera _repoEnfermera = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioEnfermera(new HospiEnCasa.App.Persistencia.AppContext());
         private static HospiEnCasa.App.Persistencia.AppRepositorios.IRepositorioPaciente _repoPaciente = new HospiEnCasa.App.Persistencia.AppRepositorios.RepositorioPaciente(new Persistencia.AppContext());
 
         public static void Main(string[] args)
@@ -115,7 +116,7 @@ namespace HospiEnCasa.App.Consola
                 Console.WriteLine("El paciente No. " + p.Id + " con Nombre: " + p.Nombre + " y Apellido: " + p.Apellido);
             }
         }
-            /* MEDICOS */
+        /* MEDICOS */
 
         /* private static void AsignarMedico()
         {
@@ -124,27 +125,30 @@ namespace HospiEnCasa.App.Consola
         } */
 
         /* MEDICOS */
-        
-        public static void AddMedico()
+
+       /* public static void AddMedico()
         {
-            var medico = new Medico{
+            var medico = new Medico
+            {
                 Nombre = "Yeison Andres",
                 Apellido = "Toledo Muñoz",
                 TipoDocumento = TipoDocumento.CedulaDeCiudadania,
                 Documento = "C.C No. 1117527557",
                 Genero = Genero.Masculino,
 
-                Especialidad =Especialidad.Urologo,
-                RegistroMedico ="RM - 527557"
+                Especialidad = Especialidad.Urologo,
+                RegistroMedico = "RM - 527557"
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");
+        }*/
 
-            /* Enfermeras */
+        /* Enfermeras */
         public static void AddEnfermera()
         {
-            var enfermera = new Enfermera{
-                Nombre = "Kelly Jhoana",
+            var enfermera = new Enfermera
+            {
+                Nombre = "Kelly Johana",
                 Apellido = "Muñoz Silva",
                 TipoDocumento = TipoDocumento.CedulaDeCiudadania,
                 Documento = "C.C No.1117527061",
@@ -157,7 +161,7 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " fué agregada con éxito a la BD de TuringSoft.\n");
         }
 
-        
-        }
+
     }
 }
+
