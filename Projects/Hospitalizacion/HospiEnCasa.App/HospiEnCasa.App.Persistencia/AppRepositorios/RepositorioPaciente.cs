@@ -39,8 +39,8 @@ namespace HospiEnCasa.App.Persistencia.AppRepositorios
 
         FamiliarDesignado IRepositorioPaciente.GetFamiliarDesignado(int idPaciente)
         {
-            var paciente = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.FamiliarDesignado).FirstOrDefault();
-            return paciente.FamiliarDesignado;
+            var familiarDesignado = _appContext.Pacientes.Where(s => s.Id == idPaciente).Include(s => s.FamiliarDesignado).FirstOrDefault();
+            return familiarDesignado.FamiliarDesignado;
         }
 
         Medico IRepositorioPaciente.GetMedicoAsignado(int idPaciente)

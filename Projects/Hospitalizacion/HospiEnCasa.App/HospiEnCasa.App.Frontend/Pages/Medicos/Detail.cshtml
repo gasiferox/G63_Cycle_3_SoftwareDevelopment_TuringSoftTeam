@@ -6,37 +6,50 @@
 
 <h1>Detalles del médico No. @Model.Medico.Id</h1>
 <br>
-<table class="table">
-    <tr class="font-weight-bold">
-        <tr>
-            <th>Nombres</th>
-            <th>@Model.Medico.Nombre</th>
-        </tr>
-        <tr>
-            <th>Apellidos</th>
-            <th>@Model.Medico.Apellido</th>
-        </tr>
-        <tr>
-            <th>Tipo de documento</th>
-            <th>@Model.Medico.TipoDocumento</th>
-        </tr>
-        <tr>
-            <th>Documento</th>
-            <th>@Model.Medico.Documento</th>
-        </tr>
-        <tr>
-            <th>Género</th>
-            <th>@Model.Medico.Genero</th>
-        </tr>
-        <tr>
-            <th>Especialidad</th>
-            <th>@Model.Medico.Especialidad</th>
-        </tr>
-        <tr>
-            <th>Registro Médico</th>
-            <th>@Model.Medico.RegistroMedico</th>
-        </tr>
-</table>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+
+
+            <table class="table">
+                <tr class="font-weight-bold">
+                <tr>
+                    <th>Nombres</th>
+                    <th>@Model.Medico.Nombre</th>
+                </tr>
+                <tr>
+                    <th>Apellidos</th>
+                    <th>@Model.Medico.Apellido</th>
+                </tr>
+                <tr>
+                    <th>Tipo de documento</th>
+                    <th>@Model.Medico.TipoDocumento</th>
+                </tr>
+                <tr>
+                    <th>Documento</th>
+                    <th>@Model.Medico.Documento</th>
+                </tr>
+                <tr>
+                    <th>Género</th>
+                    <th>@Model.Medico.Genero</th>
+                </tr>
+                <tr>
+                    <th>Especialidad</th>
+                    <th>@Model.Medico.Especialidad</th>
+                </tr>
+                <tr>
+                    <th>Registro Médico</th>
+                    <th>@Model.Medico.RegistroMedico</th>
+                </tr>
+            </table>
+        </div>
+        <div class="col">
+            <img src="@Model.Medico.Foto" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+</div>
 
 <br>
 

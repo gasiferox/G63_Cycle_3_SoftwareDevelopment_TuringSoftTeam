@@ -1,4 +1,56 @@
 ﻿@page
 @model HospiEnCasa.App.Frontend.Pages.Pacientes.Familiares.DetailModel
 @{
+    int idFamiliarDesignado = Model.FamiliarDesignado.Id;
 }
+
+<h1>Detalles del Familiar Designado No. @Model.FamiliarDesignado.Id</h1>
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+            <table class="table">
+                <tr class="font-weight-bold">
+                    <tr>
+                        <th>Nombres</th>
+                        <th>@Model.FamiliarDesignado.Nombre</th>
+                    </tr>
+                    <tr>
+                        <th>Apellidos</th>
+                        <th>@Model.FamiliarDesignado.Apellido</th>
+                    </tr>
+                    <tr>
+                        <th>Tipo de documento</th>
+                        <th>@Model.FamiliarDesignado.TipoDocumento</th>
+                    </tr>
+                    <tr>
+                        <th>Documento</th>
+                        <th>@Model.FamiliarDesignado.Documento</th>
+                    </tr>
+                    <tr>
+                        <th>Género</th>
+                        <th>@Model.FamiliarDesignado.Genero</th>
+                    </tr>
+                    <tr>
+                        <th>Parentesco</th>
+                        <th>@Model.FamiliarDesignado.Parentesco</th>
+                    </tr>
+                    <tr>
+                        <th>Correo Electrónico</th>
+                        <th>@Model.FamiliarDesignado.Correo</th>
+                    </tr>
+
+            </table>
+        </div>
+        <div class="col">
+            <img src="@Model.FamiliarDesignado.Foto" class="img-thumbnail" alt="...">
+        </div>
+    </div>
+</div>
+
+
+<br>
+<a asp-page="./Edit" class="btn btn-primary">Editar Datos del Familiar</a>
+<a asp-page="./List" class="btn btn-secondary">Volver</a>

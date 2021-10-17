@@ -39,13 +39,13 @@ namespace HospiEnCasa.App.Frontend.Pages
                 return RedirectToPage("./NotFound");
             }
             else
+            {
                 FamiliarDesignado = _repositorioPaciente.GetFamiliarDesignado(idPaciente);
-
                 Medico = _repositorioPaciente.GetMedicoAsignado(idPaciente);
 
                 Enfermera = _repositorioPaciente.GetEnfermeraAsignada(idPaciente);
-
                 return Page();
+            }
         }
     }
 }

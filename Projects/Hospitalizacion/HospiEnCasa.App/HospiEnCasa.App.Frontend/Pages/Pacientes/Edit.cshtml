@@ -23,7 +23,7 @@
     </div>
     <div class="form-group">
         <label asp-for="Paciente.TipoDocumento">Tipo de documento</label>
-        
+
     </div>
     <div class="form-group">
         <label asp-for="Paciente.Documento"></label>
@@ -32,11 +32,16 @@
     </div>
     <div class="form-group">
         <label asp-for="Paciente.Genero">Género</label>
-        <select asp-for="Genero">
-            <option asp-for="Genero">@Model.Genero</option>
+        <select asp-for="Paciente.Genero">
+            
+            <option asp-for="Genero">@Model.Paciente.Genero</option>
             @* <option value="Genero.Femenino">@Model.Genero</option>
                 <option value="2">Femenino</option>
                 <option value="3">Otro</option> *@
+            @* @foreach (Genero g in Model.Paciente.Genero.Enum.GetValues(typeof(Paciente)))
+                {
+                ListItem item = new ListItem(Enum.GetName(typeof(ModelPaciente.Genero), g), g.ToString());
+                } *@
         </select>
     </div>
     <div class="form-group">
@@ -45,7 +50,7 @@
         <span class="text-danger" asp-validation-for="Paciente.Foto"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Paciente.FechaNacimiento"></label>
+        <label asp-for="Paciente.FechaNacimiento">Fecha de Nacimiento</label>
         <input asp-for="Paciente.FechaNacimiento" class="form-control">
         <span class="text-danger" asp-validation-for="Paciente.FechaNacimiento"></span>
     </div>
@@ -67,8 +72,8 @@
 
     <button type="submit" class="btn btn-primary">Grabar</button>
 
-    <a class="btn btn-warning table-btn" asp-page="./Signos/List" asp-route-idPaciente="@idPaciente">
+    @* <a class="btn btn-warning table-btn" asp-page="./Signos/List" asp-route-idPaciente="@idPaciente">
         <i aria-hidden="true">Signos Vitales</i>
-    </a>
+        </a> *@
 </form>
 <a asp-page="./List" class="btn-default">Regrear a la lista de Pacientes</a>

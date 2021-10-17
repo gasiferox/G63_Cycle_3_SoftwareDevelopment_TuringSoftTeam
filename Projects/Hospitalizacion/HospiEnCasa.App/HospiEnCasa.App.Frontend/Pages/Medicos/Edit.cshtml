@@ -1,0 +1,58 @@
+﻿@page
+@model HospiEnCasa.App.Frontend.Pages.Medicos.EditModel
+@{
+}
+
+<h1>Edición del Médico No. @Model.Medico.Id</h1>
+<h2>@Model.Medico.Nombre @Model.Medico.Apellido</h2>
+
+
+<form action="" method="post">
+    <input type="hidden" asp-for="Medico.Id">
+    <div class="form-group">
+        <label asp-for="Medico.Nombre"></label>
+        <input asp-for="Medico.Nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="Medico.Nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.Apellido"></label>
+        <input asp-for="Medico.Apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="Medico.Apellido"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.TipoDocumento">Tipo de documento</label>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.Documento"></label>
+        <input asp-for="Medico.Documento" class="form-control">
+        <span class="text-danger" asp-validation-for="Medico.Documento"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.Genero">Género</label>
+        <select asp-for="Medico.Genero">
+            
+            <option asp-for="Genero">@Model.Medico.Genero</option>
+            
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.Foto"></label>
+        <input asp-for="Medico.Foto" class="form-control">
+        <span class="text-danger" asp-validation-for="Medico.Foto"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.Especialidad">Especialidad</label>
+        <input asp-for="Medico.Especialidad" class="form-control">
+        <span class="text-danger" asp-validation-for="Medico.Especialidad"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Medico.RegistroMedico">Registro Médico</label>
+        <input asp-for="Medico.RegistroMedico" class="form-control">
+        <span class="text-danger" asp-validation-for="Medico.RegistroMedico"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Grabar</button>
+    
+</form>
+<a asp-page="./List" class="btn-default">Regrear a la lista de Médicos</a>

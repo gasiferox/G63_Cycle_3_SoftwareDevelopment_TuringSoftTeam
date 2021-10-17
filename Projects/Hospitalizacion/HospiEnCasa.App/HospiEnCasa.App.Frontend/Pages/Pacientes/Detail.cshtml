@@ -35,7 +35,7 @@
                     </tr>
                     <tr>
                         <th>FechaNacimiento</th>
-                        <th>@Model.Paciente.FechaNacimiento</th>
+                        <th>@Model.Paciente.FechaNacimiento.ToString("yyy-MM-dd")</th>
                     </tr>
                     <tr>
                         <th>Geolocalización</th>
@@ -51,15 +51,15 @@
                     </tr>
                     <tr>
                         <th>Familiar designado</th>
-                        <th>@Model.FamiliarDesignado.Nombre @Model.FamiliarDesignado.Apellido</th>
+                        <th><a href="/Pacientes/Familiares/Detail?idfamiliardesignado=@Model.FamiliarDesignado.Id">@Model.FamiliarDesignado.Nombre @Model.FamiliarDesignado.Apellido</a></th>
                     </tr>
                     <tr>
                         <th>Enfermera</th>
-                        <th>@Model.Enfermera.Nombre @Model.Enfermera.Apellido</th>
+                        <th><a href="/Enfermeras/Detail?idenfermera=@Model.Enfermera.Id">@Model.Enfermera.Nombre @Model.Enfermera.Apellido</a></th>
                     </tr>
                     <tr>
                         <th>Médico tratante</th>
-                        <th>@Model.Medico.Nombre @Model.Medico.Apellido</th>
+                        <th><a href="/Medicos/Detail?idmedico=@Model.Medico.Id">@Model.Medico.Nombre @Model.Medico.Apellido</a></th>
                     </tr>
                     <tr>
                         <th>História clínica</th>
@@ -77,6 +77,6 @@
 
 
 <br>
-<a asp-page="./Edit" class="btn btn-primary">Editar Paciente</a>
+<a asp-page="./Edit" class="btn btn-primary" asp-route-idPaciente="@idPaciente">Editar Paciente</a>
 <a asp-page="./Signos/List" class="btn btn-warning" asp-route-idPaciente="@idPaciente">Signos Vitales</a>
 <a asp-page="./List" class="btn btn-secondary">Volver</a>

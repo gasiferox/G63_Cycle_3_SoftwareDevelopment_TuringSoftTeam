@@ -25,9 +25,9 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("####################################################\n");
 
             //AddPaciente();
-            //BuscarPaciente(12);
+            //BuscarPaciente(9);
             //BuscarFamiliarDesignado(11);
-            //BorrarPaciente(6);
+            //BorrarPaciente(2);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
@@ -36,14 +36,17 @@ namespace HospiEnCasa.App.Consola
             //ListarFamiliarDesignado(12);
             //ListarMedicoAsignado(12);
             //AsignarMedico(12,15);
-            //AsignarEnfermera(12,13);
+            //AsignarEnfermera(12,18);
 
             //AddMedico();
+            ListarMedico(15);
+            //ListarMedicos();
+            //BorrarMedico();
 
             //AddEnfermera();
             //ListarEnfermeras();
-            ListarEnfermera(13);
-            //BorrarEnfermera();
+            //ListarEnfermera(13);
+            //BorrarEnfermera(13);
         }
 
         private static void AddPaciente()
@@ -209,6 +212,27 @@ namespace HospiEnCasa.App.Consola
             };
             _repoMedico.AddMedico(medico);
             Console.WriteLine("El médico " + medico.Nombre + " " + medico.Apellido + " fue agregado con éxito.\n");
+        }
+
+        public static void ListarMedicos()
+        {
+            var medicosL = _repoMedico.GetAllMedicos();
+            Console.WriteLine("\n\t\tListado de médicos\n");
+            Console.WriteLine("\tNo.\tNombre\t\t\tApellido\n");
+            foreach (var med in medicosL)
+            {
+                Console.WriteLine("\t" + med.Id + "\t" + med.Nombre + "\t\t\t" + med.Apellido);
+            }
+            Console.WriteLine("\n");
+        }
+
+        public static void ListarMedico(int idMedico)
+        {
+            var medicoE = _repoMedico.GetMedico(idMedico);
+            Console.WriteLine("\n\t\tListado de médicos\n");
+            Console.WriteLine("\tNo.\tNombre\t\t\tApellido\n");
+            Console.WriteLine("\t" + medicoE.Id + "\t" + medicoE.Nombre + "\t\t" + medicoE.Apellido + "\n");
+            Console.WriteLine("\n");
         }
 
         /* Enfermeras */

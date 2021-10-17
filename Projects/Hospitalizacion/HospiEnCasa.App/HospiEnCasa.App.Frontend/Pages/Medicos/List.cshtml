@@ -20,13 +20,13 @@
             <td>@medico.Apellido</td>
 
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Detail" asp-route-idmedico="@medico.Id">
+                <a class="btn btn-primary table-btn" asp-page="./Detail" asp-route-idMedico="@medico.Id">
                 <i class="fas fa-user-tag"></i>
                 </a>
             </td>
 
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-idmedico="@medico.Id">
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-idMedico="@medico.Id">
                 <i class="fas fa-edit"></i>
                 </a>
             </td>
@@ -34,5 +34,5 @@
     }
 </table>
 <br>
-<a asp-page="./Medicos/Edit" class="btn btn-primary">Agregar Medico</a>
+<a asp-page="./Medicos/Add" class="btn btn-primary">Agregar Medico</a>
 <a asp-page="./Home" class="btn btn-secondary">Volver</a>
