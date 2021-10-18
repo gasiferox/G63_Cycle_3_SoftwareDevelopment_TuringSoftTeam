@@ -25,9 +25,11 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("####################################################\n");
 
             //AddPaciente();
-            //BuscarPaciente(9);
+            //ListarPaciente(17);
+            //ListarPacientes();
             //BuscarFamiliarDesignado(11);
             //BorrarPaciente(2);
+            ActualizarPaciente(17);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
@@ -39,9 +41,10 @@ namespace HospiEnCasa.App.Consola
             //AsignarEnfermera(12,18);
 
             //AddMedico();
-            ListarMedico(15);
+            //ListarMedico(10);
             //ListarMedicos();
-            //BorrarMedico();
+            //BorrarMedico(10);
+            //ActualizarMedico()
 
             //AddEnfermera();
             //ListarEnfermeras();
@@ -85,16 +88,35 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("El Paciente, " + paciente.Nombre + " " + paciente.Apellido + " fué agregado con éxito por el Equipo TuringSoft\n");
         }
 
-        private static void BuscarPaciente(int idPaciente)
+        public static void ListarPacientes()
+        {
+            var pacientesL = _repoPaciente.GetAllPacientes();
+            Console.WriteLine("\n\t\tListado de pacientes\n");
+            Console.WriteLine("No.\tPaciente\n");
+            foreach (var p in pacientesL)
+            {
+                Console.WriteLine(p.Id + "\t" + p.Nombre + " " + p.Apellido);
+            }
+            Console.WriteLine("\n");
+        }
+
+        private static void ListarPaciente(int idPaciente)
         {
             var paciente = _repoPaciente.GetPaciente(idPaciente);
-            Console.WriteLine("Paciente: " + paciente.Nombre + " " + paciente.Apellido);
-            Console.WriteLine("Teléfono: " + paciente.Telefono + "\nGénero: " + paciente.Genero);
+            Console.WriteLine("Detalles del paciente No." + paciente.Id);
+            
+            Console.WriteLine("\nPaciente: " + paciente.Nombre + " " + paciente.Apellido);
             Console.WriteLine("Identificación: " + paciente.TipoDocumento + " " + paciente.Documento);
-            Console.WriteLine("Geolocalización: ( " + paciente.Latitud + ", " + paciente.Longitud + " )");
+            Console.WriteLine("Teléfono: " + paciente.Telefono + "\nGénero: " + paciente.Genero);
+            Console.WriteLine("Imágen: " + paciente.Foto);
+
             Console.WriteLine("Fecha de Nacimiento: " + paciente.FechaNacimiento);
-            Console.WriteLine("Género: " + paciente.Genero);
+            Console.WriteLine("Geolocalización: ( " + paciente.Latitud + "N, " + paciente.Longitud + "E )");
+            Console.WriteLine("Teléfono: " + paciente.Telefono);
+            Console.WriteLine("Plan Médico: " + paciente.PlanMedico);
             Console.WriteLine("Familiar Designado: " + _repoPaciente.GetFamiliarDesignado(idPaciente));
+            Console.WriteLine("Enfermera: " + _repoPaciente.GetEnfermeraAsignada(idPaciente));
+            Console.WriteLine("Médico Tratante: " + _repoPaciente.GetMedicoAsignado(idPaciente));
             Console.WriteLine("\n");
         }
 
@@ -106,8 +128,56 @@ namespace HospiEnCasa.App.Consola
 
         private static void BorrarPaciente(int idPaciente)
         {
-            _repoPaciente.DeletePaciente(idPaciente);
-            Console.WriteLine("Paciente eliminádo con éxito!");
+            var pacienteE = _repoPaciente.GetPaciente(idPaciente);
+            if (pacienteE != null)
+            {
+                _repoPaciente.DeletePaciente(idPaciente);
+                Console.WriteLine("Paciente borrado con éxito\n");
+            }
+            else
+            {
+                Console.WriteLine("El paciente indicado no éxiste\n");
+            }
+        }
+
+        private static void ActualizarPaciente(int idPaciente)
+        {
+            var pacienteE = _repoPaciente.GetPaciente(idPaciente);
+            if (pacienteE != null)
+            {
+                Console.WriteLine("Indique los siguientes datos del paciente:");
+                Console.Write("Nombre: ");
+                pacienteE.Nombre = Console.ReadLine();
+                Console.Write("Apellido: ");
+                pacienteE.Apellido = Console.ReadLine();
+                /* Console.Write("Tipo de documento: ");
+                pacienteE.TipoDocumento = Console.ReadLine(); */
+                Console.Write("Documento: ");
+                pacienteE.Documento = Console.ReadLine();
+                /* Console.Write("Género: ");
+                Console.Write("M - F - O: ");
+                var genero = Console.ReadLine();
+                if (genero == "M")
+                {
+                    pacienteE.Genero = 0;
+                }
+                else if (genero == "F")
+                {
+                    pacienteE.Genero = 1;
+                }
+                else
+                {
+                    pacienteE.Genero = 2;
+                } */
+                Console.Write("Foto: ");
+                pacienteE.Foto = Console.ReadLine();
+
+                _repoPaciente.UpdatePaciente(pacienteE);
+            }
+            else
+            {
+                Console.WriteLine("El paciente solicitado no existe");
+            }
         }
 
         private static void AddSignosPaciente(int idPaciente)
@@ -194,7 +264,6 @@ namespace HospiEnCasa.App.Consola
         {
             var enfermera = _repoPaciente.AsignarEnfermera(idPaciente, idEnfermera);
             Console.WriteLine("La enfermera " + enfermera.Nombre + " " + enfermera.Apellido + " ha sido asignado al paciente No. " + idPaciente + "\n");
-            
         }
 
         /* Médicos */
@@ -218,10 +287,10 @@ namespace HospiEnCasa.App.Consola
         {
             var medicosL = _repoMedico.GetAllMedicos();
             Console.WriteLine("\n\t\tListado de médicos\n");
-            Console.WriteLine("\tNo.\tNombre\t\t\tApellido\n");
+            Console.WriteLine("\tNo.\tMédico\n");
             foreach (var med in medicosL)
             {
-                Console.WriteLine("\t" + med.Id + "\t" + med.Nombre + "\t\t\t" + med.Apellido);
+                Console.WriteLine("\t" + med.Id + "\t" + med.Nombre + " " + med.Apellido);
             }
             Console.WriteLine("\n");
         }
@@ -229,10 +298,30 @@ namespace HospiEnCasa.App.Consola
         public static void ListarMedico(int idMedico)
         {
             var medicoE = _repoMedico.GetMedico(idMedico);
-            Console.WriteLine("\n\t\tListado de médicos\n");
-            Console.WriteLine("\tNo.\tNombre\t\t\tApellido\n");
-            Console.WriteLine("\t" + medicoE.Id + "\t" + medicoE.Nombre + "\t\t" + medicoE.Apellido + "\n");
+            Console.WriteLine("Detalles del médico No." + medicoE.Id);
+            
+            Console.WriteLine("\nMédico: " + medicoE.Nombre + " " + medicoE.Apellido);
+            Console.WriteLine("Identificación: " + medicoE.TipoDocumento + " " + medicoE.Documento);
+            Console.WriteLine("Género: " + medicoE.Genero);
+            Console.WriteLine("Imágen: " + medicoE.Foto);
+
+            Console.WriteLine("Especialidad: " + medicoE.Especialidad);
+            Console.WriteLine("Registro Médico: " + medicoE.RegistroMedico);
             Console.WriteLine("\n");
+        }
+
+        public static void BorrarMedico(int idMedico)
+        {
+            var medicoE = _repoMedico.GetMedico(idMedico);
+            if (medicoE != null)
+            {
+                _repoMedico.DeleteMedico(idMedico);
+                Console.WriteLine("Médico borrado con éxito\n");
+            }
+            else
+            {
+                Console.WriteLine("El médico indicado no éxiste\n");
+            }
         }
 
         /* Enfermeras */
@@ -268,10 +357,13 @@ namespace HospiEnCasa.App.Consola
         public static void ListarEnfermeras()
         {
             var enfermerasL = _repoEnfermera.GetAllEnfermeras();
-            foreach (var Enfermera in enfermerasL)
+            Console.WriteLine("\n\t\tListado de enfermeras\n");
+            Console.WriteLine("\tNo.\tEnfermera\n");
+            foreach (var enf in enfermerasL)
             {
-                Console.WriteLine("Enfermera " + Enfermera.Id + ", Nombre: " + Enfermera.Nombre + " " + Enfermera.Apellido + ", con " + Enfermera.HorasLaborales + " Horas de trabajo.\n");
+                Console.WriteLine("\t" + enf.Id + "\t" + enf.Nombre + " " + enf.Apellido);
             }
+            Console.WriteLine("\n");
         }
 
         public static void BorrarEnfermera(int idEnfermera)
