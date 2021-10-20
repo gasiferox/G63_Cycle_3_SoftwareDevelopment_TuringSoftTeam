@@ -26,17 +26,17 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("####################################################\n");
 
             //AddPaciente();
-            //ListarPaciente(5);
+            //ListarPaciente(12);
             //ListarPacientes();
             //BuscarFamiliarDesignado(11);
             //BorrarPaciente(2);
-            ActualizarPaciente(5);
+            //ActualizarPaciente(5);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
             //ListarPacientesCorazon();
             //ListarSignosPaciente(9);
-            //ListarFamiliarDesignado(12);
+            ListarFamiliarDesignado(12);
             //ListarMedicoAsignado(12);
             //AsignarMedico(12,15);
             //AsignarEnfermera(12,18);
@@ -104,6 +104,10 @@ namespace HospiEnCasa.App.Consola
         private static void ListarPaciente(int idPaciente)
         {
             var paciente = _repoPaciente.GetPaciente(idPaciente);
+            var medico = _repoPaciente.GetMedicoAsignado(idPaciente);
+            var enfermera = _repoPaciente.GetEnfermeraAsignada(idPaciente);
+            var familiar = _repoPaciente.GetFamiliarDesignado(idPaciente);
+
             Console.WriteLine("Detalles del paciente No." + paciente.Id);
             
             Console.WriteLine("\nPaciente: " + paciente.Nombre + " " + paciente.Apellido);
@@ -115,9 +119,9 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("Geolocalización: ( " + paciente.Latitud + "N, " + paciente.Longitud + "E )");
             Console.WriteLine("Teléfono: " + paciente.Telefono);
             Console.WriteLine("Plan Médico: " + paciente.PlanMedico);
-            Console.WriteLine("Familiar Designado: " + _repoPaciente.GetFamiliarDesignado(idPaciente));
-            Console.WriteLine("Enfermera: " + _repoPaciente.GetEnfermeraAsignada(idPaciente));
-            Console.WriteLine("Médico Tratante: " + _repoPaciente.GetMedicoAsignado(idPaciente));
+            Console.WriteLine("Familiar Designado: " + familiar.Nombre + " " + familiar.Apellido);
+            Console.WriteLine("Enfermera: " + enfermera.Nombre + " " + enfermera.Apellido);
+            Console.WriteLine("Médico Tratante: " + medico.Nombre + " " + medico.Apellido);
             Console.WriteLine("\n");
         }
 
