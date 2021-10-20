@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using HospiEnCasa.App.Persistencia;
 using HospiEnCasa.App.Dominio.Entidades;
 using HospiEnCasa.App;
+using System.ComponentModel.DataAnnotations;
 
 namespace HospiEnCasa.App.Consola
 {
@@ -25,11 +26,11 @@ namespace HospiEnCasa.App.Consola
             Console.WriteLine("####################################################\n");
 
             //AddPaciente();
-            //ListarPaciente(17);
+            //ListarPaciente(5);
             //ListarPacientes();
             //BuscarFamiliarDesignado(11);
             //BorrarPaciente(2);
-            ActualizarPaciente(17);
+            ActualizarPaciente(5);
             //AddSignosPaciente(7);
             //ListarPacientesFemeninos();
             //ListarPacientesMasculinos();
@@ -145,34 +146,93 @@ namespace HospiEnCasa.App.Consola
             var pacienteE = _repoPaciente.GetPaciente(idPaciente);
             if (pacienteE != null)
             {
-                Console.WriteLine("Indique los siguientes datos del paciente:");
-                Console.Write("Nombre: ");
+                Console.WriteLine("Indique o confirme los datos del paciente:\n");
+                Console.WriteLine("Nombre: (" + pacienteE.Nombre + ")");
                 pacienteE.Nombre = Console.ReadLine();
-                Console.Write("Apellido: ");
+                Console.WriteLine("Apellido: (" + pacienteE.Apellido + ")");
                 pacienteE.Apellido = Console.ReadLine();
-                /* Console.Write("Tipo de documento: ");
-                pacienteE.TipoDocumento = Console.ReadLine(); */
-                Console.Write("Documento: ");
+                Console.WriteLine("Tipo de documento: " + pacienteE.TipoDocumento + "\n");
+                Console.WriteLine("(1) - Cedula de Ciudadanía");
+                Console.WriteLine("(2) - Pasaporte");
+                Console.WriteLine("(3) - Tarjeta de Identidad");
+                Console.WriteLine("(4) - Cédula de Extranjería");
+                var tipo = Console.ReadLine();
+                if (tipo == "1")
+                {
+                    pacienteE.TipoDocumento = (TipoDocumento) 0;
+                    Console.WriteLine("Documento " + pacienteE.TipoDocumento + " actualizado\n");
+                }
+                else if (tipo == "2")
+                {
+                    pacienteE.TipoDocumento = (TipoDocumento) 1;
+                    Console.WriteLine("Documento " + pacienteE.TipoDocumento + " actualizado\n");
+                }
+                else if (tipo == "3")
+                {
+                    pacienteE.TipoDocumento = (TipoDocumento) 2;
+                    Console.WriteLine("Documento " + pacienteE.TipoDocumento + " actualizado\n");
+                }
+                else if (tipo == "4")
+                {
+                    pacienteE.TipoDocumento = (TipoDocumento) 3;
+                    Console.WriteLine("Documento " + pacienteE.TipoDocumento + " actualizado\n");
+                }
+                Console.WriteLine("Documento: " + pacienteE.Documento);
                 pacienteE.Documento = Console.ReadLine();
-                /* Console.Write("Género: ");
-                Console.Write("M - F - O: ");
+                Console.WriteLine("Género: " + pacienteE.Genero);
+                Console.WriteLine("(1) - Masculino");
+                Console.WriteLine("(2) - Femenino");
+                Console.WriteLine("(3) - Otro");
                 var genero = Console.ReadLine();
-                if (genero == "M")
+                if (genero == "1")
                 {
-                    pacienteE.Genero = 0;
+                    pacienteE.Genero = (Genero) 0;
                 }
-                else if (genero == "F")
+                else if (genero == "2")
                 {
-                    pacienteE.Genero = 1;
+                    pacienteE.Genero = (Genero) 1;
                 }
-                else
+                else if (genero == "3")
                 {
-                    pacienteE.Genero = 2;
-                } */
-                Console.Write("Foto: ");
+                    pacienteE.Genero = (Genero) 2;
+                }
+                Console.WriteLine("Foto: (" + pacienteE.Foto + ")");
                 pacienteE.Foto = Console.ReadLine();
 
+                Console.WriteLine("Fecha de nacimiento (Ej. 10/22/1987)  - " + pacienteE.FechaNacimiento.ToString("dd-MM-yyy") + "-");
+                pacienteE.FechaNacimiento = DateTime.Parse(Console.ReadLine());
+                Console.WriteLine("Latitud:" + pacienteE.Latitud);
+                pacienteE.Latitud = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Longitud:" + pacienteE.Longitud);
+                pacienteE.Longitud = Convert.ToDouble(Console.ReadLine());
+                Console.WriteLine("Número telefónico:" + pacienteE.Telefono);
+                pacienteE.Telefono = Console.ReadLine();
+                Console.WriteLine("Plan médico: " + pacienteE.PlanMedico + "\n");
+                Console.WriteLine("(1) - EPS");
+                Console.WriteLine("(2) - Subsidiado");
+                Console.WriteLine("(3) - Contributivo");
+                var plan = Console.ReadLine();
+                if (plan == "1")
+                {
+                    pacienteE.PlanMedico = (PlanMedico) 0;
+                }
+                else if (plan == "2")
+                {
+                    pacienteE.PlanMedico = (PlanMedico) 1;
+                }
+                else if (plan == "3")
+                {
+                    pacienteE.PlanMedico = (PlanMedico) 2;
+                }
+    
+                /* var familiar = _repoPaciente.GetFamiliarDesignado(idPaciente);
+
+                Console.WriteLine("El familiar designado es: " + familiar.Nombre + " " + familiar.Apellido);
+                Console.WriteLine("El médico tratante es: " + pacienteE.Medico);
+                Console.WriteLine("La enfermera asignada es: " + pacienteE.Enfermera); */
+
                 _repoPaciente.UpdatePaciente(pacienteE);
+                Console.WriteLine("\nLos datos del paciente " + pacienteE.Id + " han sido actualizados con éxito\n");
             }
             else
             {
